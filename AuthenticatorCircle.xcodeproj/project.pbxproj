@@ -7,13 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1D368051B8049550034F8F5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D368041B8049550034F8F5 /* Menu.m */; };
 		B23E4C1E1B7BBFC900D35088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C1D1B7BBFC900D35088 /* main.m */; };
 		B23E4C211B7BBFC900D35088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C201B7BBFC900D35088 /* AppDelegate.m */; };
-		B23E4C241B7BBFC900D35088 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C231B7BBFC900D35088 /* ViewController.m */; };
 		B23E4C271B7BBFC900D35088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23E4C251B7BBFC900D35088 /* Main.storyboard */; };
 		B23E4C291B7BBFC900D35088 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23E4C281B7BBFC900D35088 /* Images.xcassets */; };
 		B23E4C2C1B7BBFC900D35088 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23E4C2A1B7BBFC900D35088 /* LaunchScreen.xib */; };
 		B23E4C381B7BBFCA00D35088 /* AuthenticatorCircleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C371B7BBFCA00D35088 /* AuthenticatorCircleTests.m */; };
+		B23E4C461B7BC79E00D35088 /* ArcProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C451B7BC79E00D35088 /* ArcProgressView.m */; };
+		B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C481B7BCAD200D35088 /* ShowAuthenticator.m */; };
+		B23E4C4C1B7BCBBF00D35088 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C4B1B7BCBBF00D35088 /* KeychainWrapper.m */; };
+		B267F5621B893C8E00FBB9B5 /* BG_Bastion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5521B893C8E00FBB9B5 /* BG_Bastion.jpg */; };
+		B267F5631B893C8E00FBB9B5 /* BG_Hanzo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5531B893C8E00FBB9B5 /* BG_Hanzo.jpg */; };
+		B267F5641B893C8E00FBB9B5 /* BG_Lucio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5541B893C8E00FBB9B5 /* BG_Lucio.jpg */; };
+		B267F5651B893C8E00FBB9B5 /* BG_McCree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5551B893C8E00FBB9B5 /* BG_McCree.jpg */; };
+		B267F5661B893C8E00FBB9B5 /* BG_Mercy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5561B893C8E00FBB9B5 /* BG_Mercy.jpg */; };
+		B267F5671B893C8E00FBB9B5 /* BG_Pharah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5571B893C8E00FBB9B5 /* BG_Pharah.jpg */; };
+		B267F5681B893C8E00FBB9B5 /* BG_Reaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5581B893C8E00FBB9B5 /* BG_Reaper.jpg */; };
+		B267F5691B893C8E00FBB9B5 /* BG_Reinhardt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5591B893C8E00FBB9B5 /* BG_Reinhardt.jpg */; };
+		B267F56A1B893C8E00FBB9B5 /* BG_Soldier76.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F55A1B893C8E00FBB9B5 /* BG_Soldier76.jpg */; };
+		B267F56B1B893C8E00FBB9B5 /* BG_Symmetra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F55B1B893C8E00FBB9B5 /* BG_Symmetra.jpg */; };
+		B267F56C1B893C8E00FBB9B5 /* BG_Torbjorn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F55C1B893C8E00FBB9B5 /* BG_Torbjorn.jpg */; };
+		B267F56D1B893C8E00FBB9B5 /* BG_Tracer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F55D1B893C8E00FBB9B5 /* BG_Tracer.jpg */; };
+		B267F56E1B893C8E00FBB9B5 /* BG_Widowmaker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F55E1B893C8E00FBB9B5 /* BG_Widowmaker.jpg */; };
+		B267F56F1B893C8E00FBB9B5 /* BG_Winston.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F55F1B893C8E00FBB9B5 /* BG_Winston.jpg */; };
+		B267F5701B893C8E00FBB9B5 /* BG_Zarya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5601B893C8E00FBB9B5 /* BG_Zarya.jpg */; };
+		B267F5711B893C8E00FBB9B5 /* BG_Zenyatta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */; };
+		B283C8301B7E6BC30075D2C7 /* UIStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */; };
+		B2A60E531B814D7C001BB51F /* Help.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E4F1B814D7C001BB51F /* Help.png */; };
+		B2A60E541B814D7C001BB51F /* ResetAuthenticator.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E501B814D7C001BB51F /* ResetAuthenticator.png */; };
+		B2A60E551B814D7C001BB51F /* SendFeedback.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E511B814D7C001BB51F /* SendFeedback.png */; };
+		B2A60E561B814D7C001BB51F /* ViewRestoreCode.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E521B814D7C001BB51F /* ViewRestoreCode.png */; };
+		B2D94D3A1B7D3FFB0010DE6C /* AuthenticatorSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D94D391B7D3FFB0010DE6C /* AuthenticatorSimulator.m */; };
+		B2EB9E851B8403B70054BA0E /* ViewRestoreCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EB9E841B8403B70054BA0E /* ViewRestoreCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +53,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A12EE3D91B8593EB005DDCFC /* AuthenticatorCircle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AuthenticatorCircle-Prefix.pch"; sourceTree = "<group>"; };
+		A1D368031B8049550034F8F5 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		A1D368041B8049550034F8F5 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		B23E4C181B7BBFC900D35088 /* AuthenticatorCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticatorCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23E4C1C1B7BBFC900D35088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B23E4C1D1B7BBFC900D35088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B23E4C1F1B7BBFC900D35088 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B23E4C201B7BBFC900D35088 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B23E4C221B7BBFC900D35088 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B23E4C231B7BBFC900D35088 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B23E4C261B7BBFC900D35088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B23E4C281B7BBFC900D35088 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B23E4C2B1B7BBFC900D35088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B23E4C311B7BBFCA00D35088 /* AuthenticatorCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticatorCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23E4C361B7BBFCA00D35088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B23E4C371B7BBFCA00D35088 /* AuthenticatorCircleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticatorCircleTests.m; sourceTree = "<group>"; };
+		B23E4C441B7BC79E00D35088 /* ArcProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcProgressView.h; sourceTree = "<group>"; };
+		B23E4C451B7BC79E00D35088 /* ArcProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcProgressView.m; sourceTree = "<group>"; };
+		B23E4C471B7BCAD200D35088 /* ShowAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAuthenticator.h; sourceTree = "<group>"; };
+		B23E4C481B7BCAD200D35088 /* ShowAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAuthenticator.m; sourceTree = "<group>"; };
+		B23E4C4A1B7BCBBF00D35088 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		B23E4C4B1B7BCBBF00D35088 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		B267F5521B893C8E00FBB9B5 /* BG_Bastion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Bastion.jpg; sourceTree = "<group>"; };
+		B267F5531B893C8E00FBB9B5 /* BG_Hanzo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Hanzo.jpg; sourceTree = "<group>"; };
+		B267F5541B893C8E00FBB9B5 /* BG_Lucio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Lucio.jpg; sourceTree = "<group>"; };
+		B267F5551B893C8E00FBB9B5 /* BG_McCree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_McCree.jpg; sourceTree = "<group>"; };
+		B267F5561B893C8E00FBB9B5 /* BG_Mercy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Mercy.jpg; sourceTree = "<group>"; };
+		B267F5571B893C8E00FBB9B5 /* BG_Pharah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Pharah.jpg; sourceTree = "<group>"; };
+		B267F5581B893C8E00FBB9B5 /* BG_Reaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Reaper.jpg; sourceTree = "<group>"; };
+		B267F5591B893C8E00FBB9B5 /* BG_Reinhardt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Reinhardt.jpg; sourceTree = "<group>"; };
+		B267F55A1B893C8E00FBB9B5 /* BG_Soldier76.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Soldier76.jpg; sourceTree = "<group>"; };
+		B267F55B1B893C8E00FBB9B5 /* BG_Symmetra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Symmetra.jpg; sourceTree = "<group>"; };
+		B267F55C1B893C8E00FBB9B5 /* BG_Torbjorn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Torbjorn.jpg; sourceTree = "<group>"; };
+		B267F55D1B893C8E00FBB9B5 /* BG_Tracer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Tracer.jpg; sourceTree = "<group>"; };
+		B267F55E1B893C8E00FBB9B5 /* BG_Widowmaker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Widowmaker.jpg; sourceTree = "<group>"; };
+		B267F55F1B893C8E00FBB9B5 /* BG_Winston.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Winston.jpg; sourceTree = "<group>"; };
+		B267F5601B893C8E00FBB9B5 /* BG_Zarya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Zarya.jpg; sourceTree = "<group>"; };
+		B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Zenyatta.jpg; sourceTree = "<group>"; };
+		B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIStrings.plist; sourceTree = "<group>"; };
+		B283C8321B7E6E840075D2C7 /* Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		B2A60E4F1B814D7C001BB51F /* Help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Help.png; sourceTree = "<group>"; };
+		B2A60E501B814D7C001BB51F /* ResetAuthenticator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResetAuthenticator.png; sourceTree = "<group>"; };
+		B2A60E511B814D7C001BB51F /* SendFeedback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SendFeedback.png; sourceTree = "<group>"; };
+		B2A60E521B814D7C001BB51F /* ViewRestoreCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ViewRestoreCode.png; sourceTree = "<group>"; };
+		B2D94D381B7D3FFB0010DE6C /* AuthenticatorSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticatorSimulator.h; sourceTree = "<group>"; };
+		B2D94D391B7D3FFB0010DE6C /* AuthenticatorSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticatorSimulator.m; sourceTree = "<group>"; };
+		B2EB9E831B8403B70054BA0E /* ViewRestoreCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewRestoreCode.h; sourceTree = "<group>"; };
+		B2EB9E841B8403B70054BA0E /* ViewRestoreCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewRestoreCode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +140,20 @@
 		B23E4C1A1B7BBFC900D35088 /* AuthenticatorCircle */ = {
 			isa = PBXGroup;
 			children = (
+				B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */,
 				B23E4C1F1B7BBFC900D35088 /* AppDelegate.h */,
 				B23E4C201B7BBFC900D35088 /* AppDelegate.m */,
-				B23E4C221B7BBFC900D35088 /* ViewController.h */,
-				B23E4C231B7BBFC900D35088 /* ViewController.m */,
+				B2A60E4E1B814D7C001BB51F /* Icon */,
+				B267F5511B893C8E00FBB9B5 /* BgImages */,
+				B2D94D3D1B7D60070010DE6C /* KeychainWrapper */,
+				B2D94D3C1B7D4BAE0010DE6C /* ArcProgressView */,
+				B2D94D3B1B7D4BA20010DE6C /* Simulator */,
+				B23E4C471B7BCAD200D35088 /* ShowAuthenticator.h */,
+				B23E4C481B7BCAD200D35088 /* ShowAuthenticator.m */,
+				A1D368031B8049550034F8F5 /* Menu.h */,
+				A1D368041B8049550034F8F5 /* Menu.m */,
+				B2EB9E831B8403B70054BA0E /* ViewRestoreCode.h */,
+				B2EB9E841B8403B70054BA0E /* ViewRestoreCode.m */,
 				B23E4C251B7BBFC900D35088 /* Main.storyboard */,
 				B23E4C281B7BBFC900D35088 /* Images.xcassets */,
 				B23E4C2A1B7BBFC900D35088 /* LaunchScreen.xib */,
@@ -96,6 +165,8 @@
 		B23E4C1B1B7BBFC900D35088 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B283C8321B7E6E840075D2C7 /* Prefix.h */,
+				A12EE3D91B8593EB005DDCFC /* AuthenticatorCircle-Prefix.pch */,
 				B23E4C1C1B7BBFC900D35088 /* Info.plist */,
 				B23E4C1D1B7BBFC900D35088 /* main.m */,
 			);
@@ -117,6 +188,67 @@
 				B23E4C361B7BBFCA00D35088 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B267F5511B893C8E00FBB9B5 /* BgImages */ = {
+			isa = PBXGroup;
+			children = (
+				B267F5521B893C8E00FBB9B5 /* BG_Bastion.jpg */,
+				B267F5531B893C8E00FBB9B5 /* BG_Hanzo.jpg */,
+				B267F5541B893C8E00FBB9B5 /* BG_Lucio.jpg */,
+				B267F5551B893C8E00FBB9B5 /* BG_McCree.jpg */,
+				B267F5561B893C8E00FBB9B5 /* BG_Mercy.jpg */,
+				B267F5571B893C8E00FBB9B5 /* BG_Pharah.jpg */,
+				B267F5581B893C8E00FBB9B5 /* BG_Reaper.jpg */,
+				B267F5591B893C8E00FBB9B5 /* BG_Reinhardt.jpg */,
+				B267F55A1B893C8E00FBB9B5 /* BG_Soldier76.jpg */,
+				B267F55B1B893C8E00FBB9B5 /* BG_Symmetra.jpg */,
+				B267F55C1B893C8E00FBB9B5 /* BG_Torbjorn.jpg */,
+				B267F55D1B893C8E00FBB9B5 /* BG_Tracer.jpg */,
+				B267F55E1B893C8E00FBB9B5 /* BG_Widowmaker.jpg */,
+				B267F55F1B893C8E00FBB9B5 /* BG_Winston.jpg */,
+				B267F5601B893C8E00FBB9B5 /* BG_Zarya.jpg */,
+				B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */,
+			);
+			path = BgImages;
+			sourceTree = "<group>";
+		};
+		B2A60E4E1B814D7C001BB51F /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B2A60E4F1B814D7C001BB51F /* Help.png */,
+				B2A60E501B814D7C001BB51F /* ResetAuthenticator.png */,
+				B2A60E511B814D7C001BB51F /* SendFeedback.png */,
+				B2A60E521B814D7C001BB51F /* ViewRestoreCode.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		B2D94D3B1B7D4BA20010DE6C /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				B2D94D381B7D3FFB0010DE6C /* AuthenticatorSimulator.h */,
+				B2D94D391B7D3FFB0010DE6C /* AuthenticatorSimulator.m */,
+			);
+			name = Simulator;
+			sourceTree = "<group>";
+		};
+		B2D94D3C1B7D4BAE0010DE6C /* ArcProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				B23E4C441B7BC79E00D35088 /* ArcProgressView.h */,
+				B23E4C451B7BC79E00D35088 /* ArcProgressView.m */,
+			);
+			name = ArcProgressView;
+			sourceTree = "<group>";
+		};
+		B2D94D3D1B7D60070010DE6C /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				B23E4C4A1B7BCBBF00D35088 /* KeychainWrapper.h */,
+				B23E4C4B1B7BCBBF00D35088 /* KeychainWrapper.m */,
+			);
+			name = KeychainWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +331,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B267F5701B893C8E00FBB9B5 /* BG_Zarya.jpg in Resources */,
+				B2A60E531B814D7C001BB51F /* Help.png in Resources */,
+				B267F5631B893C8E00FBB9B5 /* BG_Hanzo.jpg in Resources */,
 				B23E4C271B7BBFC900D35088 /* Main.storyboard in Resources */,
+				B267F56F1B893C8E00FBB9B5 /* BG_Winston.jpg in Resources */,
+				B267F56E1B893C8E00FBB9B5 /* BG_Widowmaker.jpg in Resources */,
+				B267F5711B893C8E00FBB9B5 /* BG_Zenyatta.jpg in Resources */,
+				B2A60E551B814D7C001BB51F /* SendFeedback.png in Resources */,
+				B267F56B1B893C8E00FBB9B5 /* BG_Symmetra.jpg in Resources */,
+				B2A60E561B814D7C001BB51F /* ViewRestoreCode.png in Resources */,
+				B2A60E541B814D7C001BB51F /* ResetAuthenticator.png in Resources */,
+				B283C8301B7E6BC30075D2C7 /* UIStrings.plist in Resources */,
+				B267F56C1B893C8E00FBB9B5 /* BG_Torbjorn.jpg in Resources */,
 				B23E4C2C1B7BBFC900D35088 /* LaunchScreen.xib in Resources */,
+				B267F5691B893C8E00FBB9B5 /* BG_Reinhardt.jpg in Resources */,
+				B267F5661B893C8E00FBB9B5 /* BG_Mercy.jpg in Resources */,
 				B23E4C291B7BBFC900D35088 /* Images.xcassets in Resources */,
+				B267F56D1B893C8E00FBB9B5 /* BG_Tracer.jpg in Resources */,
+				B267F5621B893C8E00FBB9B5 /* BG_Bastion.jpg in Resources */,
+				B267F5641B893C8E00FBB9B5 /* BG_Lucio.jpg in Resources */,
+				B267F5671B893C8E00FBB9B5 /* BG_Pharah.jpg in Resources */,
+				B267F5651B893C8E00FBB9B5 /* BG_McCree.jpg in Resources */,
+				B267F5681B893C8E00FBB9B5 /* BG_Reaper.jpg in Resources */,
+				B267F56A1B893C8E00FBB9B5 /* BG_Soldier76.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +372,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23E4C241B7BBFC900D35088 /* ViewController.m in Sources */,
 				B23E4C211B7BBFC900D35088 /* AppDelegate.m in Sources */,
+				A1D368051B8049550034F8F5 /* Menu.m in Sources */,
+				B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */,
+				B2D94D3A1B7D3FFB0010DE6C /* AuthenticatorSimulator.m in Sources */,
+				B23E4C4C1B7BCBBF00D35088 /* KeychainWrapper.m in Sources */,
+				B23E4C461B7BC79E00D35088 /* ArcProgressView.m in Sources */,
+				B2EB9E851B8403B70054BA0E /* ViewRestoreCode.m in Sources */,
 				B23E4C1E1B7BBFC900D35088 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,16 +436,18 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AuthenticatorCircle/AuthenticatorCircle-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -296,10 +456,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -321,22 +481,24 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AuthenticatorCircle/AuthenticatorCircle-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -416,6 +578,7 @@
 				B23E4C3D1B7BBFCA00D35088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B23E4C3E1B7BBFCA00D35088 /* Build configuration list for PBXNativeTarget "AuthenticatorCircleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +587,7 @@
 				B23E4C401B7BBFCA00D35088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

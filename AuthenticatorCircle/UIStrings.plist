@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UI_ShowAuthenticator</key>
+	<dict>
+		<key>UI_SA_Resync_NotWorking</key>
+		<string>Not working?</string>
+		<key>UI_SA_Resync_TryResyncing</key>
+		<string>Try Resyncing.</string>
+		<key>UI_SA_Resync_Resyncing</key>
+		<string>Resyncing...</string>
+		<key>UI_SA_Resync_SyncComplete</key>
+		<string>Sync complete.</string>
+		<key>UI_SA_Resync_StillNotWorking</key>
+		<string>Still not working?</string>
+	</dict>
+</dict>
+</plist>

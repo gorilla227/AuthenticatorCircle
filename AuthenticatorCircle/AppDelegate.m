@@ -13,10 +13,22 @@
 @end
 
 @implementation AppDelegate
-
+@synthesize gAuthenticator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //Initial gUIStrings
+    NSString *filePathOfUIStrings = [[NSBundle mainBundle] pathForResource:@"UIStrings" ofType:@"plist"];
+    gUIStrings = [NSDictionary dictionaryWithContentsOfFile:filePathOfUIStrings];
+    gAuthenticator = [[AuthenticatorSimulator alloc] initWithSeriesNumber:@"SeriesNumber" andRestoreCode:@"RestoreCode"];
+
+    //Set appearance
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:54.0/255.0 green:61.0/255.0 blue:78.0/255.0 alpha:1.0f]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+
     return YES;
 }
 
