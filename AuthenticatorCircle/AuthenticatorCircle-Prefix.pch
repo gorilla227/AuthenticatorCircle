@@ -14,4 +14,6 @@
 #import "AuthenticatorSimulator.h"
 #import "Prefix.h"
 #import "AppDelegate.h"
+#import "KeychainWrapper.h"
+#import "ProcessingViewController.h"
 #endif

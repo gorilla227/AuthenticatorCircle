@@ -20,14 +20,40 @@
     //Initial gUIStrings
     NSString *filePathOfUIStrings = [[NSBundle mainBundle] pathForResource:@"UIStrings" ofType:@"plist"];
     gUIStrings = [NSDictionary dictionaryWithContentsOfFile:filePathOfUIStrings];
-    gAuthenticator = [[AuthenticatorSimulator alloc] initWithSeriesNumber:@"SeriesNumber" andRestoreCode:@"RestoreCode"];
-
+    
+//    NSArray *keychainItemList = [KeychainWrapper retriveKeychainsByAttributes:kKeychainIdentifier];
+//    if (keychainItemList.count) {
+//        //Have authenticator saved in iCloud Keychain
+//        NSDictionary *keychainItemAttribute = keychainItemList.firstObject;
+//        KeychainWrapper *keychainItem = [[KeychainWrapper alloc] initWithAttributes:keychainItemAttribute];
+//        if ([keychainItem retriveKeychainData]) {
+//            gAuthenticator = [NSKeyedUnarchiver unarchiveObjectWithData:keychainItem.keychainData];
+//        }
+//        else {
+//            NSLog(@"Retrive KeychainItemData Failed.");
+//        }
+//    }
+//    else {
+//        [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"InitialViewController"]];
+//    }
+#warning Debug Lines Start
+    [KeychainWrapper clearKeychains:kKeychainIdentifier];
+    [[NSFileManager defaultManager] removeItemAtPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile] error:nil];
+#warning Debug Lines End
+    
     //Set appearance
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:54.0/255.0 green:61.0/255.0 blue:78.0/255.0 alpha:1.0f]];
     [[UINavigationBar appearance] setTranslucent:NO];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
+    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        gAuthenticator = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+    }
+    else {
+        [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"InitialViewController"]];
+    }
 
     return YES;
 }

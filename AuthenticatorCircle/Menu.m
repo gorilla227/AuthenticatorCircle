@@ -20,11 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView setBackgroundColor:cBackground];
+    [lb_CopyRights setBackgroundColor:cBackground];
     [lb_CopyRights sizeToFit];
 }
 
@@ -50,6 +47,14 @@
         [lb_CopyRights setFrame:copyRightsFrame];
         isCopyRightFrameSet = YES;
     }
+}
+
+- (IBAction)clear:(id)sender {
+    [KeychainWrapper clearKeychains:kKeychainIdentifier];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 /*

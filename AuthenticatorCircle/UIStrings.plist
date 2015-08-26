@@ -15,5 +15,28 @@
 		<key>UI_SA_Resync_StillNotWorking</key>
 		<string>Still not working?</string>
 	</dict>
+	<key>UI_ViewRestoreCode</key>
+	<dict>
+		<key>UI_VRC_SaveScreenshot_Message</key>
+		<string>Screenshot saved</string>
+		<key>UI_VRC_SaveScreenshot_CancelButton</key>
+		<string>OK</string>
+	</dict>
+	<key>UI_ResetAuthenticator</key>
+	<dict>
+		<key>UI_RA_Reset_Message</key>
+		<string>The authenticator keys from your device will be erased. Continue?</string>
+		<key>UI_RA_Reset_Cancel</key>
+		<string>Cancel</string>
+		<key>UI_RA_Reset_Reset</key>
+		<string>Reset</string>
+	</dict>
+	<key>UI_Processing</key>
+	<dict>
+		<key>UI_Processing_Resetting</key>
+		<string>Resetting...</string>
+		<key>UI_Processing_SettingUp</key>
+		<string>Setting Up...</string>
+	</dict>
 </dict>
 </plist>

@@ -32,6 +32,9 @@ extern AuthenticatorSimulator *gAuthenticator;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    authenticatorSimulator = appDelegate.gAuthenticator;
+    
     [progressViewContainer setBackgroundColor:[UIColor clearColor]];
     [self.view setBackgroundColor:[UIColor clearColor]];
     uiStrings = [gUIStrings objectForKey:@"UI_ShowAuthenticator"];
@@ -77,9 +80,6 @@ extern AuthenticatorSimulator *gAuthenticator;
         [progressView showOrHiddenProgressLabel:NO countDownLabel:YES];
         [progressViewContainer insertSubview:progressView atIndex:0];
         
-        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-        authenticatorSimulator = appDelegate.gAuthenticator;
-        
         [authenticatorSimulator hookupPasscodeLabel:lb_Passcode arcProgressView:progressView];
         [authenticatorSimulator startTimerFrom:(float)(arc4random() % 100) / 100];
     }
@@ -111,6 +111,10 @@ extern AuthenticatorSimulator *gAuthenticator;
     [UIView animateWithDuration:0.25f animations:^{
         [self.view setTransform:CGAffineTransformMakeScale(0.95, 0.95)];
     }];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleDefault;
 }
 
 - (void)configSyncText:(NSString *)labelText buttonText:(NSString *)buttonText {
@@ -158,7 +162,7 @@ extern AuthenticatorSimulator *gAuthenticator;
         [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(syncAuthenticator) userInfo:nil repeats:NO];
     }
     else {
-        
+#warning 
     }
 }
 

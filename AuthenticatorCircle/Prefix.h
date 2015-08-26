@@ -11,3 +11,9 @@
 //Global Variables
 extern NSDictionary *gUIStrings;
 #endif
+
+#define cBackground [UIColor colorWithRed:33.0/255.0 green:38.0/255.0 blue:53.0/255.0 alpha:1.0f]
+#define kKeychainIdentifier @"AuthenticatorIdentifier"
+#define kKeychainAccount @"AuthenticatorAccount"
+#define kKeychainService @"AuthenticatorService"
+#define kLocalSavingFile @"Authenticator.saving"
