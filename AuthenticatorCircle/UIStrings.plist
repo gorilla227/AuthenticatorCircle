@@ -38,5 +38,18 @@
 		<key>UI_Processing_SettingUp</key>
 		<string>Setting Up...</string>
 	</dict>
+	<key>UI_SetUpAuthenticator</key>
+	<dict>
+		<key>UI_SUA_BMA_LinkText</key>
+		<string>battle.net/bma</string>
+		<key>UI_SUA_BMA_LinkURL</key>
+		<string>https://www.battle.net/bma</string>
+		<key>UI_SUA_Instruction</key>
+		<string>1. Go to %@ and click Continue to Account Management.
+
+2. Click Attach Authenticator in the Battle.net Mobile Authenticator section.
+
+3. Follow the instructions on the website.</string>
+	</dict>
 </dict>
 </plist>

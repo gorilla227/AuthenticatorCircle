@@ -765,7 +765,7 @@ We recommend taking a screenshot of Your Restore code and store it in your galle
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPf-5l-Z97">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="FPf-5l-Z97" secondAttribute="height" multiplier="16:7" id="nBJ-zc-YIC"/>
+                                    <constraint firstAttribute="width" secondItem="FPf-5l-Z97" secondAttribute="height" multiplier="16:7" priority="750" id="nBJ-zc-YIC"/>
                                 </constraints>
                                 <string key="text">The Battle.net Mobile Authenticator increases your account security to help keep it safe.
 
@@ -780,7 +780,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="nBJ-zc-YIC"/>
+                                        <exclude reference="nBJ-zc-YIC"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -841,15 +841,21 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                             <constraint firstItem="HaS-nX-pmg" firstAttribute="leading" secondItem="m97-tJ-6nK" secondAttribute="leadingMargin" id="Mfl-2l-MZs"/>
                             <constraint firstItem="FPf-5l-Z97" firstAttribute="leading" secondItem="pnA-Mr-7tx" secondAttribute="leading" id="NLq-Ob-wOm"/>
                             <constraint firstItem="pnA-Mr-7tx" firstAttribute="width" secondItem="pnA-Mr-7tx" secondAttribute="height" multiplier="46:5" id="Rrd-ec-z49"/>
-                            <constraint firstItem="FPf-5l-Z97" firstAttribute="top" secondItem="HaS-nX-pmg" secondAttribute="bottom" constant="8" id="SCU-Nk-b3J"/>
+                            <constraint firstItem="FPf-5l-Z97" firstAttribute="top" secondItem="HaS-nX-pmg" secondAttribute="bottom" constant="8" id="SCU-Nk-b3J">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="nB7-DR-dfO" firstAttribute="width" secondItem="nB7-DR-dfO" secondAttribute="height" multiplier="46:5" id="TlX-pt-kIE"/>
-                            <constraint firstItem="pnA-Mr-7tx" firstAttribute="top" secondItem="FPf-5l-Z97" secondAttribute="bottom" constant="8" id="Ydc-hU-gst"/>
+                            <constraint firstItem="pnA-Mr-7tx" firstAttribute="top" secondItem="FPf-5l-Z97" secondAttribute="bottom" constant="8" id="Ydc-hU-gst">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="FPf-5l-Z97" firstAttribute="leading" secondItem="HaS-nX-pmg" secondAttribute="leading" id="cbW-lO-4cH"/>
                             <constraint firstItem="nB7-DR-dfO" firstAttribute="top" secondItem="pnA-Mr-7tx" secondAttribute="bottom" constant="26" id="ezN-1k-eHZ">
                                 <variation key="widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="FPf-5l-Z97" firstAttribute="trailing" secondItem="nB7-DR-dfO" secondAttribute="trailing" id="lfn-AM-r3O"/>
-                            <constraint firstItem="HaS-nX-pmg" firstAttribute="top" secondItem="2Wb-gQ-GZi" secondAttribute="bottom" constant="60" id="lpy-j5-ef7"/>
+                            <constraint firstItem="HaS-nX-pmg" firstAttribute="top" secondItem="2Wb-gQ-GZi" secondAttribute="bottom" constant="60" id="lpy-j5-ef7">
+                                <variation key="widthClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="FPf-5l-Z97" firstAttribute="leading" secondItem="nB7-DR-dfO" secondAttribute="leading" id="zVN-Gx-ihZ"/>
                         </constraints>
                         <variation key="default">
@@ -923,7 +929,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up Authenticator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRb-3B-Kzi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up Authenticator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gRb-3B-Kzi">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gRb-3B-Kzi" secondAttribute="height" multiplier="92:15" id="S6G-ex-dfK"/>
@@ -947,7 +953,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8ad-aV-VE3" secondAttribute="height" multiplier="368:21" id="YGi-u0-dDo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -964,10 +970,10 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CN-1234-5678-9012" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9u0-Ax-rNW">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="9u0-Ax-rNW" secondAttribute="height" multiplier="184:25" id="T9z-Mg-EwR"/>
+                                    <constraint firstAttribute="width" secondItem="9u0-Ax-rNW" secondAttribute="height" multiplier="184:20" id="T9z-Mg-EwR"/>
                                     <constraint firstAttribute="height" constant="50" id="x6q-c9-8B6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -985,51 +991,33 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authenticator Code:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKu-i3-bTp">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="69Q-zk-SzO">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nrI-xS-pVG">
-                                <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
-                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cc-ss-P3h">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="6Cc-ss-P3h" secondAttribute="height" multiplier="368:153" id="zkT-5T-fvq"/>
+                                    <constraint firstAttribute="width" secondItem="UKu-i3-bTp" secondAttribute="height" multiplier="368:21" id="lBc-LP-3Td"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">1. Go to battle.net/bma and click Continue to Account Management.
-
-2. Click Attach Authenticator in the Battle.net Mobile Authenticator section.
-
-3. Follow the instructions on the website.</string>
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="zkT-5T-fvq"/>
+                                        <exclude reference="lBc-LP-3Td"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="zkT-5T-fvq"/>
+                                        <include reference="lBc-LP-3Td"/>
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="69Q-zk-SzO">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nrI-xS-pVG">
+                                <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lY-aX-qHG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1052,44 +1040,85 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 </variation>
                                 <connections>
                                     <action selector="btn_Continue_OnClicked:" destination="QTT-KD-Rhv" eventType="touchUpInside" id="1fe-sv-axf"/>
+                                    <segue destination="0n7-pO-ZS6" kind="show" id="yJX-Ec-okI"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hta-it-jOQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="Hta-it-jOQ" secondAttribute="height" multiplier="368:153" id="NG1-iY-bIs"/>
+                                    <constraint firstAttribute="width" secondItem="Hta-it-jOQ" secondAttribute="height" multiplier="368:153" id="jjI-Ky-KEe"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">1. Go to battle.net/bma and click Continue to Account Management.
+
+2. Click Attach Authenticator in the Battle.net Mobile Authenticator section.
+
+3. Follow the instructions on the website.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NG1-iY-bIs"/>
+                                        <exclude reference="jjI-Ky-KEe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="NG1-iY-bIs"/>
+                                        <exclude reference="jjI-Ky-KEe"/>
+                                    </mask>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="69Q-zk-SzO" firstAttribute="top" secondItem="UKu-i3-bTp" secondAttribute="bottom" constant="8" id="1wm-16-zsX"/>
+                            <constraint firstItem="Hta-it-jOQ" firstAttribute="trailing" secondItem="ydd-2g-D5x" secondAttribute="trailingMargin" id="0vc-7m-akt"/>
+                            <constraint firstItem="69Q-zk-SzO" firstAttribute="top" secondItem="UKu-i3-bTp" secondAttribute="bottom" constant="8" id="1wm-16-zsX">
+                                <variation key="widthClass=compact" constant="4"/>
+                            </constraint>
+                            <constraint firstItem="3lY-aX-qHG" firstAttribute="centerX" secondItem="Hta-it-jOQ" secondAttribute="centerX" id="4iT-MC-IJ5"/>
                             <constraint firstItem="9u0-Ax-rNW" firstAttribute="top" secondItem="8ad-aV-VE3" secondAttribute="bottom" constant="-1" id="7nc-0x-o2H">
-                                <variation key="widthClass=compact" constant="1"/>
+                                <variation key="widthClass=compact" constant="4"/>
                             </constraint>
                             <constraint firstItem="69Q-zk-SzO" firstAttribute="height" secondItem="9u0-Ax-rNW" secondAttribute="height" id="8Ac-5y-xEu"/>
-                            <constraint firstItem="nrI-xS-pVG" firstAttribute="leading" secondItem="6Cc-ss-P3h" secondAttribute="leading" id="ALJ-Iy-cLl"/>
-                            <constraint firstItem="nrI-xS-pVG" firstAttribute="top" secondItem="69Q-zk-SzO" secondAttribute="bottom" constant="8" id="AwK-Vn-K3P"/>
+                            <constraint firstItem="Hta-it-jOQ" firstAttribute="top" secondItem="nrI-xS-pVG" secondAttribute="bottom" constant="20" id="9OO-v1-Lft">
+                                <variation key="widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="nrI-xS-pVG" firstAttribute="top" secondItem="69Q-zk-SzO" secondAttribute="bottom" constant="8" id="AwK-Vn-K3P">
+                                <variation key="widthClass=compact" constant="12"/>
+                            </constraint>
+                            <constraint firstItem="Hta-it-jOQ" firstAttribute="leading" secondItem="ydd-2g-D5x" secondAttribute="leadingMargin" id="D9E-ik-o00"/>
                             <constraint firstItem="3lY-aX-qHG" firstAttribute="width" secondItem="3lY-aX-qHG" secondAttribute="height" multiplier="46:5" id="EZ6-ol-Tem"/>
-                            <constraint firstItem="3lY-aX-qHG" firstAttribute="trailing" secondItem="6Cc-ss-P3h" secondAttribute="trailing" id="G7B-tw-0Z8"/>
                             <constraint firstItem="8ad-aV-VE3" firstAttribute="top" secondItem="gRb-3B-Kzi" secondAttribute="bottom" constant="8" id="Jkj-lX-bdJ"/>
                             <constraint firstItem="69Q-zk-SzO" firstAttribute="trailing" secondItem="9u0-Ax-rNW" secondAttribute="trailing" id="Kas-tt-wsj"/>
-                            <constraint firstItem="6Cc-ss-P3h" firstAttribute="top" secondItem="nrI-xS-pVG" secondAttribute="bottom" constant="19" id="QdE-pV-ap1">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
                             <constraint firstItem="gRb-3B-Kzi" firstAttribute="trailing" secondItem="8ad-aV-VE3" secondAttribute="trailing" id="Re1-Eh-FIl"/>
                             <constraint firstItem="69Q-zk-SzO" firstAttribute="leading" secondItem="9u0-Ax-rNW" secondAttribute="leading" id="gOz-TB-9Yv"/>
-                            <constraint firstItem="3lY-aX-qHG" firstAttribute="leading" secondItem="6Cc-ss-P3h" secondAttribute="leading" id="iMP-FK-qYS"/>
-                            <constraint firstItem="nrI-xS-pVG" firstAttribute="trailing" secondItem="69Q-zk-SzO" secondAttribute="trailing" id="ixH-FH-G2X"/>
-                            <constraint firstItem="3lY-aX-qHG" firstAttribute="top" secondItem="6Cc-ss-P3h" secondAttribute="bottom" constant="19" id="kYC-vb-M67">
-                                <variation key="widthClass=compact" constant="20"/>
+                            <constraint firstItem="3lY-aX-qHG" firstAttribute="top" secondItem="Hta-it-jOQ" secondAttribute="bottom" constant="15" id="iLv-ZC-mJD">
+                                <variation key="widthClass=compact" constant="16"/>
                             </constraint>
+                            <constraint firstItem="nrI-xS-pVG" firstAttribute="trailing" secondItem="69Q-zk-SzO" secondAttribute="trailing" id="ixH-FH-G2X"/>
                             <constraint firstItem="gRb-3B-Kzi" firstAttribute="leading" secondItem="ydd-2g-D5x" secondAttribute="leadingMargin" id="li8-52-wsf"/>
                             <constraint firstItem="gRb-3B-Kzi" firstAttribute="trailing" secondItem="ydd-2g-D5x" secondAttribute="trailingMargin" id="llZ-ol-PAh"/>
+                            <constraint firstItem="3lY-aX-qHG" firstAttribute="trailing" secondItem="Hta-it-jOQ" secondAttribute="trailing" id="p2r-iq-cKE"/>
                             <constraint firstItem="nrI-xS-pVG" firstAttribute="leading" secondItem="69Q-zk-SzO" secondAttribute="leading" id="pmY-YY-yVS"/>
+                            <constraint firstItem="3lY-aX-qHG" firstAttribute="leading" secondItem="Hta-it-jOQ" secondAttribute="leading" id="qc1-CA-b2v"/>
                             <constraint firstItem="9u0-Ax-rNW" firstAttribute="trailing" secondItem="UKu-i3-bTp" secondAttribute="trailing" id="rBw-DC-V9C"/>
-                            <constraint firstItem="nrI-xS-pVG" firstAttribute="trailing" secondItem="6Cc-ss-P3h" secondAttribute="trailing" id="sRG-O3-N5d"/>
                             <constraint firstItem="gRb-3B-Kzi" firstAttribute="leading" secondItem="8ad-aV-VE3" secondAttribute="leading" id="u13-r6-7tg"/>
                             <constraint firstItem="9u0-Ax-rNW" firstAttribute="leading" secondItem="UKu-i3-bTp" secondAttribute="leading" id="vFM-9f-EAB"/>
                             <constraint firstItem="9u0-Ax-rNW" firstAttribute="trailing" secondItem="8ad-aV-VE3" secondAttribute="trailing" id="wcr-7L-lzQ"/>
                             <constraint firstItem="gRb-3B-Kzi" firstAttribute="top" secondItem="wnt-d1-F6P" secondAttribute="bottom" constant="8" id="xIF-DV-vwR"/>
                             <constraint firstItem="9u0-Ax-rNW" firstAttribute="leading" secondItem="8ad-aV-VE3" secondAttribute="leading" id="z1h-Du-bLc"/>
                             <constraint firstItem="UKu-i3-bTp" firstAttribute="top" secondItem="9u0-Ax-rNW" secondAttribute="bottom" constant="8" id="zqX-vN-wnW">
-                                <variation key="widthClass=compact" constant="1"/>
+                                <variation key="widthClass=compact" constant="12"/>
                             </constraint>
                         </constraints>
                         <variation key="default">
@@ -1100,15 +1129,14 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <exclude reference="UKu-i3-bTp"/>
                                 <exclude reference="69Q-zk-SzO"/>
                                 <exclude reference="nrI-xS-pVG"/>
-                                <exclude reference="6Cc-ss-P3h"/>
                                 <exclude reference="3lY-aX-qHG"/>
+                                <exclude reference="Hta-it-jOQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Re1-Eh-FIl"/>
-                                <exclude reference="li8-52-wsf"/>
-                                <exclude reference="llZ-ol-PAh"/>
-                                <exclude reference="u13-r6-7tg"/>
-                                <exclude reference="xIF-DV-vwR"/>
+                                <exclude reference="1wm-16-zsX"/>
+                                <exclude reference="8Ac-5y-xEu"/>
+                                <exclude reference="Kas-tt-wsj"/>
+                                <exclude reference="gOz-TB-9Yv"/>
                                 <exclude reference="Jkj-lX-bdJ"/>
                                 <exclude reference="7nc-0x-o2H"/>
                                 <exclude reference="rBw-DC-V9C"/>
@@ -1116,20 +1144,22 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <exclude reference="wcr-7L-lzQ"/>
                                 <exclude reference="z1h-Du-bLc"/>
                                 <exclude reference="zqX-vN-wnW"/>
-                                <exclude reference="1wm-16-zsX"/>
-                                <exclude reference="8Ac-5y-xEu"/>
-                                <exclude reference="Kas-tt-wsj"/>
-                                <exclude reference="gOz-TB-9Yv"/>
-                                <exclude reference="ALJ-Iy-cLl"/>
+                                <exclude reference="Re1-Eh-FIl"/>
+                                <exclude reference="li8-52-wsf"/>
+                                <exclude reference="llZ-ol-PAh"/>
+                                <exclude reference="u13-r6-7tg"/>
+                                <exclude reference="xIF-DV-vwR"/>
                                 <exclude reference="AwK-Vn-K3P"/>
                                 <exclude reference="ixH-FH-G2X"/>
                                 <exclude reference="pmY-YY-yVS"/>
-                                <exclude reference="sRG-O3-N5d"/>
-                                <exclude reference="QdE-pV-ap1"/>
+                                <exclude reference="4iT-MC-IJ5"/>
                                 <exclude reference="EZ6-ol-Tem"/>
-                                <exclude reference="G7B-tw-0Z8"/>
-                                <exclude reference="iMP-FK-qYS"/>
-                                <exclude reference="kYC-vb-M67"/>
+                                <exclude reference="iLv-ZC-mJD"/>
+                                <exclude reference="p2r-iq-cKE"/>
+                                <exclude reference="qc1-CA-b2v"/>
+                                <exclude reference="0vc-7m-akt"/>
+                                <exclude reference="9OO-v1-Lft"/>
+                                <exclude reference="D9E-ik-o00"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1140,15 +1170,14 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <include reference="UKu-i3-bTp"/>
                                 <include reference="69Q-zk-SzO"/>
                                 <include reference="nrI-xS-pVG"/>
-                                <include reference="6Cc-ss-P3h"/>
                                 <include reference="3lY-aX-qHG"/>
+                                <include reference="Hta-it-jOQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Re1-Eh-FIl"/>
-                                <include reference="li8-52-wsf"/>
-                                <include reference="llZ-ol-PAh"/>
-                                <include reference="u13-r6-7tg"/>
-                                <include reference="xIF-DV-vwR"/>
+                                <include reference="1wm-16-zsX"/>
+                                <include reference="8Ac-5y-xEu"/>
+                                <include reference="Kas-tt-wsj"/>
+                                <include reference="gOz-TB-9Yv"/>
                                 <include reference="Jkj-lX-bdJ"/>
                                 <include reference="7nc-0x-o2H"/>
                                 <include reference="rBw-DC-V9C"/>
@@ -1156,34 +1185,114 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <include reference="wcr-7L-lzQ"/>
                                 <include reference="z1h-Du-bLc"/>
                                 <include reference="zqX-vN-wnW"/>
-                                <include reference="1wm-16-zsX"/>
-                                <include reference="8Ac-5y-xEu"/>
-                                <include reference="Kas-tt-wsj"/>
-                                <include reference="gOz-TB-9Yv"/>
-                                <include reference="ALJ-Iy-cLl"/>
+                                <include reference="Re1-Eh-FIl"/>
+                                <include reference="li8-52-wsf"/>
+                                <include reference="llZ-ol-PAh"/>
+                                <include reference="u13-r6-7tg"/>
+                                <include reference="xIF-DV-vwR"/>
                                 <include reference="AwK-Vn-K3P"/>
                                 <include reference="ixH-FH-G2X"/>
                                 <include reference="pmY-YY-yVS"/>
-                                <include reference="sRG-O3-N5d"/>
-                                <include reference="QdE-pV-ap1"/>
+                                <exclude reference="4iT-MC-IJ5"/>
                                 <exclude reference="EZ6-ol-Tem"/>
-                                <include reference="G7B-tw-0Z8"/>
-                                <include reference="iMP-FK-qYS"/>
-                                <include reference="kYC-vb-M67"/>
+                                <include reference="iLv-ZC-mJD"/>
+                                <include reference="p2r-iq-cKE"/>
+                                <include reference="qc1-CA-b2v"/>
+                                <include reference="0vc-7m-akt"/>
+                                <include reference="9OO-v1-Lft"/>
+                                <include reference="D9E-ik-o00"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="btn_BMALink" destination="j1m-TN-3IR" id="6Uo-N7-2Nm"/>
                         <outlet property="btn_Continue" destination="3lY-aX-qHG" id="Q8c-ZO-z4R"/>
                         <outlet property="lb_AuthenticatorCode" destination="69Q-zk-SzO" id="ggQ-2M-ufM"/>
-                        <outlet property="lb_Instruction" destination="6Cc-ss-P3h" id="AyT-O8-WMw"/>
                         <outlet property="lb_SerialNumber" destination="9u0-Ax-rNW" id="GzF-rY-AFK"/>
                         <outlet property="pv_ProgressView" destination="nrI-xS-pVG" id="rNP-jy-R5v"/>
+                        <outlet property="tv_Instuction" destination="Hta-it-jOQ" id="kwW-J7-kHD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrt-hb-P0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j1m-TN-3IR">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_BMALink_OnClicked:" destination="QTT-KD-Rhv" eventType="touchUpInside" id="frh-tt-laU"/>
+                    </connections>
+                </button>
             </objects>
             <point key="canvasLocation" x="2964" y="2637"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="694-ue-58s">
+            <objects>
+                <viewController id="0n7-pO-ZS6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zgr-S3-wER"/>
+                        <viewControllerLayoutGuide type="bottom" id="wKf-8U-rfH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I0d-ok-sRY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're done!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eV-F6-4mt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2eV-F6-4mt" secondAttribute="height" multiplier="92:15" id="vyj-uD-GNd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vyj-uD-GNd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="vyj-uD-GNd"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2eV-F6-4mt" firstAttribute="top" secondItem="zgr-S3-wER" secondAttribute="bottom" id="KZQ-mN-nLb"/>
+                            <constraint firstItem="2eV-F6-4mt" firstAttribute="width" secondItem="2eV-F6-4mt" secondAttribute="height" multiplier="92:15" id="aws-2b-FDo"/>
+                            <constraint firstItem="2eV-F6-4mt" firstAttribute="leading" secondItem="I0d-ok-sRY" secondAttribute="leadingMargin" id="dYv-gh-DAn"/>
+                            <constraint firstItem="2eV-F6-4mt" firstAttribute="trailing" secondItem="I0d-ok-sRY" secondAttribute="trailingMargin" id="pbe-V7-3iE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2eV-F6-4mt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="KZQ-mN-nLb"/>
+                                <exclude reference="aws-2b-FDo"/>
+                                <exclude reference="dYv-gh-DAn"/>
+                                <exclude reference="pbe-V7-3iE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2eV-F6-4mt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="KZQ-mN-nLb"/>
+                                <exclude reference="aws-2b-FDo"/>
+                                <include reference="dYv-gh-DAn"/>
+                                <include reference="pbe-V7-3iE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hpa-P0-Sh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3750" y="2637"/>
         </scene>
         <!--Reset Authenticator-->
         <scene sceneID="ubb-sD-AU6">

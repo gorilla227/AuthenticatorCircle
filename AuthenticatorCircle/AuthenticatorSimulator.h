@@ -13,10 +13,13 @@
 #define kSeriesNumber @"kSeriesNumber"
 #define kRestoreCode @"kRestoreCode"
 #define kPasscodeFadeTime 0.5f
+#define kTimeInterval 0.03f
+#define kTimeDuration 30
 
 @interface AuthenticatorSimulator : NSObject <NSCoding>
 - (id)initWithSeriesNumber:(NSString *)existedSeriesNumber andRestoreCode:(NSString *)existedRestoreCode;
 - (void)hookupPasscodeLabel:(UILabel *)passcodeLabel arcProgressView:(ArcProgressView *)arcProgressView;
+- (void)hookupPasscodeLabel:(UILabel *)passcodeLabel progressView:(UIProgressView *)progressView;
 - (void)startTimerFrom:(CGFloat)startProgress;
 - (NSString *)retrieveSeriesNumber;
 - (NSString *)retrieveRestoreCode;

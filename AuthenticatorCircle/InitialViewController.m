@@ -16,22 +16,22 @@
 
 @implementation InitialViewController
 @synthesize lb_Description, btn_SetUp, btn_Restore;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.view.layer setContents:(id)[UIImage imageNamed:@"AppBackground.jpg"].CGImage];
+    [self.view setContentMode:UIViewContentModeScaleAspectFill];
     [btn_SetUp.layer setCornerRadius:3.0f];
     [btn_SetUp.layer setMasksToBounds:YES];
     [btn_Restore.layer setCornerRadius:3.0f];
     [btn_Restore.layer setMasksToBounds:YES];
+    [lb_Description sizeToFit];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)viewDidLayoutSubviews {
-    [lb_Description sizeToFit];
 }
 
 - (IBAction)btn_SetUp_OnClicked:(id)sender {

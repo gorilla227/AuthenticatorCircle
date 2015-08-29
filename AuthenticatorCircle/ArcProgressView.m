@@ -185,7 +185,7 @@
     
     NSInteger number = ceil((1 - progressBarLayer.strokeEnd) * kAnimationDuration / kAnimationPercentag);
     if (number >= 1 && number <= 5) {
-        [countDownLabel setText:[NSString stringWithFormat:@"%lu", number]];
+        [countDownLabel setText:[NSString stringWithFormat:@"%lu", (long)number]];
     }
     else {
         [countDownLabel setText:nil];
