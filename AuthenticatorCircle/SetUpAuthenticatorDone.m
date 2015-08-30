@@ -1,44 +1,43 @@
 //
-//  ViewRestoreCode.m
+//  SetUpAuthenticatorDone.m
 //  AuthenticatorCircle
 //
-//  Created by Andy Xu on 15/8/18.
+//  Created by Andy on 15/8/29.
 //  Copyright (c) 2015年 Andy Xu. All rights reserved.
 //
 
-#import "ViewRestoreCode.h"
+#import "SetUpAuthenticatorDone.h"
 
-@interface ViewRestoreCode ()
+@interface SetUpAuthenticatorDone ()
+@property (nonatomic, strong) IBOutlet UILabel *lb_YouAreDone;
+@property (nonatomic, strong) IBOutlet UILabel *lb_Description;
 @property (nonatomic, strong) IBOutlet UILabel *lb_SerialTitle;
 @property (nonatomic, strong) IBOutlet UILabel *lb_SerialNumber;
-@property (nonatomic, strong) IBOutlet UILabel *lb_RestoreCodeTitle;
-@property (nonatomic, strong) IBOutlet UILabel *lb_RestoreCodeNumber;
-@property (nonatomic, strong) IBOutlet UILabel *lb_Notification;
+@property (nonatomic, strong) IBOutlet UILabel *lb_RestoreTitle;
+@property (nonatomic, strong) IBOutlet UILabel *lb_RestoreCode;
 @property (nonatomic, strong) IBOutlet UIButton *btn_SaveScreenshot;
+@property (nonatomic, strong) IBOutlet UIButton *btn_Continue;
 @end
 
-@implementation ViewRestoreCode {
+@implementation SetUpAuthenticatorDone {
+    AuthenticatorSimulator *authenticator;
     NSDictionary *uiStrings;
 }
-@synthesize lb_SerialTitle, lb_SerialNumber, lb_RestoreCodeTitle, lb_RestoreCodeNumber, lb_Notification, btn_SaveScreenshot;
+@synthesize lb_YouAreDone, lb_Description, lb_SerialTitle, lb_SerialNumber, lb_RestoreTitle, lb_RestoreCode, btn_SaveScreenshot, btn_Continue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    uiStrings = [gUIStrings objectForKey:@"UI_ViewRestoreCode"];
-    
-    [self.view setBackgroundColor:cBackground];
-    [lb_SerialTitle setTextColor:[UIColor whiteColor]];
-    [lb_SerialNumber setTextColor:[UIColor yellowColor]];
-    [lb_RestoreCodeTitle setTextColor:[UIColor whiteColor]];
-    [lb_RestoreCodeNumber setTextColor:[UIColor yellowColor]];
-    [lb_Notification setTextColor:[UIColor whiteColor]];
-    [btn_SaveScreenshot.layer setMasksToBounds:YES];
+    uiStrings = [gUIStrings objectForKey:@"UI_SetUpAuthenticatorDone"];
     [btn_SaveScreenshot.layer setCornerRadius:3.0f];
+    [btn_SaveScreenshot.layer setMasksToBounds:YES];
+    [btn_Continue.layer setCornerRadius:3.0f];
+    [btn_Continue.layer setMasksToBounds:YES];
     
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    [lb_SerialNumber setText:[appDelegate.gAuthenticator retrieveSeriesNumber]];
-    [lb_RestoreCodeNumber setText:[appDelegate.gAuthenticator retrieveRestoreCode]];
+    authenticator = appDelegate.gAuthenticator;
+    [lb_SerialNumber setText:[authenticator retrieveSeriesNumber]];
+    [lb_RestoreCode setText:[authenticator retrieveRestoreCode]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,11 +56,15 @@
 
 - (void)screenshot:(UIImage *)screenshot didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
     if (!error) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:[uiStrings objectForKey:@"UI_VRC_SaveScreenshot_Message"] delegate:nil cancelButtonTitle:[uiStrings objectForKey:@"UI_VRC_SaveScreenshot_CancelButton"] otherButtonTitles:nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:[uiStrings objectForKey:@"UI_SUAD_SaveScreenshot_Message"] delegate:nil cancelButtonTitle:[uiStrings objectForKey:@"UI_SUAD_SaveScreenshot_CancelButton"] otherButtonTitles:nil];
         [alertView show];
     }
 }
 
+- (IBAction)btn_Continue_OnClicked:(id)sender {
+    UIViewController *mainViewController = [self.storyboard instantiateInitialViewController];
+    [self presentViewController:mainViewController animated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 

@@ -10,6 +10,7 @@
 		A11E5D201B8AD6DA00D2BA8A /* WarningSign.png in Resources */ = {isa = PBXBuildFile; fileRef = A11E5D1F1B8AD6DA00D2BA8A /* WarningSign.png */; };
 		A11E5D231B8ADE7800D2BA8A /* ResetAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E5D221B8ADE7800D2BA8A /* ResetAuthenticator.m */; };
 		A1832E491B8C2BF4005D3238 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1832E481B8C2BF4005D3238 /* InitialViewController.m */; };
+		A19074BA1B92B5380000526C /* SetUpAuthenticatorDone.m in Sources */ = {isa = PBXBuildFile; fileRef = A19074B91B92B5380000526C /* SetUpAuthenticatorDone.m */; };
 		A1D368051B8049550034F8F5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D368041B8049550034F8F5 /* Menu.m */; };
 		B2293DE51B8D29A1004B9A3E /* MenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2293DE41B8D29A1004B9A3E /* MenuNavigationController.m */; };
 		B2293DE81B8D3813004B9A3E /* SetUpAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */; };
@@ -67,6 +68,8 @@
 		A12EE3D91B8593EB005DDCFC /* AuthenticatorCircle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AuthenticatorCircle-Prefix.pch"; sourceTree = "<group>"; };
 		A1832E471B8C2BF4005D3238 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		A1832E481B8C2BF4005D3238 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		A19074B81B92B5380000526C /* SetUpAuthenticatorDone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpAuthenticatorDone.h; sourceTree = "<group>"; };
+		A19074B91B92B5380000526C /* SetUpAuthenticatorDone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpAuthenticatorDone.m; sourceTree = "<group>"; };
 		A1D368031B8049550034F8F5 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		A1D368041B8049550034F8F5 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		B2293DE21B8D1071004B9A3E /* AuthenticatorCircle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AuthenticatorCircle.entitlements; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				A1832E481B8C2BF4005D3238 /* InitialViewController.m */,
 				B2293DE61B8D3813004B9A3E /* SetUpAuthenticator.h */,
 				B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */,
+				A19074B81B92B5380000526C /* SetUpAuthenticatorDone.h */,
+				A19074B91B92B5380000526C /* SetUpAuthenticatorDone.m */,
 				B23E4C251B7BBFC900D35088 /* Main.storyboard */,
 				B23E4C281B7BBFC900D35088 /* Images.xcassets */,
 				B23E4C2A1B7BBFC900D35088 /* LaunchScreen.xib */,
@@ -422,6 +427,7 @@
 				A1D368051B8049550034F8F5 /* Menu.m in Sources */,
 				B2293DE51B8D29A1004B9A3E /* MenuNavigationController.m in Sources */,
 				B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */,
+				A19074BA1B92B5380000526C /* SetUpAuthenticatorDone.m in Sources */,
 				B2D94D3A1B7D3FFB0010DE6C /* AuthenticatorSimulator.m in Sources */,
 				B23E4C4C1B7BCBBF00D35088 /* KeychainWrapper.m in Sources */,
 				B2E7CC5E1B8BDE3B004EA14C /* ProcessingViewController.m in Sources */,

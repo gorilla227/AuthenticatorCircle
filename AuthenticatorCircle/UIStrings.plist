@@ -51,5 +51,12 @@
 
 3. Follow the instructions on the website.</string>
 	</dict>
+	<key>UI_SetUpAuthenticatorDone</key>
+	<dict>
+		<key>UI_SUAD_SaveScreenshot_Message</key>
+		<string>Screenshot saved</string>
+		<key>UI_SUAD_SaveScreenshot_CancelButton</key>
+		<string>OK</string>
+	</dict>
 </dict>
 </plist>
