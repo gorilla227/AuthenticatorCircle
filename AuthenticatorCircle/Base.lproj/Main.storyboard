@@ -78,7 +78,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Z90-T6-F5r" secondAttribute="height" multiplier="5:1" id="veL-3C-v1p"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="58"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -805,7 +805,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="btn_SetUp_OnClicked:" destination="h9E-2u-6Ha" eventType="touchUpInside" id="frY-00-WQu"/>
+                                    <segue destination="dOl-Fr-Ob6" kind="showDetail" identifier="SetUpNewAuthenticator" id="GcX-cf-RHX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nB7-DR-dfO">
@@ -907,6 +907,8 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Iy5-l1-Q6s"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="btn_Restore" destination="nB7-DR-dfO" id="3up-7R-ekD"/>
                         <outlet property="btn_SetUp" destination="pnA-Mr-7tx" id="CTu-n2-2fC"/>
@@ -915,7 +917,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R58-A4-cbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170.5" y="2637"/>
+            <point key="canvasLocation" x="1413" y="2675"/>
         </scene>
         <!--Set Up Authenticator-->
         <scene sceneID="LSR-lO-3wK">
@@ -1115,7 +1117,9 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                             <constraint firstItem="gRb-3B-Kzi" firstAttribute="leading" secondItem="8ad-aV-VE3" secondAttribute="leading" id="u13-r6-7tg"/>
                             <constraint firstItem="9u0-Ax-rNW" firstAttribute="leading" secondItem="UKu-i3-bTp" secondAttribute="leading" id="vFM-9f-EAB"/>
                             <constraint firstItem="9u0-Ax-rNW" firstAttribute="trailing" secondItem="8ad-aV-VE3" secondAttribute="trailing" id="wcr-7L-lzQ"/>
-                            <constraint firstItem="gRb-3B-Kzi" firstAttribute="top" secondItem="wnt-d1-F6P" secondAttribute="bottom" constant="8" id="xIF-DV-vwR"/>
+                            <constraint firstItem="gRb-3B-Kzi" firstAttribute="top" secondItem="wnt-d1-F6P" secondAttribute="bottom" constant="8" id="xIF-DV-vwR">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="9u0-Ax-rNW" firstAttribute="leading" secondItem="8ad-aV-VE3" secondAttribute="leading" id="z1h-Du-bLc"/>
                             <constraint firstItem="UKu-i3-bTp" firstAttribute="top" secondItem="9u0-Ax-rNW" secondAttribute="bottom" constant="8" id="zqX-vN-wnW">
                                 <variation key="widthClass=compact" constant="12"/>
@@ -1204,6 +1208,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                             </mask>
                         </variation>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="btn_BMALink" destination="j1m-TN-3IR" id="6Uo-N7-2Nm"/>
                         <outlet property="btn_Continue" destination="3lY-aX-qHG" id="Q8c-ZO-z4R"/>
@@ -1225,7 +1230,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                     </connections>
                 </button>
             </objects>
-            <point key="canvasLocation" x="2964" y="2637"/>
+            <point key="canvasLocation" x="2170.5" y="2675"/>
         </scene>
         <!--Set Up Authenticator Done-->
         <scene sceneID="694-ue-58s">
@@ -1572,6 +1577,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                             </mask>
                         </variation>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="btn_Continue" destination="lfx-aU-zCF" id="7RK-Yh-FRN"/>
                         <outlet property="btn_SaveScreenshot" destination="pht-8A-jzm" id="gXs-Ba-N9H"/>
@@ -1585,7 +1591,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpa-P0-Sh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3750" y="2637"/>
+            <point key="canvasLocation" x="2926.5" y="2675"/>
         </scene>
         <!--Reset Authenticator-->
         <scene sceneID="ubb-sD-AU6">
@@ -1634,7 +1640,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you want to reset your authenticator, we recommend you detach it from your Battle.net Account first." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHe-Sw-AiS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you want to reset your authenticator, we recommend you detach it from your Battle.net Account first." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eHe-Sw-AiS">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eHe-Sw-AiS" secondAttribute="height" multiplier="368:129" id="kzM-es-554">
@@ -1858,19 +1864,21 @@ Be sure to write down these numbers in case you ever need to restore your authen
                             </mask>
                         </variation>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="ai_Processing" destination="otX-n1-ENa" id="L5y-6b-UWK"/>
                         <outlet property="lb_Processing" destination="4ei-tb-LUT" id="ZjV-Ob-WV9"/>
+                        <segue destination="QTT-KD-Rhv" kind="showDetail" identifier="SetUpNewAuthenticator" id="9eZ-CS-mpt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djn-3b-rTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="609" y="1945"/>
         </scene>
-        <!--Menu Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="a4W-qi-2NF">
             <objects>
-                <navigationController id="6CV-FJ-zp9" customClass="MenuNavigationController" sceneMemberID="viewController">
+                <navigationController id="6CV-FJ-zp9" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cx6-kV-vXa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1883,6 +1891,25 @@ Be sure to write down these numbers in case you ever need to restore your authen
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SI-Pd-Jrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="610" y="1223"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1gu-BM-zkc">
+            <objects>
+                <navigationController storyboardIdentifier="InitialNavi" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eRX-d5-CoF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FR0-Vb-gIr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h9E-2u-6Ha" kind="relationship" relationship="rootViewController" id="zaV-vJ-Kvf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRd-Mi-z3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="2675"/>
         </scene>
     </scenes>
     <resources>

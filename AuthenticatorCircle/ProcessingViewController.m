@@ -24,6 +24,7 @@
     uiStrings = [gUIStrings objectForKey:@"UI_Processing"];
     [self.view.layer setContents:(id)[UIImage imageNamed:@"AppBackground.jpg"].CGImage];
     [self.view setContentMode:UIViewContentModeScaleAspectFill];
+    [self.navigationController setNavigationBarHidden:YES];
     switch (processingType) {
         case ProcessingTypeResetting:
             [lb_Processing setText:[uiStrings objectForKey:@"UI_Processing_Resetting"]];
@@ -59,7 +60,7 @@
         NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile];
         [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
 
-        UIViewController *initialViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"InitialViewController"];
+        UIViewController *initialViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"InitialNavi"];
         [self presentViewController:initialViewController animated:YES completion:nil];
     }
     else if (processingType == ProcessingTypeSettingUp) {
@@ -74,8 +75,7 @@
         if (keychainItem.keychainData) {
             AppDelegate *appDeldgate = [[UIApplication sharedApplication] delegate];
             [appDeldgate setGAuthenticator:newAuthenticator];
-            UIViewController *setUpAuthenticator = [self.storyboard instantiateViewControllerWithIdentifier:@"SetUpAuthenticator"];
-            [self presentViewController:setUpAuthenticator animated:YES completion:nil];
+            [self performSegueWithIdentifier:@"SetUpNewAuthenticator" sender:nil];
         }
     }
     else {
@@ -83,14 +83,13 @@
     }
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
 }
-*/
 
 @end

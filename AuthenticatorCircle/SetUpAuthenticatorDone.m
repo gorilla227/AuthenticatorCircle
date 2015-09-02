@@ -33,6 +33,8 @@
     [btn_SaveScreenshot.layer setMasksToBounds:YES];
     [btn_Continue.layer setCornerRadius:3.0f];
     [btn_Continue.layer setMasksToBounds:YES];
+    [self.view.layer setContents:(id)[UIImage imageNamed:@"AppBackground.jpg"].CGImage];
+    [self.view setContentMode:UIViewContentModeScaleAspectFill];
     
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     authenticator = appDelegate.gAuthenticator;
@@ -43,6 +45,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 - (IBAction)btn_SaveScreenshot_OnClicked:(id)sender {

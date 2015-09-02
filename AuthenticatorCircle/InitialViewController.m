@@ -22,6 +22,7 @@
     // Do any additional setup after loading the view.
     [self.view.layer setContents:(id)[UIImage imageNamed:@"AppBackground.jpg"].CGImage];
     [self.view setContentMode:UIViewContentModeScaleAspectFill];
+    [self.navigationController setNavigationBarHidden:YES];
     [btn_SetUp.layer setCornerRadius:3.0f];
     [btn_SetUp.layer setMasksToBounds:YES];
     [btn_Restore.layer setCornerRadius:3.0f];
@@ -34,12 +35,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)btn_SetUp_OnClicked:(id)sender {
-    ProcessingViewController *process = [self.storyboard instantiateViewControllerWithIdentifier:@"ProcessingViewController"];
-    [process setProcessingType:ProcessingTypeSettingUp];
-    [self presentViewController:process animated:YES completion:nil];
-}
-
 - (IBAction)btn_Restore_OnClicked:(id)sender {
 #warning 
 }
@@ -47,14 +42,17 @@
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"SetUpNewAuthenticator"]) {
+        ProcessingViewController *process = segue.destinationViewController;
+        [process setProcessingType:ProcessingTypeSettingUp];
+    }
 }
-*/
 
 @end

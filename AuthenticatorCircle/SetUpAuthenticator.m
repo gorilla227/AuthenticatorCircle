@@ -35,6 +35,7 @@
     //Set UI Appearance
     [self.view.layer setContents:(id)[UIImage imageNamed:@"AppBackground.jpg"].CGImage];
     [self.view setContentMode:UIViewContentModeScaleAspectFill];
+    [self.navigationController setNavigationBarHidden:YES];
     [lb_SerialNumber setText:[authenticator retrieveSeriesNumber]];
     [btn_Continue.layer setCornerRadius:3.0f];
     [btn_Continue.layer setMasksToBounds:YES];
