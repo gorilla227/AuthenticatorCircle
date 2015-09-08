@@ -13,7 +13,11 @@ extern NSDictionary *gUIStrings;
 #endif
 
 #define cBackground [UIColor colorWithRed:33.0/255.0 green:38.0/255.0 blue:53.0/255.0 alpha:1.0f]
+#define cViewBackground [UIColor colorWithPatternImage:[UIImage imageNamed:@"AppBackground.jpg"]]
+#define cTextFieldBackground [UIColor colorWithWhite:0.1f alpha:0.8f]
 #define kKeychainIdentifier @"AuthenticatorIdentifier"
 #define kKeychainAccount @"AuthenticatorAccount"
 #define kKeychainService @"AuthenticatorService"
 #define kLocalSavingFile @"Authenticator.saving"
+#define kButtonCornerRadius 2.0f
+#define kTextFieldCornerRadius 1.0f

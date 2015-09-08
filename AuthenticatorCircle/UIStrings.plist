@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SerialRegionCodes</key>
+	<array>
+		<string>CN</string>
+		<string>US</string>
+		<string>EU</string>
+		<string>KR</string>
+		<string>TW</string>
+	</array>
 	<key>UI_ShowAuthenticator</key>
 	<dict>
 		<key>UI_SA_Resync_NotWorking</key>
@@ -56,6 +64,13 @@
 		<key>UI_SUAD_SaveScreenshot_Message</key>
 		<string>Screenshot saved</string>
 		<key>UI_SUAD_SaveScreenshot_CancelButton</key>
+		<string>OK</string>
+	</dict>
+	<key>UI_RestoreWithRestoreCode</key>
+	<dict>
+		<key>UI_RWRC_NotComplete_AlertViewMessage</key>
+		<string>Please fill out the required fields before you press Submit.</string>
+		<key>UI_RWRC_NotComplete_AlertViewCancel</key>
 		<string>OK</string>
 	</dict>
 </dict>

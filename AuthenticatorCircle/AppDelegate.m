@@ -37,8 +37,8 @@
 //        [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"InitialViewController"]];
 //    }
 #warning Debug Lines Start
-    [KeychainWrapper clearKeychains:kKeychainIdentifier];
-    [[NSFileManager defaultManager] removeItemAtPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile] error:nil];
+//    [KeychainWrapper clearKeychains:kKeychainIdentifier];
+//    [[NSFileManager defaultManager] removeItemAtPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile] error:nil];
 #warning Debug Lines End
     
     //Set appearance

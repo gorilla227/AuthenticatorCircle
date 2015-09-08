@@ -29,12 +29,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     uiStrings = [gUIStrings objectForKey:@"UI_SetUpAuthenticatorDone"];
-    [btn_SaveScreenshot.layer setCornerRadius:3.0f];
+    [btn_SaveScreenshot.layer setBorderColor:[UIColor grayColor].CGColor];
+    [btn_SaveScreenshot.layer setBorderWidth:1.0f];
+    [btn_SaveScreenshot.layer setCornerRadius:kButtonCornerRadius];
     [btn_SaveScreenshot.layer setMasksToBounds:YES];
-    [btn_Continue.layer setCornerRadius:3.0f];
+    [btn_Continue.layer setCornerRadius:kButtonCornerRadius];
     [btn_Continue.layer setMasksToBounds:YES];
-    [self.view.layer setContents:(id)[UIImage imageNamed:@"AppBackground.jpg"].CGImage];
-    [self.view setContentMode:UIViewContentModeScaleAspectFill];
+    [self.view setBackgroundColor:cViewBackground];
     
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     authenticator = appDelegate.gAuthenticator;

@@ -22,8 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     uiStrings = [gUIStrings objectForKey:@"UI_Processing"];
-    [self.view.layer setContents:(id)[UIImage imageNamed:@"AppBackground.jpg"].CGImage];
-    [self.view setContentMode:UIViewContentModeScaleAspectFill];
+    [self.view setBackgroundColor:cViewBackground];
     [self.navigationController setNavigationBarHidden:YES];
     switch (processingType) {
         case ProcessingTypeResetting:
@@ -68,6 +67,15 @@
         NSData *authenticatorData = [NSKeyedArchiver archivedDataWithRootObject:newAuthenticator];
         NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile];
         [NSKeyedArchiver archiveRootObject:newAuthenticator toFile:filePath];
+        NSArray *existedKeychains = [KeychainWrapper retriveKeychainsByAttributes:kKeychainIdentifier];
+        for (NSDictionary *keychainAttribute in existedKeychains) {
+            if ([[keychainAttribute objectForKey:(__bridge id)kSecAttrAccount] isEqual:kKeychainAccount] && [[keychainAttribute objectForKey:(__bridge id)kSecAttrService] isEqual:kKeychainService]) {
+                //Authenticator Existed
+                KeychainWrapper *keychainItem = [[KeychainWrapper alloc] initWithAttributes:keychainAttribute];
+                [keychainItem deleteKeychain];
+                break;
+            }
+        }
         KeychainWrapper *keychainItem = [[KeychainWrapper alloc] initWithNewKeychain:@{(__bridge id)kSecAttrAccount:kKeychainAccount,
                                                                                        (__bridge id)kSecAttrService:kKeychainService,
                                                                                        (__bridge id)kSecAttrGeneric:[kKeychainIdentifier dataUsingEncoding:NSUTF8StringEncoding],

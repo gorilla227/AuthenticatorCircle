@@ -20,12 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.view.layer setContents:(id)[UIImage imageNamed:@"AppBackground.jpg"].CGImage];
-    [self.view setContentMode:UIViewContentModeScaleAspectFill];
-    [self.navigationController setNavigationBarHidden:YES];
-    [btn_SetUp.layer setCornerRadius:3.0f];
+    [self.view setBackgroundColor:cViewBackground];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [btn_SetUp.layer setCornerRadius:kButtonCornerRadius];
     [btn_SetUp.layer setMasksToBounds:YES];
-    [btn_Restore.layer setCornerRadius:3.0f];
+    [btn_Restore.layer setCornerRadius:kButtonCornerRadius];
     [btn_Restore.layer setMasksToBounds:YES];
     [lb_Description sizeToFit];
 }
@@ -35,8 +35,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)btn_Restore_OnClicked:(id)sender {
-#warning 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {

@@ -31,9 +31,9 @@
     } completion:nil];
     [btn_ResetMyAuthenticator.layer setBorderColor:[UIColor grayColor].CGColor];
     [btn_ResetMyAuthenticator.layer setBorderWidth:1.0f];
-    [btn_ResetMyAuthenticator.layer setCornerRadius:3.0f];
+    [btn_ResetMyAuthenticator.layer setCornerRadius:kButtonCornerRadius];
     [btn_ResetMyAuthenticator.layer setMasksToBounds:YES];
-    [btn_GoBack.layer setCornerRadius:3.0f];
+    [btn_GoBack.layer setCornerRadius:kButtonCornerRadius];
     [btn_GoBack.layer setMasksToBounds:YES];
 }
 
@@ -57,21 +57,20 @@
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (buttonIndex) {
-        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-        [appDelegate setGAuthenticator:nil];
-        ProcessingViewController *process = [self.storyboard instantiateViewControllerWithIdentifier:@"ProcessingViewController"];
-        [process setProcessingType:ProcessingTypeResetting];
-        [self presentViewController:process animated:YES completion:nil];
+        [self performSegueWithIdentifier:@"ResetMyAuthenticator" sender:self];
     }
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"ResetMyAuthenticator"]) {
+        ProcessingViewController *process = segue.destinationViewController;
+        [process setProcessingType:ProcessingTypeResetting];
+    }
 }
-*/
 
 @end

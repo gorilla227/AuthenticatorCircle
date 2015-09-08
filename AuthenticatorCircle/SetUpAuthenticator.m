@@ -33,11 +33,10 @@
     [authenticator sync];
     
     //Set UI Appearance
-    [self.view.layer setContents:(id)[UIImage imageNamed:@"AppBackground.jpg"].CGImage];
-    [self.view setContentMode:UIViewContentModeScaleAspectFill];
+    [self.view setBackgroundColor:cViewBackground];
     [self.navigationController setNavigationBarHidden:YES];
     [lb_SerialNumber setText:[authenticator retrieveSeriesNumber]];
-    [btn_Continue.layer setCornerRadius:3.0f];
+    [btn_Continue.layer setCornerRadius:kButtonCornerRadius];
     [btn_Continue.layer setMasksToBounds:YES];
     [lb_AuthenticatorCode setText:nil];
     [pv_ProgressView setTransform:CGAffineTransformMakeScale(1, 2)];
@@ -73,10 +72,6 @@
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
-}
-
-- (IBAction)btn_Continue_OnClicked:(id)sender {
-    
 }
 
 - (IBAction)btn_BMALink_OnClicked:(id)sender {    

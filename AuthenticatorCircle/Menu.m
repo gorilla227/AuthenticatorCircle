@@ -51,6 +51,7 @@
 
 - (IBAction)clear:(id)sender {
     [KeychainWrapper clearKeychains:kKeychainIdentifier];
+    [[NSFileManager defaultManager] removeItemAtPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile] error:nil];
 }
 
 /*

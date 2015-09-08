@@ -829,7 +829,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="btn_Restore_OnClicked:" destination="h9E-2u-6Ha" eventType="touchUpInside" id="MJe-2w-O93"/>
+                                    <segue destination="q8g-7j-Utw" kind="show" id="dmF-X9-J1o"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1041,7 +1041,6 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="btn_Continue_OnClicked:" destination="QTT-KD-Rhv" eventType="touchUpInside" id="1fe-sv-axf"/>
                                     <segue destination="0n7-pO-ZS6" kind="show" id="yJX-Ec-okI"/>
                                 </connections>
                             </button>
@@ -1231,6 +1230,467 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                 </button>
             </objects>
             <point key="canvasLocation" x="2170.5" y="2675"/>
+        </scene>
+        <!--Restore With Restore Code-->
+        <scene sceneID="RVv-pm-ay7">
+            <objects>
+                <tableViewController id="FaH-5f-kwf" customClass="RestoreWithRestoreCode" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" canCancelContentTouches="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3qh-Id-ltt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="U4M-el-vhR">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="xeZ-pa-imC" rowHeight="60" style="IBUITableViewCellStyleDefault" id="LZj-e5-dmr">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LZj-e5-dmr" id="wHb-zJ-qA5">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Use Restore Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="xeZ-pa-imC">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="lIN-dh-VaE" rowHeight="160" style="IBUITableViewCellStyleDefault" id="lku-RG-S2c">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lku-RG-S2c" id="PIc-YO-Wuf">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="lIN-dh-VaE">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Enter Your serial number and restore code, then press submit. This operation requires an internet connection.
+
+Note: If you took a screenshot when installing the authenticator, refer to it now.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <string key="userLabel">Enter Your serial number and restore code, then press submit. This operation requires an internet connection.  Note: If you took a screenshot when installing the authenticator, refer to it now.</string>
+                                                    <variation key="widthClass=compact">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Ilc-gV-bbx">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="AGs-8Q-JNM">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AGs-8Q-JNM" id="NqM-Iv-82d">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Serial" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="laL-Ke-0lM" customClass="UITextField_Inset_PlaceholderFont">
+                                                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="laL-Ke-0lM" secondAttribute="height" multiplier="368:40" id="jKZ-uZ-6SV"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="decimalPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="jKZ-uZ-6SV"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <exclude reference="jKZ-uZ-6SV"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="FaH-5f-kwf" id="ZXD-AA-wA1"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="laL-Ke-0lM" firstAttribute="width" secondItem="laL-Ke-0lM" secondAttribute="height" multiplier="368:40" id="2As-hd-9dG"/>
+                                                <constraint firstItem="laL-Ke-0lM" firstAttribute="top" secondItem="NqM-Iv-82d" secondAttribute="topMargin" constant="2" id="JPw-PZ-CrQ"/>
+                                                <constraint firstItem="laL-Ke-0lM" firstAttribute="leading" secondItem="NqM-Iv-82d" secondAttribute="leadingMargin" constant="8" id="Joe-sb-SmZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="laL-Ke-0lM" secondAttribute="bottom" constant="2" id="rWI-dw-BbT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="laL-Ke-0lM" secondAttribute="trailing" constant="8" id="uNf-oi-caO"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="laL-Ke-0lM"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="2As-hd-9dG"/>
+                                                    <exclude reference="JPw-PZ-CrQ"/>
+                                                    <exclude reference="Joe-sb-SmZ"/>
+                                                    <exclude reference="rWI-dw-BbT"/>
+                                                    <exclude reference="uNf-oi-caO"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="laL-Ke-0lM"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="2As-hd-9dG"/>
+                                                    <include reference="JPw-PZ-CrQ"/>
+                                                    <include reference="Joe-sb-SmZ"/>
+                                                    <include reference="rWI-dw-BbT"/>
+                                                    <include reference="uNf-oi-caO"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="0a8-iY-iIO">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0a8-iY-iIO" id="k2w-he-36e">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restore Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n2a-JD-soC" customClass="UITextField_Inset_PlaceholderFont">
+                                                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="n2a-JD-soC" secondAttribute="height" multiplier="368:40" id="ctz-5H-wAO"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="ctz-5H-wAO"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <exclude reference="ctz-5H-wAO"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="FaH-5f-kwf" id="5QP-qc-hAk"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="n2a-JD-soC" firstAttribute="top" secondItem="k2w-he-36e" secondAttribute="topMargin" constant="2" id="8bP-b9-CEK"/>
+                                                <constraint firstItem="n2a-JD-soC" firstAttribute="width" secondItem="n2a-JD-soC" secondAttribute="height" multiplier="368:40" id="8cS-j6-uPQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="n2a-JD-soC" secondAttribute="bottom" constant="2" id="XCo-eX-hIa"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="n2a-JD-soC" secondAttribute="trailing" constant="8" id="lXp-fo-d6X"/>
+                                                <constraint firstItem="n2a-JD-soC" firstAttribute="leading" secondItem="k2w-he-36e" secondAttribute="leadingMargin" constant="8" id="zBv-IZ-A7k"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="n2a-JD-soC"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="8bP-b9-CEK"/>
+                                                    <exclude reference="8cS-j6-uPQ"/>
+                                                    <exclude reference="XCo-eX-hIa"/>
+                                                    <exclude reference="lXp-fo-d6X"/>
+                                                    <exclude reference="zBv-IZ-A7k"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="n2a-JD-soC"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="8bP-b9-CEK"/>
+                                                    <exclude reference="8cS-j6-uPQ"/>
+                                                    <include reference="XCo-eX-hIa"/>
+                                                    <include reference="lXp-fo-d6X"/>
+                                                    <include reference="zBv-IZ-A7k"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="l0k-XN-oX0">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="A0f-gu-k3G">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A0f-gu-k3G" id="mZw-1G-ixB">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rg3-lp-47I">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="rg3-lp-47I" secondAttribute="height" multiplier="46:5" id="MTP-Dq-Ygm"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Submit">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="MTP-Dq-Ygm"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <exclude reference="MTP-Dq-Ygm"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="btn_Submit_OnClicked:" destination="FaH-5f-kwf" eventType="touchUpInside" id="AXh-Mc-8YJ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rg3-lp-47I" secondAttribute="trailing" constant="8" id="92h-45-OEa"/>
+                                                <constraint firstItem="rg3-lp-47I" firstAttribute="width" secondItem="rg3-lp-47I" secondAttribute="height" multiplier="46:5" id="Xro-4W-31Z"/>
+                                                <constraint firstItem="rg3-lp-47I" firstAttribute="top" secondItem="mZw-1G-ixB" secondAttribute="topMargin" constant="2" id="dTQ-wV-DJG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rg3-lp-47I" secondAttribute="bottom" constant="2" id="eFf-r3-Fga"/>
+                                                <constraint firstItem="rg3-lp-47I" firstAttribute="leading" secondItem="mZw-1G-ixB" secondAttribute="leadingMargin" constant="8" id="uQh-V5-9qJ"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="rg3-lp-47I"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="92h-45-OEa"/>
+                                                    <exclude reference="Xro-4W-31Z"/>
+                                                    <exclude reference="dTQ-wV-DJG"/>
+                                                    <exclude reference="eFf-r3-Fga"/>
+                                                    <exclude reference="uQh-V5-9qJ"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="rg3-lp-47I"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="92h-45-OEa"/>
+                                                    <exclude reference="Xro-4W-31Z"/>
+                                                    <include reference="dTQ-wV-DJG"/>
+                                                    <include reference="eFf-r3-Fga"/>
+                                                    <include reference="uQh-V5-9qJ"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="FaH-5f-kwf" id="CIE-C1-bhu"/>
+                            <outlet property="delegate" destination="FaH-5f-kwf" id="gRR-Tl-zuz"/>
+                            <outletCollection property="gestureRecognizers" destination="9ML-MG-iAj" appends="YES" id="aGz-ba-QRV"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="btn_Submit" destination="rg3-lp-47I" id="OHh-ei-OL2"/>
+                        <outlet property="lb_Description" destination="lIN-dh-VaE" id="Eru-mu-dyM"/>
+                        <outlet property="tf_RestoreCode" destination="n2a-JD-soC" id="ki2-lB-bRs"/>
+                        <outlet property="tf_Serial" destination="laL-Ke-0lM" id="2KY-9n-xye"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8uF-HG-exh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9ML-MG-iAj">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="FaH-5f-kwf" id="mzd-dI-PvK"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2926.5" y="3422"/>
+        </scene>
+        <!--Restore Authenticator-->
+        <scene sceneID="szC-Pg-4kG">
+            <objects>
+                <viewController storyboardIdentifier="RestoreAuthenticator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q8g-7j-Utw" customClass="RestoreAuthenticator" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JJv-Td-tUK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yvw-cJ-Nlh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zLM-dV-WyU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restore Authenticator" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yfS-1s-dIe">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yfS-1s-dIe" secondAttribute="height" multiplier="92:15" id="NOI-Iz-dNN"/>
+                                    <constraint firstAttribute="width" secondItem="yfS-1s-dIe" secondAttribute="height" multiplier="92:15" id="Ou6-gO-eo3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NOI-Iz-dNN"/>
+                                        <exclude reference="Ou6-gO-eo3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="NOI-Iz-dNN"/>
+                                        <include reference="Ou6-gO-eo3"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VFk-Lb-KB9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VFk-Lb-KB9" secondAttribute="height" multiplier="368:121" id="ZHE-nk-Ny7"/>
+                                </constraints>
+                                <string key="text">If you have Cloud Sync enabled on your previous device, you can quickly restore your authenticator by enabling your iCloud Keychain.
+
+To enable iCloud, go to Settings &gt; iCloud &gt; Keychain.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZHE-nk-Ny7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ZHE-nk-Ny7"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Q-Lv-0Ng">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z4Q-Lv-0Ng" secondAttribute="height" multiplier="46:5" id="ueK-Ub-kdd"/>
+                                </constraints>
+                                <state key="normal" title="Restore from iCloud Keychain">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ueK-Ub-kdd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ueK-Ub-kdd"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-e5-MA0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DeE-e5-MA0" secondAttribute="height" multiplier="46:5" id="pBp-KE-TSB"/>
+                                </constraints>
+                                <state key="normal" title="Use Restore Code">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pBp-KE-TSB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="pBp-KE-TSB"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="FaH-5f-kwf" kind="show" id="rfV-Tc-B9Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1960784314" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yfS-1s-dIe" firstAttribute="top" secondItem="JJv-Td-tUK" secondAttribute="bottom" constant="8" id="4Qp-wO-2XU"/>
+                            <constraint firstItem="yfS-1s-dIe" firstAttribute="width" secondItem="yfS-1s-dIe" secondAttribute="height" multiplier="92:15" id="KMB-Ub-kka"/>
+                            <constraint firstItem="Z4Q-Lv-0Ng" firstAttribute="top" secondItem="VFk-Lb-KB9" secondAttribute="bottom" constant="16" id="TU8-2L-P5O"/>
+                            <constraint firstItem="Z4Q-Lv-0Ng" firstAttribute="leading" secondItem="VFk-Lb-KB9" secondAttribute="leading" id="Vbm-ke-cTP"/>
+                            <constraint firstItem="DeE-e5-MA0" firstAttribute="top" secondItem="Z4Q-Lv-0Ng" secondAttribute="bottom" constant="18" id="apP-Co-6kx">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="VFk-Lb-KB9" firstAttribute="width" secondItem="VFk-Lb-KB9" secondAttribute="height" multiplier="368:121" id="h3U-nq-15g"/>
+                            <constraint firstItem="Z4Q-Lv-0Ng" firstAttribute="trailing" secondItem="VFk-Lb-KB9" secondAttribute="trailing" id="iex-P7-JAW"/>
+                            <constraint firstItem="yfS-1s-dIe" firstAttribute="leading" secondItem="zLM-dV-WyU" secondAttribute="leadingMargin" id="jC3-Ho-t64"/>
+                            <constraint firstItem="VFk-Lb-KB9" firstAttribute="top" secondItem="yfS-1s-dIe" secondAttribute="bottom" constant="8" id="lha-Mi-iUF"/>
+                            <constraint firstItem="Z4Q-Lv-0Ng" firstAttribute="trailing" secondItem="DeE-e5-MA0" secondAttribute="trailing" id="nPy-ze-Xmi"/>
+                            <constraint firstItem="VFk-Lb-KB9" firstAttribute="leading" secondItem="yfS-1s-dIe" secondAttribute="leading" id="nfB-q1-9aJ"/>
+                            <constraint firstItem="VFk-Lb-KB9" firstAttribute="trailing" secondItem="yfS-1s-dIe" secondAttribute="trailing" id="njC-2z-b4I"/>
+                            <constraint firstItem="yfS-1s-dIe" firstAttribute="trailing" secondItem="zLM-dV-WyU" secondAttribute="trailingMargin" id="pf1-dX-fn4"/>
+                            <constraint firstItem="Z4Q-Lv-0Ng" firstAttribute="width" secondItem="Z4Q-Lv-0Ng" secondAttribute="height" multiplier="46:5" id="uOO-WJ-xuA"/>
+                            <constraint firstItem="Z4Q-Lv-0Ng" firstAttribute="leading" secondItem="DeE-e5-MA0" secondAttribute="leading" id="uv8-eV-WDN"/>
+                            <constraint firstItem="DeE-e5-MA0" firstAttribute="width" secondItem="DeE-e5-MA0" secondAttribute="height" multiplier="46:5" id="xLb-xl-vtn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="yfS-1s-dIe"/>
+                                <exclude reference="VFk-Lb-KB9"/>
+                                <exclude reference="Z4Q-Lv-0Ng"/>
+                                <exclude reference="DeE-e5-MA0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="h3U-nq-15g"/>
+                                <exclude reference="lha-Mi-iUF"/>
+                                <exclude reference="nfB-q1-9aJ"/>
+                                <exclude reference="njC-2z-b4I"/>
+                                <exclude reference="4Qp-wO-2XU"/>
+                                <exclude reference="KMB-Ub-kka"/>
+                                <exclude reference="jC3-Ho-t64"/>
+                                <exclude reference="pf1-dX-fn4"/>
+                                <exclude reference="apP-Co-6kx"/>
+                                <exclude reference="xLb-xl-vtn"/>
+                                <exclude reference="TU8-2L-P5O"/>
+                                <exclude reference="Vbm-ke-cTP"/>
+                                <exclude reference="iex-P7-JAW"/>
+                                <exclude reference="nPy-ze-Xmi"/>
+                                <exclude reference="uOO-WJ-xuA"/>
+                                <exclude reference="uv8-eV-WDN"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="yfS-1s-dIe"/>
+                                <include reference="VFk-Lb-KB9"/>
+                                <include reference="Z4Q-Lv-0Ng"/>
+                                <include reference="DeE-e5-MA0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="h3U-nq-15g"/>
+                                <include reference="lha-Mi-iUF"/>
+                                <include reference="nfB-q1-9aJ"/>
+                                <include reference="njC-2z-b4I"/>
+                                <include reference="4Qp-wO-2XU"/>
+                                <exclude reference="KMB-Ub-kka"/>
+                                <include reference="jC3-Ho-t64"/>
+                                <include reference="pf1-dX-fn4"/>
+                                <include reference="apP-Co-6kx"/>
+                                <exclude reference="xLb-xl-vtn"/>
+                                <include reference="TU8-2L-P5O"/>
+                                <include reference="Vbm-ke-cTP"/>
+                                <include reference="iex-P7-JAW"/>
+                                <include reference="nPy-ze-Xmi"/>
+                                <exclude reference="uOO-WJ-xuA"/>
+                                <include reference="uv8-eV-WDN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="btn_RestoreFromICloudKeychain" destination="Z4Q-Lv-0Ng" id="lEd-aU-5lO"/>
+                        <outlet property="btn_UseRestoreCode" destination="DeE-e5-MA0" id="5cz-QU-JCD"/>
+                        <outlet property="lb_Description" destination="VFk-Lb-KB9" id="Rb0-dU-B7I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5uw-JO-onj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2170.5" y="3422"/>
         </scene>
         <!--Set Up Authenticator Done-->
         <scene sceneID="694-ue-58s">
@@ -1644,7 +2104,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eHe-Sw-AiS" secondAttribute="height" multiplier="368:129" id="kzM-es-554">
-                                        <variation key="widthClass=compact" constant="74.170542635658876"/>
+                                        <variation key="widthClass=compact" constant="0.0"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -1787,6 +2247,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                         <outlet property="iv_WarningSign" destination="t01-w7-Mom" id="s7G-5n-PO5"/>
                         <outlet property="lb_Question" destination="mFf-fM-fkf" id="8NM-Qh-riw"/>
                         <outlet property="lb_Warning" destination="eHe-Sw-AiS" id="UHP-VQ-UxZ"/>
+                        <segue destination="dOl-Fr-Ob6" kind="presentation" identifier="ResetMyAuthenticator" modalTransitionStyle="crossDissolve" id="f2c-a1-bMc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpc-Ao-F9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1920,4 +2381,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
         <image name="ViewRestoreCode.png" width="80" height="80"/>
         <image name="WarningSign.png" width="300" height="300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="f2c-a1-bMc"/>
+    </inferredMetricsTieBreakers>
 </document>
