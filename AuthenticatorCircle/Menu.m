@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 Andy Xu. All rights reserved.
 //
 
+@import MessageUI;
 #import "Menu.h"
 
 @interface Menu ()
@@ -35,8 +36,8 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
-    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:NO];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -54,50 +55,54 @@
     [[NSFileManager defaultManager] removeItemAtPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile] error:nil];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if ([cell.reuseIdentifier isEqualToString:@"SendFeedback"]) {
+        if ([MFMailComposeViewController canSendMail]) {
+            NSDictionary *feedbackMailComponents = [gUIStrings objectForKey:@"FeedbackMailComponents"];
+            MFMailComposeViewController *compose = [[MFMailComposeViewController alloc] init];
+            [compose setMailComposeDelegate:self];
+            [compose.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
+            [compose.navigationBar setTintColor:self.view.tintColor];
+            [compose setSubject:[feedbackMailComponents objectForKey:@"Subject"]];
+            [compose setToRecipients:@[[feedbackMailComponents objectForKey:@"To"]]];
+            
+            NSString *warningMessage = [feedbackMailComponents objectForKey:@"WarningMessage"];
+            NSString *appVersion = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"AppVersion"], [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]];
+            NSString *locale = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Locale"], [[NSBundle mainBundle] preferredLocalizations].firstObject];
+            NSString *device = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Device"], [UIDevice currentDevice].model];
+            NSString *iosVersion = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"IOSVersion"], [UIDevice currentDevice].systemVersion];
+            NSString *sentFrom =  [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"SentFrom"], [UIDevice currentDevice].model];
+            NSString *body = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Body"], warningMessage, appVersion, locale, device, iosVersion, sentFrom];
+            [compose setMessageBody:body isHTML:YES];
+            
+            [self presentViewController:compose animated:YES completion:nil];
+        }
+        else {
+            NSLog(@"This device cannot send email.");
+        }
+    }
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    switch (result) {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled.");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail sent failed.");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Draft saved.");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail sent.");
+            break;
+        default:
+            break;
+    }
+    [controller dismissViewControllerAnimated:YES completion:nil];
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 /*
 #pragma mark - Navigation
 

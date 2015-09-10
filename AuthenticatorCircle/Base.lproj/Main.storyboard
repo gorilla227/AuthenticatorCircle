@@ -359,7 +359,7 @@
                         <sections>
                             <tableViewSection id="eKR-rC-chc">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ugU-hP-cZl" imageView="XGX-ml-Nv9" style="IBUITableViewCellStyleDefault" id="Ljs-Yd-elY">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViewRestoreCode" textLabel="ugU-hP-cZl" imageView="XGX-ml-Nv9" style="IBUITableViewCellStyleDefault" id="Ljs-Yd-elY">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ljs-Yd-elY" id="vHj-Y5-sqw">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -383,7 +383,7 @@
                                             <segue destination="cTP-XN-oAK" kind="show" id="EQu-Wc-ANq"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="y5a-ro-Vy0" imageView="bpz-W6-sOO" style="IBUITableViewCellStyleDefault" id="M94-52-oK7">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResetAuthenticator" textLabel="y5a-ro-Vy0" imageView="bpz-W6-sOO" style="IBUITableViewCellStyleDefault" id="M94-52-oK7">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M94-52-oK7" id="3Wv-Do-WjO">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -411,7 +411,7 @@
                             </tableViewSection>
                             <tableViewSection id="feJ-vx-R1O">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="v2l-K8-dSP" imageView="LCL-8q-WJi" style="IBUITableViewCellStyleDefault" id="yjW-0k-XaN">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Help" textLabel="v2l-K8-dSP" imageView="LCL-8q-WJi" style="IBUITableViewCellStyleDefault" id="yjW-0k-XaN">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yjW-0k-XaN" id="f9D-Uf-UV2">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -432,7 +432,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="OaB-bg-FHJ" imageView="JPx-aE-KP8" style="IBUITableViewCellStyleDefault" id="dCp-np-y1p">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SendFeedback" textLabel="OaB-bg-FHJ" imageView="JPx-aE-KP8" style="IBUITableViewCellStyleDefault" id="dCp-np-y1p">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dCp-np-y1p" id="tup-5o-Kja">
                                             <autoresizingMask key="autoresizingMask"/>

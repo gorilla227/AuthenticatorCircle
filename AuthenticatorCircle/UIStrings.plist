@@ -10,6 +10,39 @@
 		<string>KR</string>
 		<string>TW</string>
 	</array>
+	<key>FeedbackMailComponents</key>
+	<dict>
+		<key>Subject</key>
+		<string>Authenticator Feedback</string>
+		<key>To</key>
+		<string>axu@blizzard.com</string>
+		<key>Body</key>
+		<string>
+
+
+---------------
+%@
+
+%@
+%@
+%@
+%@
+---------------
+
+%@</string>
+		<key>WarningMessage</key>
+		<string>Please do not delete the diagnostics information below; this data helps our engineers improve the app.</string>
+		<key>AppVersion</key>
+		<string>App version: %@</string>
+		<key>Locale</key>
+		<string>Locale: %@</string>
+		<key>Device</key>
+		<string>Device: %@</string>
+		<key>IOSVersion</key>
+		<string>iOS version: %@</string>
+		<key>SentFrom</key>
+		<string>Sent from my %@</string>
+	</dict>
 	<key>UI_ShowAuthenticator</key>
 	<dict>
 		<key>UI_SA_Resync_NotWorking</key>

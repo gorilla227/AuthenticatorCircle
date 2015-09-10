@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Menu : UITableViewController
+@interface Menu : UITableViewController <MFMailComposeViewControllerDelegate>
 
 @end
