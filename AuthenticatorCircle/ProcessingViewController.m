@@ -77,6 +77,24 @@
     }
     else if (processingType == ProcessingTypeRestoreKeychain) {
         //Restore from iCloud
+        NSArray *existedKeychains = [KeychainWrapper retriveKeychainsByAttributes:kKeychainIdentifier];
+        for (NSDictionary *keychainAttribute in existedKeychains) {
+            if ([[keychainAttribute objectForKey:(__bridge id)kSecAttrAccount] isEqual:kKeychainAccount] && [[keychainAttribute objectForKey:(__bridge id)kSecAttrService] isEqual:kKeychainService]) {
+                //Authenticator Existed
+                KeychainWrapper *keychainItem = [[KeychainWrapper alloc] initWithAttributes:keychainAttribute];
+                AuthenticatorSimulator *authenticator = [NSKeyedUnarchiver unarchiveObjectWithData:keychainItem.keychainData];
+                if (authenticator) {
+                    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile];
+                    [NSKeyedArchiver archiveRootObject:authenticator toFile:filePath];
+                    
+                    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+                    [appDelegate setGAuthenticator:authenticator];
+                    
+                    [self performSegueWithIdentifier:@"RestoreKeychainDone" sender:self];
+                }
+                break;
+            }
+        }
     }
     else if (processingType == ProcessingTypeRestoreWithCode) {
         //Restore with Serial & RestoreCode

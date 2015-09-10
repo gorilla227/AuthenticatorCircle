@@ -40,6 +40,8 @@
 		B267F56F1B893C8E00FBB9B5 /* BG_Winston.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F55F1B893C8E00FBB9B5 /* BG_Winston.jpg */; };
 		B267F5701B893C8E00FBB9B5 /* BG_Zarya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5601B893C8E00FBB9B5 /* BG_Zarya.jpg */; };
 		B267F5711B893C8E00FBB9B5 /* BG_Zenyatta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */; };
+		B281E5251BA1FD3200736CC3 /* CompleteSign.png in Resources */ = {isa = PBXBuildFile; fileRef = B281E5241BA1FD3200736CC3 /* CompleteSign.png */; };
+		B281E5281BA205EB00736CC3 /* RestoreKeychainDone.m in Sources */ = {isa = PBXBuildFile; fileRef = B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */; };
 		B283C8301B7E6BC30075D2C7 /* UIStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */; };
 		B2A60E531B814D7C001BB51F /* Help.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E4F1B814D7C001BB51F /* Help.png */; };
 		B2A60E541B814D7C001BB51F /* ResetAuthenticator.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E501B814D7C001BB51F /* ResetAuthenticator.png */; };
@@ -115,6 +117,9 @@
 		B267F55F1B893C8E00FBB9B5 /* BG_Winston.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Winston.jpg; sourceTree = "<group>"; };
 		B267F5601B893C8E00FBB9B5 /* BG_Zarya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Zarya.jpg; sourceTree = "<group>"; };
 		B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Zenyatta.jpg; sourceTree = "<group>"; };
+		B281E5241BA1FD3200736CC3 /* CompleteSign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CompleteSign.png; sourceTree = "<group>"; };
+		B281E5261BA205EB00736CC3 /* RestoreKeychainDone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreKeychainDone.h; sourceTree = "<group>"; };
+		B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreKeychainDone.m; sourceTree = "<group>"; };
 		B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIStrings.plist; sourceTree = "<group>"; };
 		B283C8321B7E6E840075D2C7 /* Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
 		B2A60E4F1B814D7C001BB51F /* Help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Help.png; sourceTree = "<group>"; };
@@ -207,6 +212,8 @@
 				B25E461C1B98E95E00C7FD60 /* RestoreAuthenticator.m */,
 				B22D0BC71B991B4D00BD1857 /* RestoreWithRestoreCode.h */,
 				B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */,
+				B281E5261BA205EB00736CC3 /* RestoreKeychainDone.h */,
+				B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */,
 				B23E4C251B7BBFC900D35088 /* Main.storyboard */,
 				B23E4C281B7BBFC900D35088 /* Images.xcassets */,
 				B23E4C2A1B7BBFC900D35088 /* LaunchScreen.xib */,
@@ -270,6 +277,7 @@
 		B2A60E4E1B814D7C001BB51F /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				B281E5241BA1FD3200736CC3 /* CompleteSign.png */,
 				B2E7CC611B8BF8A4004EA14C /* BattleNet_Title.png */,
 				B2A60E4F1B814D7C001BB51F /* Help.png */,
 				B2A60E501B814D7C001BB51F /* ResetAuthenticator.png */,
@@ -398,6 +406,7 @@
 				B2A60E531B814D7C001BB51F /* Help.png in Resources */,
 				B2E7CC601B8BF71C004EA14C /* AppBackground.jpg in Resources */,
 				B267F5631B893C8E00FBB9B5 /* BG_Hanzo.jpg in Resources */,
+				B281E5251BA1FD3200736CC3 /* CompleteSign.png in Resources */,
 				B2E7CC621B8BF8A4004EA14C /* BattleNet_Title.png in Resources */,
 				B23E4C271B7BBFC900D35088 /* Main.storyboard in Resources */,
 				B267F56F1B893C8E00FBB9B5 /* BG_Winston.jpg in Resources */,
@@ -441,6 +450,7 @@
 				B23E4C211B7BBFC900D35088 /* AppDelegate.m in Sources */,
 				B22D0BC91B991B4D00BD1857 /* RestoreWithRestoreCode.m in Sources */,
 				A1D368051B8049550034F8F5 /* Menu.m in Sources */,
+				B281E5281BA205EB00736CC3 /* RestoreKeychainDone.m in Sources */,
 				B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */,
 				B25E461D1B98E95E00C7FD60 /* RestoreAuthenticator.m in Sources */,
 				A19074BA1B92B5380000526C /* SetUpAuthenticatorDone.m in Sources */,
