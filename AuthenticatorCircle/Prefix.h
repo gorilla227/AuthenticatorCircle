@@ -21,3 +21,5 @@ extern NSDictionary *gUIStrings;
 #define kLocalSavingFile @"Authenticator.saving"
 #define kButtonCornerRadius 2.0f
 #define kTextFieldCornerRadius 1.0f
+#define kSerialKey @"SerialKey"
+#define kRestoreCodeKey @"RestoreCodeKey"

@@ -329,7 +329,7 @@
         <scene sceneID="5RX-H7-f5c">
             <objects>
                 <tableViewController storyboardIdentifier="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wKa-Yl-SuF" customClass="Menu" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jJE-9O-aUA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jJE-9O-aUA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.12941176470588237" green="0.14901960784313725" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
@@ -1299,7 +1299,7 @@ Note: If you took a screenshot when installing the authenticator, refer to it no
                                                     </constraints>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="decimalPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="jKZ-uZ-6SV"/>
@@ -1494,6 +1494,7 @@ Note: If you took a screenshot when installing the authenticator, refer to it no
                         <outlet property="lb_Description" destination="lIN-dh-VaE" id="Eru-mu-dyM"/>
                         <outlet property="tf_RestoreCode" destination="n2a-JD-soC" id="ki2-lB-bRs"/>
                         <outlet property="tf_Serial" destination="laL-Ke-0lM" id="2KY-9n-xye"/>
+                        <segue destination="dOl-Fr-Ob6" kind="presentation" identifier="RestoreWithCode" modalTransitionStyle="crossDissolve" id="geD-Ir-cw7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uF-HG-exh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1581,6 +1582,9 @@ To enable iCloud, go to Settings &gt; iCloud &gt; Keychain.</string>
                                         <include reference="ueK-Ub-kdd"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="dOl-Fr-Ob6" kind="presentation" identifier="RestoreKeychain" modalTransitionStyle="crossDissolve" id="4b0-sg-aUy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-e5-MA0">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -2382,6 +2386,6 @@ Be sure to write down these numbers in case you ever need to restore your authen
         <image name="WarningSign.png" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f2c-a1-bMc"/>
+        <segue reference="geD-Ir-cw7"/>
     </inferredMetricsTieBreakers>
 </document>

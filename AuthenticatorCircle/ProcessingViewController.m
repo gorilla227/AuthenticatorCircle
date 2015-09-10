@@ -16,7 +16,7 @@
 @implementation ProcessingViewController {
     NSDictionary *uiStrings;
 }
-@synthesize lb_Processing, ai_Processing, processingType;
+@synthesize lb_Processing, ai_Processing, processingType, processingParameters;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +30,10 @@
             break;
         case ProcessingTypeSettingUp:
             [lb_Processing setText:[uiStrings objectForKey:@"UI_Processing_SettingUp"]];
+            break;
+        case ProcessingTypeRestoreWithCode:
+        case ProcessingTypeRestoreKeychain:
+            [lb_Processing setText:[uiStrings objectForKey:@"UI_Processing_Restore"]];
             break;
         default:
             [lb_Processing setText:nil];
@@ -54,6 +58,7 @@
 - (void)completeProcess {
     [ai_Processing stopAnimating];
     if (processingType == ProcessingTypeResetting) {
+        //Reset authenticator
         AppDelegate *appDeldgate = [[UIApplication sharedApplication] delegate];
         [appDeldgate setGAuthenticator:nil];
         NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile];
@@ -63,10 +68,42 @@
         [self presentViewController:initialViewController animated:YES completion:nil];
     }
     else if (processingType == ProcessingTypeSettingUp) {
+        //Set up new Authenticator
         AuthenticatorSimulator *newAuthenticator = [[AuthenticatorSimulator alloc] initWithSeriesNumber:@"CN" andRestoreCode:nil];
-        NSData *authenticatorData = [NSKeyedArchiver archivedDataWithRootObject:newAuthenticator];
+        
+        if ([self saveAuthenticatorLocalAndICloud:newAuthenticator]) {
+            [self performSegueWithIdentifier:@"SetUpNewAuthenticator" sender:nil];
+        }
+    }
+    else if (processingType == ProcessingTypeRestoreKeychain) {
+        //Restore from iCloud
+    }
+    else if (processingType == ProcessingTypeRestoreWithCode) {
+        //Restore with Serial & RestoreCode
+        if ([processingParameters.allKeys containsObject:kSerialKey] && [processingParameters.allKeys containsObject:kRestoreCodeKey]) {
+            AuthenticatorSimulator *authenticator = [[AuthenticatorSimulator alloc] initWithSeriesNumber:[processingParameters objectForKey:kSerialKey] andRestoreCode:[processingParameters objectForKey:kRestoreCodeKey]];
+            if ([self saveAuthenticatorLocalAndICloud:authenticator]) {
+                UIViewController *mainViewController = [self.storyboard instantiateInitialViewController];
+                [self presentViewController:mainViewController animated:YES completion:nil];
+            }
+            else {
+                NSLog(@"Save authenticator failed.");
+            }
+        }
+        else {
+            NSLog(@"No Serial or Restore Code for Restoring.");
+        }
+    }
+    else {
+        
+    }
+}
+
+- (BOOL)saveAuthenticatorLocalAndICloud:(AuthenticatorSimulator *)authenticator {
+    if (authenticator) {
+        NSData *authenticatorData = [NSKeyedArchiver archivedDataWithRootObject:authenticator];
         NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile];
-        [NSKeyedArchiver archiveRootObject:newAuthenticator toFile:filePath];
+        [NSKeyedArchiver archiveRootObject:authenticator toFile:filePath];
         NSArray *existedKeychains = [KeychainWrapper retriveKeychainsByAttributes:kKeychainIdentifier];
         for (NSDictionary *keychainAttribute in existedKeychains) {
             if ([[keychainAttribute objectForKey:(__bridge id)kSecAttrAccount] isEqual:kKeychainAccount] && [[keychainAttribute objectForKey:(__bridge id)kSecAttrService] isEqual:kKeychainService]) {
@@ -76,18 +113,21 @@
                 break;
             }
         }
+        
         KeychainWrapper *keychainItem = [[KeychainWrapper alloc] initWithNewKeychain:@{(__bridge id)kSecAttrAccount:kKeychainAccount,
                                                                                        (__bridge id)kSecAttrService:kKeychainService,
                                                                                        (__bridge id)kSecAttrGeneric:[kKeychainIdentifier dataUsingEncoding:NSUTF8StringEncoding],
                                                                                        (__bridge id)kSecValueData:authenticatorData}];
-        if (keychainItem.keychainData) {
-            AppDelegate *appDeldgate = [[UIApplication sharedApplication] delegate];
-            [appDeldgate setGAuthenticator:newAuthenticator];
-            [self performSegueWithIdentifier:@"SetUpNewAuthenticator" sender:nil];
+        BOOL result = keychainItem.keychainData;
+        if (result) {
+            AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+            [appDelegate setGAuthenticator:authenticator];
         }
+        return result;
     }
     else {
-        
+        NSLog(@"Authenticator is NULL.");
+        return NO;
     }
 }
 

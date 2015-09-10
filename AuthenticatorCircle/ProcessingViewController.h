@@ -10,9 +10,12 @@
 typedef NS_ENUM(NSInteger, ProcessingType) {
     ProcessingTypeDefault,
     ProcessingTypeResetting,
-    ProcessingTypeSettingUp
+    ProcessingTypeSettingUp,
+    ProcessingTypeRestoreWithCode,
+    ProcessingTypeRestoreKeychain
 };
 
 @interface ProcessingViewController : UIViewController
 @property (nonatomic) ProcessingType processingType;
+@property (nonatomic) NSDictionary *processingParameters;
 @end

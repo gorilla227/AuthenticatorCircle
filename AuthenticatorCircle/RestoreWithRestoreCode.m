@@ -51,10 +51,7 @@
 
 - (IBAction)btn_Submit_OnClicked:(id)sender {
     if (tf_Serial.text.length == 17 && tf_RestoreCode.text.length == 10) {
-        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-        appDelegate.gAuthenticator = [[AuthenticatorSimulator alloc] initWithSeriesNumber:tf_Serial.text andRestoreCode:tf_RestoreCode.text];
-        UIViewController *mainViewController = [self.storyboard instantiateInitialViewController];
-        [self presentViewController:mainViewController animated:YES completion:nil];
+        [self performSegueWithIdentifier:@"RestoreWithCode" sender:self];        
     }
     else {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:[uiStrings objectForKey:@"UI_RWRC_NotComplete_AlertViewMessage"] delegate:nil cancelButtonTitle:[uiStrings objectForKey:@"UI_RWRC_NotComplete_AlertViewCancel"] otherButtonTitles:nil];
@@ -119,14 +116,17 @@
     return YES;
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"RestoreWithCode"]) {
+        ProcessingViewController *process = segue.destinationViewController;
+        [process setProcessingType:ProcessingTypeRestoreWithCode];
+        [process setProcessingParameters:@{kSerialKey:tf_Serial.text, kRestoreCodeKey:tf_RestoreCode.text}];
+    }
 }
-*/
 
 @end

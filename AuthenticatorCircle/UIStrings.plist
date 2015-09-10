@@ -45,6 +45,8 @@
 		<string>Resetting...</string>
 		<key>UI_Processing_SettingUp</key>
 		<string>Setting Up...</string>
+		<key>UI_Processing_Restore</key>
+		<string>Restoring...</string>
 	</dict>
 	<key>UI_SetUpAuthenticator</key>
 	<dict>
