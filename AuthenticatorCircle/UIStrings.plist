@@ -108,5 +108,12 @@
 		<key>UI_RWRC_NotComplete_AlertViewCancel</key>
 		<string>OK</string>
 	</dict>
+	<key>UI_Initial</key>
+	<dict>
+		<key>UI_Initial_SelectRegion_ActionSheetTitle</key>
+		<string>Select Region</string>
+		<key>UI_Initial_SelectRegion_ActionSheetCancel</key>
+		<string>Cancel</string>
+	</dict>
 </dict>
 </plist>

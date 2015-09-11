@@ -23,3 +23,4 @@ extern NSDictionary *gUIStrings;
 #define kTextFieldCornerRadius 1.0f
 #define kSerialKey @"SerialKey"
 #define kRestoreCodeKey @"RestoreCodeKey"
+#define kSetupRegionCodeKey @"SetupRegionCodeKey"

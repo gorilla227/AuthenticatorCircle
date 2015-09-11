@@ -14,7 +14,10 @@
 @property (nonatomic, strong) IBOutlet UIButton *btn_Restore;
 @end
 
-@implementation InitialViewController
+@implementation InitialViewController {
+    NSArray *regionCodes;
+    NSDictionary *uiStrings;
+}
 @synthesize lb_Description, btn_SetUp, btn_Restore;
 
 - (void)viewDidLoad {
@@ -28,6 +31,9 @@
     [btn_Restore.layer setCornerRadius:kButtonCornerRadius];
     [btn_Restore.layer setMasksToBounds:YES];
     [lb_Description sizeToFit];
+    
+    regionCodes = [gUIStrings objectForKey:@"SerialRegionCodes"];
+    uiStrings = [gUIStrings objectForKey:@"UI_Initial"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,6 +50,23 @@
     return UIStatusBarStyleLightContent;
 }
 
+- (IBAction)btn_SetUp_OnClicked:(id)sender {
+    UIActionSheet *selectionRegioin = [[UIActionSheet alloc] initWithTitle:[uiStrings objectForKey:@"UI_Initial_SelectRegion_ActionSheetTitle"]
+                                                                  delegate:self cancelButtonTitle:[uiStrings objectForKey:@"UI_Initial_SelectRegion_ActionSheetCancel"]
+                                                    destructiveButtonTitle:nil
+                                                         otherButtonTitles:nil];
+    for (NSString *region in regionCodes) {
+        [selectionRegioin addButtonWithTitle:region];
+    }
+    [selectionRegioin showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex != actionSheet.cancelButtonIndex) {
+        [self performSegueWithIdentifier:@"SetUpNewAuthenticator" sender:[actionSheet buttonTitleAtIndex:buttonIndex]];
+    }
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -53,6 +76,7 @@
     if ([segue.identifier isEqualToString:@"SetUpNewAuthenticator"]) {
         ProcessingViewController *process = segue.destinationViewController;
         [process setProcessingType:ProcessingTypeSettingUp];
+        [process setProcessingParameters:@{kSetupRegionCodeKey:sender}];
     }
 }
 

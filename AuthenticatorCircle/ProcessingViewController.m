@@ -69,7 +69,7 @@
     }
     else if (processingType == ProcessingTypeSettingUp) {
         //Set up new Authenticator
-        AuthenticatorSimulator *newAuthenticator = [[AuthenticatorSimulator alloc] initWithSeriesNumber:@"CN" andRestoreCode:nil];
+        AuthenticatorSimulator *newAuthenticator = [[AuthenticatorSimulator alloc] initWithSeriesNumber:[processingParameters objectForKey:kSetupRegionCodeKey] andRestoreCode:nil];
         
         if ([self saveAuthenticatorLocalAndICloud:newAuthenticator]) {
             [self performSegueWithIdentifier:@"SetUpNewAuthenticator" sender:nil];

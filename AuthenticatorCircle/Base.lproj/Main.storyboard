@@ -323,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyO-qX-PBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="526"/>
+            <point key="canvasLocation" x="609" y="500"/>
         </scene>
         <!--Menu-->
         <scene sceneID="5RX-H7-f5c">
@@ -479,7 +479,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvd-Kd-QPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413" y="1223"/>
+            <point key="canvasLocation" x="1413" y="1197"/>
         </scene>
         <!--View Restore Code-->
         <scene sceneID="h3e-NQ-0lF">
@@ -732,7 +732,7 @@ We recommend taking a screenshot of Your Restore code and store it in your galle
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsy-Fb-qvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170.5" y="1223"/>
+            <point key="canvasLocation" x="2170.5" y="1197"/>
         </scene>
         <!--Initial-->
         <scene sceneID="Nf9-Ez-jxe">
@@ -805,7 +805,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="dOl-Fr-Ob6" kind="showDetail" identifier="SetUpNewAuthenticator" id="GcX-cf-RHX"/>
+                                    <action selector="btn_SetUp_OnClicked:" destination="h9E-2u-6Ha" eventType="touchUpInside" id="8EJ-di-nAk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nB7-DR-dfO">
@@ -913,6 +913,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                         <outlet property="btn_Restore" destination="nB7-DR-dfO" id="3up-7R-ekD"/>
                         <outlet property="btn_SetUp" destination="pnA-Mr-7tx" id="CTu-n2-2fC"/>
                         <outlet property="lb_Description" destination="FPf-5l-Z97" id="P80-Xf-C4z"/>
+                        <segue destination="dOl-Fr-Ob6" kind="showDetail" identifier="SetUpNewAuthenticator" id="vq0-v5-gfn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R58-A4-cbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2533,7 +2534,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SI-Pd-Jrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610" y="1223"/>
+            <point key="canvasLocation" x="609" y="1197"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1gu-BM-zkc">
@@ -2565,6 +2566,6 @@ Be sure to write down these numbers in case you ever need to restore your authen
         <image name="WarningSign.png" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="geD-Ir-cw7"/>
+        <segue reference="vq0-v5-gfn"/>
     </inferredMetricsTieBreakers>
 </document>
