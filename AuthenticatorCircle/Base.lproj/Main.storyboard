@@ -2351,6 +2351,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                         <viewControllerLayoutGuide type="bottom" id="NE7-5Z-UcW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="s02-Al-YIc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CompleteSign.png" translatesAutoresizingMaskIntoConstraints="NO" id="QWi-35-oeJ">
@@ -2471,19 +2472,19 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 <exclude reference="Zkz-Ai-VMX"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="0Mf-uf-Hye"/>
+                                <exclude reference="LSm-eK-3oo"/>
+                                <exclude reference="dKc-c8-EXW"/>
+                                <exclude reference="Bij-PL-MCs"/>
+                                <exclude reference="Oss-Tf-agf"/>
+                                <exclude reference="xez-pi-Jq9"/>
+                                <exclude reference="FYT-yz-fqU"/>
+                                <exclude reference="Uv6-qI-jFd"/>
+                                <exclude reference="sY5-jv-oJa"/>
                                 <exclude reference="LhQ-NH-f1I"/>
                                 <exclude reference="afi-ec-dUJ"/>
                                 <exclude reference="vQv-ag-P6P"/>
                                 <exclude reference="yVU-XS-IVD"/>
-                                <exclude reference="Bij-PL-MCs"/>
-                                <exclude reference="Oss-Tf-agf"/>
-                                <exclude reference="xez-pi-Jq9"/>
-                                <exclude reference="0Mf-uf-Hye"/>
-                                <exclude reference="LSm-eK-3oo"/>
-                                <exclude reference="dKc-c8-EXW"/>
-                                <exclude reference="FYT-yz-fqU"/>
-                                <exclude reference="Uv6-qI-jFd"/>
-                                <exclude reference="sY5-jv-oJa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -2494,19 +2495,19 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 <include reference="Zkz-Ai-VMX"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="0Mf-uf-Hye"/>
+                                <include reference="LSm-eK-3oo"/>
+                                <include reference="dKc-c8-EXW"/>
+                                <include reference="Bij-PL-MCs"/>
+                                <include reference="Oss-Tf-agf"/>
+                                <include reference="xez-pi-Jq9"/>
+                                <include reference="FYT-yz-fqU"/>
+                                <include reference="Uv6-qI-jFd"/>
+                                <include reference="sY5-jv-oJa"/>
                                 <include reference="LhQ-NH-f1I"/>
                                 <include reference="afi-ec-dUJ"/>
                                 <include reference="vQv-ag-P6P"/>
                                 <exclude reference="yVU-XS-IVD"/>
-                                <include reference="Bij-PL-MCs"/>
-                                <include reference="Oss-Tf-agf"/>
-                                <include reference="xez-pi-Jq9"/>
-                                <include reference="0Mf-uf-Hye"/>
-                                <include reference="LSm-eK-3oo"/>
-                                <include reference="dKc-c8-EXW"/>
-                                <include reference="FYT-yz-fqU"/>
-                                <include reference="Uv6-qI-jFd"/>
-                                <include reference="sY5-jv-oJa"/>
                             </mask>
                         </variation>
                     </view>

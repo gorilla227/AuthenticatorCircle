@@ -48,6 +48,7 @@
 		B2A60E551B814D7C001BB51F /* SendFeedback.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E511B814D7C001BB51F /* SendFeedback.png */; };
 		B2A60E561B814D7C001BB51F /* ViewRestoreCode.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E521B814D7C001BB51F /* ViewRestoreCode.png */; };
 		B2BC9C2E1B979F94004481BB /* UINavigationController+NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BC9C2D1B979F94004481BB /* UINavigationController+NavigationController.m */; };
+		B2C11F5C1BA37B2400E9C962 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C11F5B1BA37B2400E9C962 /* TTTAttributedLabel.m */; };
 		B2D2C5661B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D2C5651B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m */; };
 		B2D94D3A1B7D3FFB0010DE6C /* AuthenticatorSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D94D391B7D3FFB0010DE6C /* AuthenticatorSimulator.m */; };
 		B2E7CC5E1B8BDE3B004EA14C /* ProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7CC5D1B8BDE3B004EA14C /* ProcessingViewController.m */; };
@@ -128,6 +129,8 @@
 		B2A60E521B814D7C001BB51F /* ViewRestoreCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ViewRestoreCode.png; sourceTree = "<group>"; };
 		B2BC9C2C1B979F94004481BB /* UINavigationController+NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NavigationController.h"; sourceTree = "<group>"; };
 		B2BC9C2D1B979F94004481BB /* UINavigationController+NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NavigationController.m"; sourceTree = "<group>"; };
+		B2C11F5A1BA37B2400E9C962 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		B2C11F5B1BA37B2400E9C962 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		B2D2C5641B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextField_Inset_PlaceholderFont.h; sourceTree = "<group>"; };
 		B2D2C5651B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextField_Inset_PlaceholderFont.m; sourceTree = "<group>"; };
 		B2D94D381B7D3FFB0010DE6C /* AuthenticatorSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticatorSimulator.h; sourceTree = "<group>"; };
@@ -189,6 +192,7 @@
 				B23E4C201B7BBFC900D35088 /* AppDelegate.m */,
 				B2A60E4E1B814D7C001BB51F /* Icon */,
 				B267F5511B893C8E00FBB9B5 /* BgImages */,
+				B2C11F591BA37B2400E9C962 /* TTTAttributedLabel */,
 				B2D94D3D1B7D60070010DE6C /* KeychainWrapper */,
 				B2D94D3C1B7D4BAE0010DE6C /* ArcProgressView */,
 				B2D94D3B1B7D4BA20010DE6C /* Simulator */,
@@ -286,6 +290,15 @@
 				A11E5D1F1B8AD6DA00D2BA8A /* WarningSign.png */,
 			);
 			path = Icon;
+			sourceTree = "<group>";
+		};
+		B2C11F591BA37B2400E9C962 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				B2C11F5A1BA37B2400E9C962 /* TTTAttributedLabel.h */,
+				B2C11F5B1BA37B2400E9C962 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 		B2D94D3B1B7D4BA20010DE6C /* Simulator */ = {
@@ -454,6 +467,7 @@
 				B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */,
 				B25E461D1B98E95E00C7FD60 /* RestoreAuthenticator.m in Sources */,
 				A19074BA1B92B5380000526C /* SetUpAuthenticatorDone.m in Sources */,
+				B2C11F5C1BA37B2400E9C962 /* TTTAttributedLabel.m in Sources */,
 				B2D94D3A1B7D3FFB0010DE6C /* AuthenticatorSimulator.m in Sources */,
 				B2BC9C2E1B979F94004481BB /* UINavigationController+NavigationController.m in Sources */,
 				B23E4C4C1B7BCBBF00D35088 /* KeychainWrapper.m in Sources */,
