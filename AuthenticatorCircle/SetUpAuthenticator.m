@@ -12,16 +12,15 @@
 @property (nonatomic, strong) IBOutlet UILabel *lb_SerialNumber;
 @property (nonatomic, strong) IBOutlet UILabel *lb_AuthenticatorCode;
 @property (nonatomic, strong) IBOutlet UIProgressView *pv_ProgressView;
-@property (nonatomic, strong) IBOutlet UIButton *btn_BMALink;
 @property (nonatomic, strong) IBOutlet UIButton *btn_Continue;
-@property (nonatomic, strong) IBOutlet UITextView *tv_Instuction;
+@property (nonatomic, strong) IBOutlet TTTAttributedLabel *lb_Instuction;
 @end
 
 @implementation SetUpAuthenticator {
     AuthenticatorSimulator *authenticator;
     NSDictionary *uiStrings;
 }
-@synthesize lb_SerialNumber, lb_AuthenticatorCode, pv_ProgressView, btn_BMALink, btn_Continue, tv_Instuction;
+@synthesize lb_SerialNumber, lb_AuthenticatorCode, pv_ProgressView, btn_Continue, lb_Instuction;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,24 +44,15 @@
     
     //Set URL link in Instruction
     uiStrings = [gUIStrings objectForKey:@"UI_SetUpAuthenticator"];
-    NSString *linkText = [uiStrings objectForKey:@"UI_SUA_BMA_LinkText"];    NSMutableAttributedString *instructionString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:[uiStrings objectForKey:@"UI_SUA_Instruction"], linkText]];
-    [instructionString addAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],
-                                       NSFontAttributeName:[UIFont systemFontOfSize:16.0f]} range:NSMakeRange(0, instructionString.length)];
-    [instructionString addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:[instructionString.string rangeOfString:linkText]];
+    [lb_Instuction setLinkAttributes:@{(id)kCTForegroundColorAttributeName:(id)self.view.tintColor.CGColor,
+                                       NSUnderlineStyleAttributeName:@(NSUnderlineStyleNone)}];
+    [lb_Instuction setActiveLinkAttributes:@{(id)kCTForegroundColorAttributeName:(id)[UIColor grayColor].CGColor}];
     
-    [tv_Instuction setAttributedText:instructionString];
-    [tv_Instuction sizeToFit];
-    [tv_Instuction.layoutManager ensureLayoutForTextContainer:tv_Instuction.textContainer];
-    NSRange range = [instructionString.string rangeOfString:linkText];
-    UITextPosition *start = [tv_Instuction positionFromPosition:tv_Instuction.beginningOfDocument offset:range.location];
-    UITextPosition *end = [tv_Instuction positionFromPosition:start offset:range.length];
-    UITextRange *textRange = [tv_Instuction textRangeFromPosition:start toPosition:end];
-    CGRect linkRect = [tv_Instuction firstRectForRange:textRange];
-    
-    [btn_BMALink setFrame:linkRect];
-    [tv_Instuction addSubview:btn_BMALink];
-    [tv_Instuction setEditable:NO];
-    [tv_Instuction setSelectable:NO];
+    NSString *linkText = [uiStrings objectForKey:@"UI_SUA_BMA_LinkText"];
+    NSString *instructionString = [NSString stringWithFormat:[uiStrings objectForKey:@"UI_SUA_Instruction"], linkText];
+    NSRange linkRange = [instructionString rangeOfString:linkText];
+    [lb_Instuction setText:instructionString];
+    [lb_Instuction addLinkToURL:[NSURL URLWithString:[uiStrings objectForKey:@"UI_SUA_BMA_LinkURL"]] withRange:linkRange];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,8 +64,7 @@
     return UIStatusBarStyleLightContent;
 }
 
-- (IBAction)btn_BMALink_OnClicked:(id)sender {    
-    NSURL *url = [NSURL URLWithString:[uiStrings objectForKey:@"UI_SUA_BMA_LinkURL"]];
+- (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url {
     BOOL result = [[UIApplication sharedApplication] openURL:url];
     NSLog(@"BMA_Link:%@",result?@"YES":@"NO");
 }
