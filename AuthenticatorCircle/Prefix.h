@@ -24,3 +24,4 @@ extern NSDictionary *gUIStrings;
 #define kSerialKey @"SerialKey"
 #define kRestoreCodeKey @"RestoreCodeKey"
 #define kSetupRegionCodeKey @"SetupRegionCodeKey"
+#define kLinkSeperator @"#$"

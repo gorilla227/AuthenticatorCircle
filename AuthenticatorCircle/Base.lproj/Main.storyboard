@@ -323,13 +323,144 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyO-qX-PBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="500"/>
+            <point key="canvasLocation" x="609" y="477"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="gRu-ac-3ux">
+            <objects>
+                <tableViewController id="44g-B6-cZq" customClass="HelpList" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4eh-pP-mH2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.14901960780000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HelpTitleCell" textLabel="8ym-HJ-NJR" style="IBUITableViewCellStyleDefault" id="0NS-hW-NuJ">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0NS-hW-NuJ" id="k5a-Mp-CHp">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Help Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="8ym-HJ-NJR">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="fY8-he-tGL" kind="show" id="VDI-f7-6xb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="44g-B6-cZq" id="DvV-My-NJk"/>
+                            <outlet property="delegate" destination="44g-B6-cZq" id="kES-Jf-Oij"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Help" id="vXp-WB-kga">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Btl-RE-fbB"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAo-HS-SKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182.5" y="477"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="lTT-5B-DTE">
+            <objects>
+                <viewController id="fY8-he-tGL" customClass="HelpContent" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E6o-mL-5Nq"/>
+                        <viewControllerLayoutGuide type="bottom" id="34y-iA-Gdb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TAu-fd-tNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtq-tl-EPb">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Content" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g37-IL-c1I" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fY8-he-tGL" id="oow-xn-kOS"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.14901960780000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="g37-IL-c1I" firstAttribute="top" secondItem="rtq-tl-EPb" secondAttribute="bottom" constant="26" id="2hx-R6-ylb">
+                                <variation key="widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="rtq-tl-EPb" firstAttribute="top" secondItem="E6o-mL-5Nq" secondAttribute="bottom" constant="18" id="H9k-eZ-ak1"/>
+                            <constraint firstItem="rtq-tl-EPb" firstAttribute="trailing" secondItem="TAu-fd-tNZ" secondAttribute="trailingMargin" id="LHp-kK-Pbn"/>
+                            <constraint firstAttribute="centerX" secondItem="rtq-tl-EPb" secondAttribute="centerX" id="MNx-MC-kWc"/>
+                            <constraint firstItem="g37-IL-c1I" firstAttribute="trailing" secondItem="rtq-tl-EPb" secondAttribute="trailing" id="Vas-uB-Vfb"/>
+                            <constraint firstItem="rtq-tl-EPb" firstAttribute="leading" secondItem="TAu-fd-tNZ" secondAttribute="leadingMargin" id="wcy-sB-mMf"/>
+                            <constraint firstItem="g37-IL-c1I" firstAttribute="leading" secondItem="rtq-tl-EPb" secondAttribute="leading" id="zb6-Rx-01z"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rtq-tl-EPb"/>
+                                <exclude reference="g37-IL-c1I"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2hx-R6-ylb"/>
+                                <exclude reference="Vas-uB-Vfb"/>
+                                <exclude reference="zb6-Rx-01z"/>
+                                <exclude reference="H9k-eZ-ak1"/>
+                                <exclude reference="LHp-kK-Pbn"/>
+                                <exclude reference="MNx-MC-kWc"/>
+                                <exclude reference="wcy-sB-mMf"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="rtq-tl-EPb"/>
+                                <include reference="g37-IL-c1I"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2hx-R6-ylb"/>
+                                <include reference="Vas-uB-Vfb"/>
+                                <include reference="zb6-Rx-01z"/>
+                                <include reference="H9k-eZ-ak1"/>
+                                <include reference="LHp-kK-Pbn"/>
+                                <include reference="MNx-MC-kWc"/>
+                                <include reference="wcy-sB-mMf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help" id="2aO-L9-ged">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="2q2-ml-Yr1"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lb_HelpContent" destination="g37-IL-c1I" id="7lt-pJ-ual"/>
+                        <outlet property="lb_HelpTitle" destination="rtq-tl-EPb" id="agX-Ti-ZAP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTx-gV-MoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3015" y="477"/>
         </scene>
         <!--Menu-->
         <scene sceneID="5RX-H7-f5c">
             <objects>
                 <tableViewController storyboardIdentifier="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wKa-Yl-SuF" customClass="Menu" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jJE-9O-aUA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jJE-9O-aUA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.12941176470588237" green="0.14901960784313725" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
@@ -431,6 +562,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="44g-B6-cZq" kind="show" id="i2J-3i-S3d"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SendFeedback" textLabel="OaB-bg-FHJ" imageView="JPx-aE-KP8" style="IBUITableViewCellStyleDefault" id="dCp-np-y1p">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -732,7 +866,7 @@ We recommend taking a screenshot of Your Restore code and store it in your galle
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsy-Fb-qvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170.5" y="1197"/>
+            <point key="canvasLocation" x="2182.5" y="1197"/>
         </scene>
         <!--Initial-->
         <scene sceneID="Nf9-Ez-jxe">
@@ -788,6 +922,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fQK-b7-q7E"/>
                                     <constraint firstAttribute="width" secondItem="pnA-Mr-7tx" secondAttribute="height" multiplier="46:5" id="oYE-Um-VRa"/>
                                 </constraints>
                                 <state key="normal" title="Set Up New Authenticator">
@@ -796,12 +931,14 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="fQK-b7-q7E"/>
                                         <exclude reference="oYE-Um-VRa"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="oYE-Um-VRa"/>
+                                        <include reference="fQK-b7-q7E"/>
+                                        <exclude reference="oYE-Um-VRa"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -813,6 +950,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nB7-DR-dfO" secondAttribute="height" multiplier="46:5" id="aT2-rs-wOi"/>
+                                    <constraint firstAttribute="height" constant="40" id="lrw-bP-91w"/>
                                 </constraints>
                                 <state key="normal" title="Restore Authenticator">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -821,11 +959,13 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="aT2-rs-wOi"/>
+                                        <exclude reference="lrw-bP-91w"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="aT2-rs-wOi"/>
+                                        <exclude reference="aT2-rs-wOi"/>
+                                        <include reference="lrw-bP-91w"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -1026,6 +1166,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="3lY-aX-qHG" secondAttribute="height" multiplier="46:5" id="aDf-Wp-LPL"/>
+                                    <constraint firstAttribute="height" constant="40" id="uFI-gO-llM"/>
                                 </constraints>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1034,11 +1175,13 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="aDf-Wp-LPL"/>
+                                        <exclude reference="uFI-gO-llM"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="aDf-Wp-LPL"/>
+                                        <exclude reference="aDf-Wp-LPL"/>
+                                        <include reference="uFI-gO-llM"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -1115,11 +1258,10 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <exclude reference="vJP-hn-MvY"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Re1-Eh-FIl"/>
-                                <exclude reference="li8-52-wsf"/>
-                                <exclude reference="llZ-ol-PAh"/>
-                                <exclude reference="u13-r6-7tg"/>
-                                <exclude reference="xIF-DV-vwR"/>
+                                <exclude reference="1wm-16-zsX"/>
+                                <exclude reference="8Ac-5y-xEu"/>
+                                <exclude reference="Kas-tt-wsj"/>
+                                <exclude reference="gOz-TB-9Yv"/>
                                 <exclude reference="Jkj-lX-bdJ"/>
                                 <exclude reference="7nc-0x-o2H"/>
                                 <exclude reference="rBw-DC-V9C"/>
@@ -1127,10 +1269,11 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <exclude reference="wcr-7L-lzQ"/>
                                 <exclude reference="z1h-Du-bLc"/>
                                 <exclude reference="zqX-vN-wnW"/>
-                                <exclude reference="1wm-16-zsX"/>
-                                <exclude reference="8Ac-5y-xEu"/>
-                                <exclude reference="Kas-tt-wsj"/>
-                                <exclude reference="gOz-TB-9Yv"/>
+                                <exclude reference="Re1-Eh-FIl"/>
+                                <exclude reference="li8-52-wsf"/>
+                                <exclude reference="llZ-ol-PAh"/>
+                                <exclude reference="u13-r6-7tg"/>
+                                <exclude reference="xIF-DV-vwR"/>
                                 <exclude reference="AwK-Vn-K3P"/>
                                 <exclude reference="ixH-FH-G2X"/>
                                 <exclude reference="pmY-YY-yVS"/>
@@ -1155,11 +1298,10 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <include reference="vJP-hn-MvY"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Re1-Eh-FIl"/>
-                                <include reference="li8-52-wsf"/>
-                                <include reference="llZ-ol-PAh"/>
-                                <include reference="u13-r6-7tg"/>
-                                <include reference="xIF-DV-vwR"/>
+                                <include reference="1wm-16-zsX"/>
+                                <include reference="8Ac-5y-xEu"/>
+                                <include reference="Kas-tt-wsj"/>
+                                <include reference="gOz-TB-9Yv"/>
                                 <include reference="Jkj-lX-bdJ"/>
                                 <include reference="7nc-0x-o2H"/>
                                 <include reference="rBw-DC-V9C"/>
@@ -1167,10 +1309,11 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                 <include reference="wcr-7L-lzQ"/>
                                 <include reference="z1h-Du-bLc"/>
                                 <include reference="zqX-vN-wnW"/>
-                                <include reference="1wm-16-zsX"/>
-                                <include reference="8Ac-5y-xEu"/>
-                                <include reference="Kas-tt-wsj"/>
-                                <include reference="gOz-TB-9Yv"/>
+                                <include reference="Re1-Eh-FIl"/>
+                                <include reference="li8-52-wsf"/>
+                                <include reference="llZ-ol-PAh"/>
+                                <include reference="u13-r6-7tg"/>
+                                <include reference="xIF-DV-vwR"/>
                                 <include reference="AwK-Vn-K3P"/>
                                 <include reference="ixH-FH-G2X"/>
                                 <include reference="pmY-YY-yVS"/>
@@ -1532,6 +1675,7 @@ To enable iCloud, go to Settings &gt; iCloud &gt; Keychain.</string>
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2VW-24-ZvV"/>
                                     <constraint firstAttribute="width" secondItem="Z4Q-Lv-0Ng" secondAttribute="height" multiplier="46:5" id="ueK-Ub-kdd"/>
                                 </constraints>
                                 <state key="normal" title="Restore from iCloud Keychain">
@@ -1540,12 +1684,14 @@ To enable iCloud, go to Settings &gt; iCloud &gt; Keychain.</string>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="2VW-24-ZvV"/>
                                         <exclude reference="ueK-Ub-kdd"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="ueK-Ub-kdd"/>
+                                        <include reference="2VW-24-ZvV"/>
+                                        <exclude reference="ueK-Ub-kdd"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -1557,6 +1703,7 @@ To enable iCloud, go to Settings &gt; iCloud &gt; Keychain.</string>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DeE-e5-MA0" secondAttribute="height" multiplier="46:5" id="pBp-KE-TSB"/>
+                                    <constraint firstAttribute="height" constant="40" id="wXp-Z8-gBv"/>
                                 </constraints>
                                 <state key="normal" title="Use Restore Code">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1565,11 +1712,13 @@ To enable iCloud, go to Settings &gt; iCloud &gt; Keychain.</string>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="pBp-KE-TSB"/>
+                                        <exclude reference="wXp-Z8-gBv"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="pBp-KE-TSB"/>
+                                        <exclude reference="pBp-KE-TSB"/>
+                                        <include reference="wXp-Z8-gBv"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -1804,6 +1953,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JdQ-eS-s7p"/>
                                     <constraint firstAttribute="width" secondItem="pht-8A-jzm" secondAttribute="height" multiplier="46:5" id="eky-IT-rl2"/>
                                 </constraints>
                                 <state key="normal" title="Save Screenshot">
@@ -1811,11 +1961,13 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="JdQ-eS-s7p"/>
                                         <exclude reference="eky-IT-rl2"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
+                                        <include reference="JdQ-eS-s7p"/>
                                         <exclude reference="eky-IT-rl2"/>
                                     </mask>
                                 </variation>
@@ -1827,6 +1979,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Ub-Zo-YnF"/>
                                     <constraint firstAttribute="width" secondItem="lfx-aU-zCF" secondAttribute="height" multiplier="46:5" id="hE2-zW-69u"/>
                                 </constraints>
                                 <state key="normal" title="Continue">
@@ -1835,12 +1988,14 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="7Ub-Zo-YnF"/>
                                         <exclude reference="hE2-zW-69u"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="hE2-zW-69u"/>
+                                        <include reference="7Ub-Zo-YnF"/>
+                                        <exclude reference="hE2-zW-69u"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -2002,7 +2157,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 <include reference="77K-xQ-Tvx"/>
                                 <include reference="KEY-Gn-h9z"/>
                                 <include reference="Mfh-lf-sZS"/>
-                                <include reference="SIk-rR-q1H"/>
+                                <exclude reference="SIk-rR-q1H"/>
                                 <include reference="duR-fi-O0Y"/>
                             </mask>
                         </variation>
@@ -2095,6 +2250,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lpa-Nz-BuH"/>
                                     <constraint firstAttribute="width" secondItem="2Ae-JY-TiM" secondAttribute="height" multiplier="46:5" id="Zfv-YA-vAd"/>
                                 </constraints>
                                 <state key="normal" title="Reset My Authenticator">
@@ -2102,12 +2258,14 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="Lpa-Nz-BuH"/>
                                         <exclude reference="Zfv-YA-vAd"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="Zfv-YA-vAd"/>
+                                        <include reference="Lpa-Nz-BuH"/>
+                                        <exclude reference="Zfv-YA-vAd"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -2118,6 +2276,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HyE-Jt-RGO"/>
                                     <constraint firstAttribute="width" secondItem="3Ci-si-Zbx" secondAttribute="height" multiplier="46:5" id="eAz-92-afI"/>
                                 </constraints>
                                 <state key="normal" title="Go Back">
@@ -2126,12 +2285,14 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="HyE-Jt-RGO"/>
                                         <exclude reference="eAz-92-afI"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="eAz-92-afI"/>
+                                        <include reference="HyE-Jt-RGO"/>
+                                        <exclude reference="eAz-92-afI"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -2222,7 +2383,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpc-Ao-F9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170.5" y="1945"/>
+            <point key="canvasLocation" x="2182.5" y="1945"/>
         </scene>
         <!--Processing-->
         <scene sceneID="wx5-UQ-UKB">
@@ -2366,6 +2527,7 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rjs-ke-d0b"/>
                                     <constraint firstAttribute="width" secondItem="19K-RE-JVG" secondAttribute="height" multiplier="46:5" id="Thp-YV-Q2R"/>
                                     <constraint firstAttribute="width" secondItem="19K-RE-JVG" secondAttribute="height" multiplier="46:5" id="vDi-Mu-6ZI"/>
                                 </constraints>
@@ -2375,13 +2537,15 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="Rjs-ke-d0b"/>
                                         <exclude reference="Thp-YV-Q2R"/>
                                         <exclude reference="vDi-Mu-6ZI"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="Thp-YV-Q2R"/>
+                                        <include reference="Rjs-ke-d0b"/>
+                                        <exclude reference="Thp-YV-Q2R"/>
                                         <exclude reference="vDi-Mu-6ZI"/>
                                     </mask>
                                 </variation>
@@ -2532,6 +2696,6 @@ Be sure to write down these numbers in case you ever need to restore your authen
         <image name="WarningSign.png" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vq0-v5-gfn"/>
+        <segue reference="geD-Ir-cw7"/>
     </inferredMetricsTieBreakers>
 </document>

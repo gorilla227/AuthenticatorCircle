@@ -55,6 +55,8 @@
 		B2E7CC601B8BF71C004EA14C /* AppBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2E7CC5F1B8BF71C004EA14C /* AppBackground.jpg */; };
 		B2E7CC621B8BF8A4004EA14C /* BattleNet_Title.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E7CC611B8BF8A4004EA14C /* BattleNet_Title.png */; };
 		B2EB9E851B8403B70054BA0E /* ViewRestoreCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EB9E841B8403B70054BA0E /* ViewRestoreCode.m */; };
+		B2F406A61BA394C700E25474 /* HelpContent.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F406A51BA394C700E25474 /* HelpContent.m */; };
+		B2F406A91BA394D800E25474 /* HelpList.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F406A81BA394D800E25474 /* HelpList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +143,10 @@
 		B2E7CC611B8BF8A4004EA14C /* BattleNet_Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BattleNet_Title.png; sourceTree = "<group>"; };
 		B2EB9E831B8403B70054BA0E /* ViewRestoreCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewRestoreCode.h; sourceTree = "<group>"; };
 		B2EB9E841B8403B70054BA0E /* ViewRestoreCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewRestoreCode.m; sourceTree = "<group>"; };
+		B2F406A41BA394C700E25474 /* HelpContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpContent.h; sourceTree = "<group>"; };
+		B2F406A51BA394C700E25474 /* HelpContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpContent.m; sourceTree = "<group>"; };
+		B2F406A71BA394D800E25474 /* HelpList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpList.h; sourceTree = "<group>"; };
+		B2F406A81BA394D800E25474 /* HelpList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +224,10 @@
 				B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */,
 				B281E5261BA205EB00736CC3 /* RestoreKeychainDone.h */,
 				B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */,
+				B2F406A71BA394D800E25474 /* HelpList.h */,
+				B2F406A81BA394D800E25474 /* HelpList.m */,
+				B2F406A41BA394C700E25474 /* HelpContent.h */,
+				B2F406A51BA394C700E25474 /* HelpContent.m */,
 				B23E4C251B7BBFC900D35088 /* Main.storyboard */,
 				B23E4C281B7BBFC900D35088 /* Images.xcassets */,
 				B23E4C2A1B7BBFC900D35088 /* LaunchScreen.xib */,
@@ -467,8 +477,10 @@
 				B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */,
 				B25E461D1B98E95E00C7FD60 /* RestoreAuthenticator.m in Sources */,
 				A19074BA1B92B5380000526C /* SetUpAuthenticatorDone.m in Sources */,
+				B2F406A61BA394C700E25474 /* HelpContent.m in Sources */,
 				B2C11F5C1BA37B2400E9C962 /* TTTAttributedLabel.m in Sources */,
 				B2D94D3A1B7D3FFB0010DE6C /* AuthenticatorSimulator.m in Sources */,
+				B2F406A91BA394D800E25474 /* HelpList.m in Sources */,
 				B2BC9C2E1B979F94004481BB /* UINavigationController+NavigationController.m in Sources */,
 				B23E4C4C1B7BCBBF00D35088 /* KeychainWrapper.m in Sources */,
 				B2E7CC5E1B8BDE3B004EA14C /* ProcessingViewController.m in Sources */,

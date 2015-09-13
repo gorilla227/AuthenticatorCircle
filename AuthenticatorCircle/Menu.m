@@ -72,9 +72,8 @@
             NSString *locale = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Locale"], [[NSBundle mainBundle] preferredLocalizations].firstObject];
             NSString *device = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Device"], [UIDevice currentDevice].model];
             NSString *iosVersion = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"IOSVersion"], [UIDevice currentDevice].systemVersion];
-            NSString *sentFrom =  [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"SentFrom"], [UIDevice currentDevice].model];
-            NSString *body = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Body"], warningMessage, appVersion, locale, device, iosVersion, sentFrom];
-            [compose setMessageBody:body isHTML:YES];
+            NSString *body = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Body"], warningMessage, appVersion, locale, device, iosVersion];
+            [compose setMessageBody:body isHTML:NO];
             
             [self presentViewController:compose animated:YES completion:nil];
         }
