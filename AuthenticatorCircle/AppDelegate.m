@@ -21,21 +21,6 @@
     NSString *filePathOfUIStrings = [[NSBundle mainBundle] pathForResource:@"UIStrings" ofType:@"plist"];
     gUIStrings = [NSDictionary dictionaryWithContentsOfFile:filePathOfUIStrings];
     
-//    NSArray *keychainItemList = [KeychainWrapper retriveKeychainsByAttributes:kKeychainIdentifier];
-//    if (keychainItemList.count) {
-//        //Have authenticator saved in iCloud Keychain
-//        NSDictionary *keychainItemAttribute = keychainItemList.firstObject;
-//        KeychainWrapper *keychainItem = [[KeychainWrapper alloc] initWithAttributes:keychainItemAttribute];
-//        if ([keychainItem retriveKeychainData]) {
-//            gAuthenticator = [NSKeyedUnarchiver unarchiveObjectWithData:keychainItem.keychainData];
-//        }
-//        else {
-//            NSLog(@"Retrive KeychainItemData Failed.");
-//        }
-//    }
-//    else {
-//        [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"InitialViewController"]];
-//    }
 #warning Debug Lines Start
 //    [KeychainWrapper clearKeychains:kKeychainIdentifier];
 //    [[NSFileManager defaultManager] removeItemAtPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile] error:nil];
@@ -48,13 +33,33 @@
 //    [[UINavigationBar appearance] setTranslucent:NO];
     
     NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-        gAuthenticator = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+    AuthenticatorSimulator *localAuthenticator = [AuthenticatorOperation loadFromFile:filePath];
+    AuthenticatorSimulator *cloudAuthenticator = [AuthenticatorOperation loadFromCloud];
+    
+    if (!localAuthenticator && !cloudAuthenticator) {
+        //New User
+#warning Welcome View
     }
-    else {
+    else if (!localAuthenticator && cloudAuthenticator) {
+        //New Device -> InitialViewController
         [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"InitialNavi"]];
     }
-
+    else if (localAuthenticator && !cloudAuthenticator) {
+        //If shouldn't be this situation -> Save local authenticator to iCloud
+        [AuthenticatorOperation saveToCloud:localAuthenticator];
+        [self setGAuthenticator:localAuthenticator];
+    }
+    else {
+        //Both LocalAuthenticator and CloudAuthenticator existed
+        if ([[localAuthenticator retrieveSeriesNumber] isEqualToString:[cloudAuthenticator retrieveSeriesNumber]]) {
+            //LocalAuthenticator equals to CloudAuthenticator -> Launch ShowAuthenticator
+            [self setGAuthenticator:localAuthenticator];
+        }
+        else {
+            //LocalAuthenticatr is not consistent with CloudAuthenticator -> Ask user to make a chioce
+#warning Chioce View
+        }
+    }
     return YES;
 }
 

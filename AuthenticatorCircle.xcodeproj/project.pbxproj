@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A11E5D201B8AD6DA00D2BA8A /* WarningSign.png in Resources */ = {isa = PBXBuildFile; fileRef = A11E5D1F1B8AD6DA00D2BA8A /* WarningSign.png */; };
 		A11E5D231B8ADE7800D2BA8A /* ResetAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E5D221B8ADE7800D2BA8A /* ResetAuthenticator.m */; };
+		A1827DF11BA68EFA0090783B /* AuthenticatorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1827DF01BA68EFA0090783B /* AuthenticatorOperation.m */; };
 		A1832E491B8C2BF4005D3238 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1832E481B8C2BF4005D3238 /* InitialViewController.m */; };
 		A19074BA1B92B5380000526C /* SetUpAuthenticatorDone.m in Sources */ = {isa = PBXBuildFile; fileRef = A19074B91B92B5380000526C /* SetUpAuthenticatorDone.m */; };
 		A1D368051B8049550034F8F5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D368041B8049550034F8F5 /* Menu.m */; };
@@ -74,6 +75,8 @@
 		A11E5D211B8ADE7800D2BA8A /* ResetAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetAuthenticator.h; sourceTree = "<group>"; };
 		A11E5D221B8ADE7800D2BA8A /* ResetAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetAuthenticator.m; sourceTree = "<group>"; };
 		A12EE3D91B8593EB005DDCFC /* AuthenticatorCircle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AuthenticatorCircle-Prefix.pch"; sourceTree = "<group>"; };
+		A1827DEF1BA68EFA0090783B /* AuthenticatorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticatorOperation.h; sourceTree = "<group>"; };
+		A1827DF01BA68EFA0090783B /* AuthenticatorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticatorOperation.m; sourceTree = "<group>"; };
 		A1832E471B8C2BF4005D3238 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		A1832E481B8C2BF4005D3238 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		A19074B81B92B5380000526C /* SetUpAuthenticatorDone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpAuthenticatorDone.h; sourceTree = "<group>"; };
@@ -188,46 +191,15 @@
 		B23E4C1A1B7BBFC900D35088 /* AuthenticatorCircle */ = {
 			isa = PBXGroup;
 			children = (
-				B2D2C5641B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.h */,
-				B2D2C5651B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m */,
-				B2BC9C2C1B979F94004481BB /* UINavigationController+NavigationController.h */,
-				B2BC9C2D1B979F94004481BB /* UINavigationController+NavigationController.m */,
+				B27BE9E81BA79C0C006FEBCC /* UIControlCustomization */,
 				B2293DE21B8D1071004B9A3E /* AuthenticatorCircle.entitlements */,
 				B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */,
 				B23E4C1F1B7BBFC900D35088 /* AppDelegate.h */,
 				B23E4C201B7BBFC900D35088 /* AppDelegate.m */,
 				B2A60E4E1B814D7C001BB51F /* Icon */,
 				B267F5511B893C8E00FBB9B5 /* BgImages */,
-				B2C11F591BA37B2400E9C962 /* TTTAttributedLabel */,
-				B2D94D3D1B7D60070010DE6C /* KeychainWrapper */,
-				B2D94D3C1B7D4BAE0010DE6C /* ArcProgressView */,
-				B2D94D3B1B7D4BA20010DE6C /* Simulator */,
-				B23E4C471B7BCAD200D35088 /* ShowAuthenticator.h */,
-				B23E4C481B7BCAD200D35088 /* ShowAuthenticator.m */,
-				A1D368031B8049550034F8F5 /* Menu.h */,
-				A1D368041B8049550034F8F5 /* Menu.m */,
-				B2EB9E831B8403B70054BA0E /* ViewRestoreCode.h */,
-				B2EB9E841B8403B70054BA0E /* ViewRestoreCode.m */,
-				A11E5D211B8ADE7800D2BA8A /* ResetAuthenticator.h */,
-				A11E5D221B8ADE7800D2BA8A /* ResetAuthenticator.m */,
-				B2E7CC5C1B8BDE3B004EA14C /* ProcessingViewController.h */,
-				B2E7CC5D1B8BDE3B004EA14C /* ProcessingViewController.m */,
-				A1832E471B8C2BF4005D3238 /* InitialViewController.h */,
-				A1832E481B8C2BF4005D3238 /* InitialViewController.m */,
-				B2293DE61B8D3813004B9A3E /* SetUpAuthenticator.h */,
-				B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */,
-				A19074B81B92B5380000526C /* SetUpAuthenticatorDone.h */,
-				A19074B91B92B5380000526C /* SetUpAuthenticatorDone.m */,
-				B25E461B1B98E95E00C7FD60 /* RestoreAuthenticator.h */,
-				B25E461C1B98E95E00C7FD60 /* RestoreAuthenticator.m */,
-				B22D0BC71B991B4D00BD1857 /* RestoreWithRestoreCode.h */,
-				B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */,
-				B281E5261BA205EB00736CC3 /* RestoreKeychainDone.h */,
-				B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */,
-				B2F406A71BA394D800E25474 /* HelpList.h */,
-				B2F406A81BA394D800E25474 /* HelpList.m */,
-				B2F406A41BA394C700E25474 /* HelpContent.h */,
-				B2F406A51BA394C700E25474 /* HelpContent.m */,
+				B27BE9E61BA79BD1006FEBCC /* AuthenticatorOperation */,
+				B27BE9E71BA79BFA006FEBCC /* ViewControllers */,
 				B23E4C251B7BBFC900D35088 /* Main.storyboard */,
 				B23E4C281B7BBFC900D35088 /* Images.xcassets */,
 				B23E4C2A1B7BBFC900D35088 /* LaunchScreen.xib */,
@@ -286,6 +258,63 @@
 				B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */,
 			);
 			path = BgImages;
+			sourceTree = "<group>";
+		};
+		B27BE9E61BA79BD1006FEBCC /* AuthenticatorOperation */ = {
+			isa = PBXGroup;
+			children = (
+				B2D94D3B1B7D4BA20010DE6C /* Simulator */,
+				B2D94D3D1B7D60070010DE6C /* KeychainWrapper */,
+				A1827DEF1BA68EFA0090783B /* AuthenticatorOperation.h */,
+				A1827DF01BA68EFA0090783B /* AuthenticatorOperation.m */,
+			);
+			name = AuthenticatorOperation;
+			sourceTree = "<group>";
+		};
+		B27BE9E71BA79BFA006FEBCC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B23E4C471B7BCAD200D35088 /* ShowAuthenticator.h */,
+				B23E4C481B7BCAD200D35088 /* ShowAuthenticator.m */,
+				A1D368031B8049550034F8F5 /* Menu.h */,
+				A1D368041B8049550034F8F5 /* Menu.m */,
+				B2EB9E831B8403B70054BA0E /* ViewRestoreCode.h */,
+				B2EB9E841B8403B70054BA0E /* ViewRestoreCode.m */,
+				A11E5D211B8ADE7800D2BA8A /* ResetAuthenticator.h */,
+				A11E5D221B8ADE7800D2BA8A /* ResetAuthenticator.m */,
+				B2E7CC5C1B8BDE3B004EA14C /* ProcessingViewController.h */,
+				B2E7CC5D1B8BDE3B004EA14C /* ProcessingViewController.m */,
+				A1832E471B8C2BF4005D3238 /* InitialViewController.h */,
+				A1832E481B8C2BF4005D3238 /* InitialViewController.m */,
+				B2293DE61B8D3813004B9A3E /* SetUpAuthenticator.h */,
+				B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */,
+				A19074B81B92B5380000526C /* SetUpAuthenticatorDone.h */,
+				A19074B91B92B5380000526C /* SetUpAuthenticatorDone.m */,
+				B25E461B1B98E95E00C7FD60 /* RestoreAuthenticator.h */,
+				B25E461C1B98E95E00C7FD60 /* RestoreAuthenticator.m */,
+				B22D0BC71B991B4D00BD1857 /* RestoreWithRestoreCode.h */,
+				B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */,
+				B281E5261BA205EB00736CC3 /* RestoreKeychainDone.h */,
+				B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */,
+				B2F406A71BA394D800E25474 /* HelpList.h */,
+				B2F406A81BA394D800E25474 /* HelpList.m */,
+				B2F406A41BA394C700E25474 /* HelpContent.h */,
+				B2F406A51BA394C700E25474 /* HelpContent.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B27BE9E81BA79C0C006FEBCC /* UIControlCustomization */ = {
+			isa = PBXGroup;
+			children = (
+				B2D94D3C1B7D4BAE0010DE6C /* ArcProgressView */,
+				B2C11F591BA37B2400E9C962 /* TTTAttributedLabel */,
+				B2D2C5641B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.h */,
+				B2D2C5651B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m */,
+				B2BC9C2C1B979F94004481BB /* UINavigationController+NavigationController.h */,
+				B2BC9C2D1B979F94004481BB /* UINavigationController+NavigationController.m */,
+			);
+			name = UIControlCustomization;
 			sourceTree = "<group>";
 		};
 		B2A60E4E1B814D7C001BB51F /* Icon */ = {
@@ -476,6 +505,7 @@
 				B281E5281BA205EB00736CC3 /* RestoreKeychainDone.m in Sources */,
 				B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */,
 				B25E461D1B98E95E00C7FD60 /* RestoreAuthenticator.m in Sources */,
+				A1827DF11BA68EFA0090783B /* AuthenticatorOperation.m in Sources */,
 				A19074BA1B92B5380000526C /* SetUpAuthenticatorDone.m in Sources */,
 				B2F406A61BA394C700E25474 /* HelpContent.m in Sources */,
 				B2C11F5C1BA37B2400E9C962 /* TTTAttributedLabel.m in Sources */,
