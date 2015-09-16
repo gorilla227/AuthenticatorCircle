@@ -375,7 +375,7 @@
         <!--Help-->
         <scene sceneID="lTT-5B-DTE">
             <objects>
-                <viewController id="fY8-he-tGL" customClass="HelpContent" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HelpContent" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fY8-he-tGL" customClass="HelpContent" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E6o-mL-5Nq"/>
                         <viewControllerLayoutGuide type="bottom" id="34y-iA-Gdb"/>
@@ -448,11 +448,17 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="2q2-ml-Yr1"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="btn_Close" destination="NDj-0g-4uG" id="bEa-aM-lWN"/>
                         <outlet property="lb_HelpContent" destination="g37-IL-c1I" id="7lt-pJ-ual"/>
                         <outlet property="lb_HelpTitle" destination="rtq-tl-EPb" id="agX-Ti-ZAP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTx-gV-MoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem systemItem="done" id="NDj-0g-4uG">
+                    <connections>
+                        <action selector="btn_Close_OnClicked:" destination="fY8-he-tGL" id="H0e-9b-WcP"/>
+                    </connections>
+                </barButtonItem>
             </objects>
             <point key="canvasLocation" x="3015" y="477"/>
         </scene>
@@ -2665,6 +2671,42 @@ Be sure to write down these numbers in case you ever need to restore your authen
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SI-Pd-Jrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="609" y="1197"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bq5-lS-G0Q">
+            <objects>
+                <viewController id="Ice-Qb-trW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3U7-G8-Won"/>
+                        <viewControllerLayoutGuide type="bottom" id="qTh-Ev-mkg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6oa-P7-Hsp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EpT-GM-RYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1039.5" y="1197"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AnJ-xx-axK">
+            <objects>
+                <viewController id="tgH-qX-EkV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JIJ-eY-wWx"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGg-s1-RRo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nNx-c8-EIv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZpI-0T-xVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-235.5" y="1197"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1gu-BM-zkc">

@@ -12,6 +12,7 @@
 extern NSDictionary *gUIStrings;
 #endif
 
+#define cMenuTintColor [UIColor colorWithRed:54.0/255.0 green:61.0/255.0 blue:78.0/255.0 alpha:1.0f]
 #define cBackground [UIColor colorWithRed:33.0/255.0 green:38.0/255.0 blue:53.0/255.0 alpha:1.0f]
 #define cViewBackground [UIColor colorWithPatternImage:[UIImage imageNamed:@"AppBackground.jpg"]]
 #define cTextFieldBackground [UIColor colorWithWhite:0.1f alpha:0.8f]

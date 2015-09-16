@@ -8,6 +8,7 @@
 extern AuthenticatorSimulator *gAuthenticator;
 #import "ShowAuthenticator.h"
 #import "ArcProgressView.h"
+#import "HelpContent.h"
 
 @interface ShowAuthenticator ()
 @property (nonatomic, strong) IBOutlet UIView *progressViewContainer;
@@ -162,7 +163,14 @@ extern AuthenticatorSimulator *gAuthenticator;
         [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(syncAuthenticator) userInfo:nil repeats:NO];
     }
     else {
-#warning 
+        HelpContent *helpContent = [self.storyboard instantiateViewControllerWithIdentifier:@"HelpContent"];
+        [helpContent setHelpDetail:[[gUIStrings objectForKey:@"HelpList"] lastObject]];
+        [helpContent.navigationController setNavigationBarHidden:NO];
+        [helpContent.navigationItem setRightBarButtonItem:helpContent.btn_Close];
+        UINavigationController *helpNavi = [[UINavigationController alloc] initWithRootViewController:helpContent];
+        [helpNavi.navigationBar setBarTintColor:cMenuTintColor];
+
+        [self presentViewController:helpNavi animated:YES completion:nil];
     }
 }
 
@@ -170,14 +178,18 @@ extern AuthenticatorSimulator *gAuthenticator;
     [btn_Sync setTag:2];
     [authenticatorSimulator sync];
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"AdditionalHelp"]) {        
+        HelpContent *helpContent = segue.destinationViewController;
+        [helpContent setHelpDetail:[[gUIStrings objectForKey:@"HelpList"] lastObject]];
+        [helpContent.navigationController setNavigationBarHidden:NO];
+    }
 }
-*/
 
 @end

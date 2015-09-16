@@ -14,7 +14,7 @@
 @end
 
 @implementation HelpContent
-@synthesize helpDetail, lb_HelpContent, lb_HelpTitle;
+@synthesize helpDetail, lb_HelpContent, lb_HelpTitle, btn_Close;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -73,6 +73,10 @@
 - (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url {
     BOOL result = [[UIApplication sharedApplication] openURL:url];
     NSLog(@"Open Link: %@",result?@"Successed":@"Failed");
+}
+
+- (IBAction)btn_Close_OnClicked:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

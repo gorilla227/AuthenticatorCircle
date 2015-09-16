@@ -10,4 +10,5 @@
 
 @interface HelpContent : UIViewController <TTTAttributedLabelDelegate>
 @property (nonatomic) NSDictionary *helpDetail;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *btn_Close;
 @end

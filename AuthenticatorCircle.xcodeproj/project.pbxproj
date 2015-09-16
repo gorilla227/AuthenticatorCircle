@@ -41,6 +41,8 @@
 		B267F56F1B893C8E00FBB9B5 /* BG_Winston.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F55F1B893C8E00FBB9B5 /* BG_Winston.jpg */; };
 		B267F5701B893C8E00FBB9B5 /* BG_Zarya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5601B893C8E00FBB9B5 /* BG_Zarya.jpg */; };
 		B267F5711B893C8E00FBB9B5 /* BG_Zenyatta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */; };
+		B27BE9EA1BA7A1AE006FEBCC /* CloudIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B27BE9E91BA7A1AE006FEBCC /* CloudIcon.png */; };
+		B27BE9EC1BA7A1B4006FEBCC /* WelcomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B27BE9EB1BA7A1B4006FEBCC /* WelcomeIcon.png */; };
 		B281E5251BA1FD3200736CC3 /* CompleteSign.png in Resources */ = {isa = PBXBuildFile; fileRef = B281E5241BA1FD3200736CC3 /* CompleteSign.png */; };
 		B281E5281BA205EB00736CC3 /* RestoreKeychainDone.m in Sources */ = {isa = PBXBuildFile; fileRef = B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */; };
 		B283C8301B7E6BC30075D2C7 /* UIStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */; };
@@ -123,6 +125,8 @@
 		B267F55F1B893C8E00FBB9B5 /* BG_Winston.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Winston.jpg; sourceTree = "<group>"; };
 		B267F5601B893C8E00FBB9B5 /* BG_Zarya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Zarya.jpg; sourceTree = "<group>"; };
 		B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Zenyatta.jpg; sourceTree = "<group>"; };
+		B27BE9E91BA7A1AE006FEBCC /* CloudIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloudIcon.png; sourceTree = "<group>"; };
+		B27BE9EB1BA7A1B4006FEBCC /* WelcomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeIcon.png; sourceTree = "<group>"; };
 		B281E5241BA1FD3200736CC3 /* CompleteSign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CompleteSign.png; sourceTree = "<group>"; };
 		B281E5261BA205EB00736CC3 /* RestoreKeychainDone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreKeychainDone.h; sourceTree = "<group>"; };
 		B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreKeychainDone.m; sourceTree = "<group>"; };
@@ -320,6 +324,7 @@
 		B2A60E4E1B814D7C001BB51F /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				B27BE9E91BA7A1AE006FEBCC /* CloudIcon.png */,
 				B281E5241BA1FD3200736CC3 /* CompleteSign.png */,
 				B2E7CC611B8BF8A4004EA14C /* BattleNet_Title.png */,
 				B2A60E4F1B814D7C001BB51F /* Help.png */,
@@ -327,6 +332,7 @@
 				B2A60E511B814D7C001BB51F /* SendFeedback.png */,
 				B2A60E521B814D7C001BB51F /* ViewRestoreCode.png */,
 				A11E5D1F1B8AD6DA00D2BA8A /* WarningSign.png */,
+				B27BE9EB1BA7A1B4006FEBCC /* WelcomeIcon.png */,
 			);
 			path = Icon;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11E5D201B8AD6DA00D2BA8A /* WarningSign.png in Resources */,
+				B27BE9EC1BA7A1B4006FEBCC /* WelcomeIcon.png in Resources */,
 				B267F5701B893C8E00FBB9B5 /* BG_Zarya.jpg in Resources */,
 				B2A60E531B814D7C001BB51F /* Help.png in Resources */,
 				B2E7CC601B8BF71C004EA14C /* AppBackground.jpg in Resources */,
@@ -481,6 +488,7 @@
 				B267F5651B893C8E00FBB9B5 /* BG_McCree.jpg in Resources */,
 				B267F5681B893C8E00FBB9B5 /* BG_Reaper.jpg in Resources */,
 				B267F56A1B893C8E00FBB9B5 /* BG_Soldier76.jpg in Resources */,
+				B27BE9EA1BA7A1AE006FEBCC /* CloudIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

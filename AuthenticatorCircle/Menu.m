@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:54.0/255.0 green:61.0/255.0 blue:78.0/255.0 alpha:1.0f]];
+    [self.navigationController.navigationBar setBarTintColor:cMenuTintColor];
     [self.tableView setBackgroundColor:cBackground];
     [lb_CopyRights setBackgroundColor:cBackground];
     [lb_CopyRights sizeToFit];
