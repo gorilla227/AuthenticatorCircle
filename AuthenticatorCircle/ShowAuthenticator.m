@@ -14,10 +14,8 @@ extern AuthenticatorSimulator *gAuthenticator;
 @property (nonatomic, strong) IBOutlet UIView *progressViewContainer;
 @property (nonatomic, strong) IBOutlet UILabel *lb_Passcode;
 @property (nonatomic, strong) IBOutlet UIButton *btn_Copy;
-@property (nonatomic, strong) IBOutlet UILabel *lb_Sync;
-@property (nonatomic, strong) IBOutlet UIButton *btn_Sync;
-@property (nonatomic, strong) IBOutlet UIView *view_Sync;
 @property (nonatomic, strong) IBOutlet UILabel *lb_Copied;
+@property (nonatomic, strong) IBOutlet TTTAttributedLabel *lb_Sync;
 @end
 
 @implementation ShowAuthenticator {
@@ -28,7 +26,7 @@ extern AuthenticatorSimulator *gAuthenticator;
     NSDictionary *uiStrings;
     AuthenticatorSimulator *authenticatorSimulator;
 }
-@synthesize progressViewContainer, lb_Passcode, btn_Copy, lb_Sync, btn_Sync, view_Sync, lb_Copied;
+@synthesize progressViewContainer, lb_Passcode, btn_Copy, lb_Copied, lb_Sync;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -68,6 +66,12 @@ extern AuthenticatorSimulator *gAuthenticator;
     [lb_Copied setBackgroundColor:[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.8f]];
     [lb_Copied setAlpha:0];
     [lb_Copied setTransform:CGAffineTransformMakeTranslation(0, -lb_Copied.bounds.size.height)];
+    
+    //Initial lb_Sync
+    [lb_Sync setLinkAttributes:@{(id)kCTForegroundColorAttributeName:(id)self.view.tintColor.CGColor,
+                                        NSUnderlineStyleAttributeName:@(NSUnderlineStyleNone)}];
+    [lb_Sync setActiveLinkAttributes:@{(id)kCTForegroundColorAttributeName:(id)[UIColor grayColor].CGColor}];
+    [self configSyncLabel:0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,6 +80,7 @@ extern AuthenticatorSimulator *gAuthenticator;
 }
 
 - (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
     if (!progressView) {
         progressView = [[ArcProgressView alloc] initWithDiameter:progressViewContainer.bounds.size.width arcWidth:10.0f arcRadian:360.0f];
         [progressView showOrHiddenProgressLabel:NO countDownLabel:YES];
@@ -84,24 +89,10 @@ extern AuthenticatorSimulator *gAuthenticator;
         [authenticatorSimulator hookupPasscodeLabel:lb_Passcode arcProgressView:progressView];
         [authenticatorSimulator startTimerFrom:(float)(arc4random() % 100) / 100];
     }
-    
-    //Config sync text
-    switch (btn_Sync.tag) {
-        case 0:
-            [self configSyncText:[uiStrings objectForKey:@"UI_SA_Resync_NotWorking"] buttonText:[uiStrings objectForKey:@"UI_SA_Resync_TryResyncing"]];
-            break;
-        case 1:
-            [self configSyncText:[uiStrings objectForKey:@"UI_SA_Resync_Resyncing"] buttonText:nil];
-            break;
-        case 2:
-            [self configSyncText:[uiStrings objectForKey:@"UI_SA_Resync_SyncComplete"] buttonText:[uiStrings objectForKey:@"UI_SA_Resync_StillNotWorking"]];
-            break;
-        default:
-            break;
-    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
     [UIView animateWithDuration:0.25f animations:^{
         [self.view setTransform:CGAffineTransformMakeScale(1, 1)];
@@ -109,6 +100,7 @@ extern AuthenticatorSimulator *gAuthenticator;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     [UIView animateWithDuration:0.25f animations:^{
         [self.view setTransform:CGAffineTransformMakeScale(0.95, 0.95)];
     }];
@@ -118,15 +110,52 @@ extern AuthenticatorSimulator *gAuthenticator;
     return UIStatusBarStyleDefault;
 }
 
-- (void)configSyncText:(NSString *)labelText buttonText:(NSString *)buttonText {
-    [lb_Sync setText:labelText];
-    [btn_Sync setTitle:buttonText forState:UIControlStateNormal];
-    [lb_Sync sizeToFit];
-    [btn_Sync sizeToFit];
-    CGRect containFrame = CGRectUnion(lb_Sync.frame, btn_Sync.frame);
-    CGPoint center = CGPointMake(self.view.center.x, self.view.bounds.size.height - containFrame.size.height);
-    [view_Sync setFrame:containFrame];
-    [view_Sync setCenter:center];
+- (void)configSyncLabel:(NSInteger)tag {
+    NSString *prefixText;
+    NSString *linkText;
+    NSRange linkRange;
+    
+    [lb_Sync setTag:tag];
+    switch (tag) {
+        case 0://Click to Resync
+            prefixText = [uiStrings objectForKey:@"UI_SA_Resync_NotWorking"];
+            linkText = [uiStrings objectForKey:@"UI_SA_Resync_TryResyncing"];
+            [lb_Sync setText:[NSString stringWithFormat:@"%@ %@", prefixText, linkText]];
+            linkRange = [lb_Sync.text rangeOfString:linkText];
+            [lb_Sync addLinkToURL:nil withRange:linkRange];
+            break;
+        case 1://Resyncing
+            [lb_Sync setText:[uiStrings objectForKey:@"UI_SA_Resync_Resyncing"]];
+            break;
+        case 2://Still not working
+            prefixText = [uiStrings objectForKey:@"UI_SA_Resync_SyncComplete"];
+            linkText = [uiStrings objectForKey:@"UI_SA_Resync_StillNotWorking"];
+            [lb_Sync setText:[NSString stringWithFormat:@"%@ %@", prefixText, linkText]];
+            linkRange = [lb_Sync.text rangeOfString:linkText];
+            [lb_Sync addLinkToURL:nil withRange:linkRange];
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url {
+    if (lb_Sync.tag == 0) {
+        //Resync
+        [self configSyncLabel:1];
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(syncAuthenticator) userInfo:nil repeats:NO];
+    }
+    else if (lb_Sync.tag == 2) {
+        //Show help content
+        HelpContent *helpContent = [self.storyboard instantiateViewControllerWithIdentifier:@"HelpContent"];
+        [helpContent setHelpDetail:[[gUIStrings objectForKey:@"HelpList"] lastObject]];
+        [helpContent.navigationController setNavigationBarHidden:NO];
+        [helpContent.navigationItem setRightBarButtonItem:helpContent.btn_Close];
+        UINavigationController *helpNavi = [[UINavigationController alloc] initWithRootViewController:helpContent];
+        [helpNavi.navigationBar setBarTintColor:cMenuTintColor];
+        
+        [self presentViewController:helpNavi animated:YES completion:nil];
+    }
 }
 
 - (void)changeBackgroundImage:(NSNotification *)notification {
@@ -141,8 +170,6 @@ extern AuthenticatorSimulator *gAuthenticator;
 
 - (IBAction)btn_Copy_OnClicked:(id)sender {
     [[UIPasteboard generalPasteboard] setString:lb_Passcode.text];
-//    UIAlertView *copySucc = [[UIAlertView alloc] initWithTitle:nil message:@"Passcode is copied to clipboard successfully!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//    [copySucc show];
     [btn_Copy setEnabled:NO];
     [UIView animateWithDuration:0.5f delay:0.0f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [lb_Copied setAlpha:1.0f];
@@ -156,40 +183,19 @@ extern AuthenticatorSimulator *gAuthenticator;
         }];
     }];
 }
-- (IBAction)btn_Sync_OnClicked:(id)sender {
-    if (btn_Sync.tag == 0) {
-        [btn_Sync setTag:1];
-        [self configSyncText:[uiStrings objectForKey:@"UI_SA_Resync_Resyncing"] buttonText:nil];
-        [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(syncAuthenticator) userInfo:nil repeats:NO];
-    }
-    else {
-        HelpContent *helpContent = [self.storyboard instantiateViewControllerWithIdentifier:@"HelpContent"];
-        [helpContent setHelpDetail:[[gUIStrings objectForKey:@"HelpList"] lastObject]];
-        [helpContent.navigationController setNavigationBarHidden:NO];
-        [helpContent.navigationItem setRightBarButtonItem:helpContent.btn_Close];
-        UINavigationController *helpNavi = [[UINavigationController alloc] initWithRootViewController:helpContent];
-        [helpNavi.navigationBar setBarTintColor:cMenuTintColor];
-
-        [self presentViewController:helpNavi animated:YES completion:nil];
-    }
-}
 
 - (void)syncAuthenticator {
-    [btn_Sync setTag:2];
+    [self configSyncLabel:2];
     [authenticatorSimulator sync];
 }
 
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([segue.identifier isEqualToString:@"AdditionalHelp"]) {        
-        HelpContent *helpContent = segue.destinationViewController;
-        [helpContent setHelpDetail:[[gUIStrings objectForKey:@"HelpList"] lastObject]];
-        [helpContent.navigationController setNavigationBarHidden:NO];
-    }
 }
-
+*/
 @end

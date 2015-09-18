@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShowAuthenticator : UIViewController
+@interface ShowAuthenticator : UIViewController <TTTAttributedLabelDelegate>
 
 @end
