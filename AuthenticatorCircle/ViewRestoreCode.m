@@ -33,8 +33,7 @@
     [lb_RestoreCodeTitle setTextColor:[UIColor whiteColor]];
     [lb_RestoreCodeNumber setTextColor:[UIColor yellowColor]];
     [lb_Notification setTextColor:[UIColor whiteColor]];
-    [btn_SaveScreenshot.layer setMasksToBounds:YES];
-    [btn_SaveScreenshot.layer setCornerRadius:kButtonCornerRadius];
+    [btn_SaveScreenshot updateUIButtonStyle:UIButtonStyleLightBlue];
     
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     [lb_SerialNumber setText:[appDelegate.gAuthenticator retrieveSeriesNumber]];

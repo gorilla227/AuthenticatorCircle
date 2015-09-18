@@ -35,8 +35,7 @@
     [self.view setBackgroundColor:cViewBackground];
     [self.navigationController setNavigationBarHidden:YES];
     [lb_SerialNumber setText:[authenticator retrieveSeriesNumber]];
-    [btn_Continue.layer setCornerRadius:kButtonCornerRadius];
-    [btn_Continue.layer setMasksToBounds:YES];
+    [btn_Continue updateUIButtonStyle:UIButtonStyleLightBlue];
     [lb_AuthenticatorCode setText:nil];
     [pv_ProgressView setTransform:CGAffineTransformMakeScale(1, 2)];
     [pv_ProgressView.layer setCornerRadius:1.0f];

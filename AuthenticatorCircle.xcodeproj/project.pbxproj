@@ -12,9 +12,12 @@
 		A1827DF11BA68EFA0090783B /* AuthenticatorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1827DF01BA68EFA0090783B /* AuthenticatorOperation.m */; };
 		A1832E491B8C2BF4005D3238 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1832E481B8C2BF4005D3238 /* InitialViewController.m */; };
 		A19074BA1B92B5380000526C /* SetUpAuthenticatorDone.m in Sources */ = {isa = PBXBuildFile; fileRef = A19074B91B92B5380000526C /* SetUpAuthenticatorDone.m */; };
+		A1C137D51BAA3B3700D8C92A /* WelcomeHomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C137D41BAA3B3700D8C92A /* WelcomeHomePage.m */; settings = {ASSET_TAGS = (); }; };
+		A1C137D81BAA3BA700D8C92A /* WelcomeSyncWithiCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C137D71BAA3BA700D8C92A /* WelcomeSyncWithiCloud.m */; settings = {ASSET_TAGS = (); }; };
 		A1D368051B8049550034F8F5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D368041B8049550034F8F5 /* Menu.m */; };
 		B2293DE81B8D3813004B9A3E /* SetUpAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */; };
 		B22D0BC91B991B4D00BD1857 /* RestoreWithRestoreCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */; };
+		B23DD22D1BA8F6BD00A5B9B9 /* WelcomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23DD22C1BA8F6BD00A5B9B9 /* WelcomePageView.m */; };
 		B23E4C1E1B7BBFC900D35088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C1D1B7BBFC900D35088 /* main.m */; };
 		B23E4C211B7BBFC900D35088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C201B7BBFC900D35088 /* AppDelegate.m */; };
 		B23E4C271B7BBFC900D35088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23E4C251B7BBFC900D35088 /* Main.storyboard */; };
@@ -25,6 +28,7 @@
 		B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C481B7BCAD200D35088 /* ShowAuthenticator.m */; };
 		B23E4C4C1B7BCBBF00D35088 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C4B1B7BCBBF00D35088 /* KeychainWrapper.m */; };
 		B25E461D1B98E95E00C7FD60 /* RestoreAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B25E461C1B98E95E00C7FD60 /* RestoreAuthenticator.m */; };
+		B265C7DB1BAB7DD500DC238B /* UIButton+StyleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B265C7DA1BAB7DD500DC238B /* UIButton+StyleButton.m */; settings = {ASSET_TAGS = (); }; };
 		B267F5621B893C8E00FBB9B5 /* BG_Bastion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5521B893C8E00FBB9B5 /* BG_Bastion.jpg */; };
 		B267F5631B893C8E00FBB9B5 /* BG_Hanzo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5531B893C8E00FBB9B5 /* BG_Hanzo.jpg */; };
 		B267F5641B893C8E00FBB9B5 /* BG_Lucio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5541B893C8E00FBB9B5 /* BG_Lucio.jpg */; };
@@ -83,6 +87,10 @@
 		A1832E481B8C2BF4005D3238 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		A19074B81B92B5380000526C /* SetUpAuthenticatorDone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpAuthenticatorDone.h; sourceTree = "<group>"; };
 		A19074B91B92B5380000526C /* SetUpAuthenticatorDone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpAuthenticatorDone.m; sourceTree = "<group>"; };
+		A1C137D31BAA3B3700D8C92A /* WelcomeHomePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeHomePage.h; sourceTree = "<group>"; };
+		A1C137D41BAA3B3700D8C92A /* WelcomeHomePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeHomePage.m; sourceTree = "<group>"; };
+		A1C137D61BAA3BA700D8C92A /* WelcomeSyncWithiCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeSyncWithiCloud.h; sourceTree = "<group>"; };
+		A1C137D71BAA3BA700D8C92A /* WelcomeSyncWithiCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeSyncWithiCloud.m; sourceTree = "<group>"; };
 		A1D368031B8049550034F8F5 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		A1D368041B8049550034F8F5 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		B2293DE21B8D1071004B9A3E /* AuthenticatorCircle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AuthenticatorCircle.entitlements; sourceTree = "<group>"; };
@@ -90,6 +98,8 @@
 		B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpAuthenticator.m; sourceTree = "<group>"; };
 		B22D0BC71B991B4D00BD1857 /* RestoreWithRestoreCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreWithRestoreCode.h; sourceTree = "<group>"; };
 		B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreWithRestoreCode.m; sourceTree = "<group>"; };
+		B23DD22B1BA8F6BD00A5B9B9 /* WelcomePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomePageView.h; sourceTree = "<group>"; };
+		B23DD22C1BA8F6BD00A5B9B9 /* WelcomePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomePageView.m; sourceTree = "<group>"; };
 		B23E4C181B7BBFC900D35088 /* AuthenticatorCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticatorCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23E4C1C1B7BBFC900D35088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B23E4C1D1B7BBFC900D35088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -109,6 +119,8 @@
 		B23E4C4B1B7BCBBF00D35088 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		B25E461B1B98E95E00C7FD60 /* RestoreAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreAuthenticator.h; sourceTree = "<group>"; };
 		B25E461C1B98E95E00C7FD60 /* RestoreAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreAuthenticator.m; sourceTree = "<group>"; };
+		B265C7D91BAB7DD500DC238B /* UIButton+StyleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+StyleButton.h"; sourceTree = "<group>"; };
+		B265C7DA1BAB7DD500DC238B /* UIButton+StyleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+StyleButton.m"; sourceTree = "<group>"; };
 		B267F5521B893C8E00FBB9B5 /* BG_Bastion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Bastion.jpg; sourceTree = "<group>"; };
 		B267F5531B893C8E00FBB9B5 /* BG_Hanzo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Hanzo.jpg; sourceTree = "<group>"; };
 		B267F5541B893C8E00FBB9B5 /* BG_Lucio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Lucio.jpg; sourceTree = "<group>"; };
@@ -195,7 +207,6 @@
 		B23E4C1A1B7BBFC900D35088 /* AuthenticatorCircle */ = {
 			isa = PBXGroup;
 			children = (
-				B27BE9E81BA79C0C006FEBCC /* UIControlCustomization */,
 				B2293DE21B8D1071004B9A3E /* AuthenticatorCircle.entitlements */,
 				B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */,
 				B23E4C1F1B7BBFC900D35088 /* AppDelegate.h */,
@@ -203,6 +214,7 @@
 				B2A60E4E1B814D7C001BB51F /* Icon */,
 				B267F5511B893C8E00FBB9B5 /* BgImages */,
 				B27BE9E61BA79BD1006FEBCC /* AuthenticatorOperation */,
+				B27BE9E81BA79C0C006FEBCC /* UIControlCustomization */,
 				B27BE9E71BA79BFA006FEBCC /* ViewControllers */,
 				B23E4C251B7BBFC900D35088 /* Main.storyboard */,
 				B23E4C281B7BBFC900D35088 /* Images.xcassets */,
@@ -304,6 +316,12 @@
 				B2F406A81BA394D800E25474 /* HelpList.m */,
 				B2F406A41BA394C700E25474 /* HelpContent.h */,
 				B2F406A51BA394C700E25474 /* HelpContent.m */,
+				B23DD22B1BA8F6BD00A5B9B9 /* WelcomePageView.h */,
+				B23DD22C1BA8F6BD00A5B9B9 /* WelcomePageView.m */,
+				A1C137D31BAA3B3700D8C92A /* WelcomeHomePage.h */,
+				A1C137D41BAA3B3700D8C92A /* WelcomeHomePage.m */,
+				A1C137D61BAA3BA700D8C92A /* WelcomeSyncWithiCloud.h */,
+				A1C137D71BAA3BA700D8C92A /* WelcomeSyncWithiCloud.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -317,6 +335,8 @@
 				B2D2C5651B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m */,
 				B2BC9C2C1B979F94004481BB /* UINavigationController+NavigationController.h */,
 				B2BC9C2D1B979F94004481BB /* UINavigationController+NavigationController.m */,
+				B265C7D91BAB7DD500DC238B /* UIButton+StyleButton.h */,
+				B265C7DA1BAB7DD500DC238B /* UIButton+StyleButton.m */,
 			);
 			name = UIControlCustomization;
 			sourceTree = "<group>";
@@ -509,6 +529,7 @@
 				B2293DE81B8D3813004B9A3E /* SetUpAuthenticator.m in Sources */,
 				B23E4C211B7BBFC900D35088 /* AppDelegate.m in Sources */,
 				B22D0BC91B991B4D00BD1857 /* RestoreWithRestoreCode.m in Sources */,
+				B265C7DB1BAB7DD500DC238B /* UIButton+StyleButton.m in Sources */,
 				A1D368051B8049550034F8F5 /* Menu.m in Sources */,
 				B281E5281BA205EB00736CC3 /* RestoreKeychainDone.m in Sources */,
 				B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */,
@@ -522,11 +543,14 @@
 				B2BC9C2E1B979F94004481BB /* UINavigationController+NavigationController.m in Sources */,
 				B23E4C4C1B7BCBBF00D35088 /* KeychainWrapper.m in Sources */,
 				B2E7CC5E1B8BDE3B004EA14C /* ProcessingViewController.m in Sources */,
+				B23DD22D1BA8F6BD00A5B9B9 /* WelcomePageView.m in Sources */,
 				B23E4C461B7BC79E00D35088 /* ArcProgressView.m in Sources */,
 				B2EB9E851B8403B70054BA0E /* ViewRestoreCode.m in Sources */,
 				B2D2C5661B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m in Sources */,
 				A1832E491B8C2BF4005D3238 /* InitialViewController.m in Sources */,
 				B23E4C1E1B7BBFC900D35088 /* main.m in Sources */,
+				A1C137D81BAA3BA700D8C92A /* WelcomeSyncWithiCloud.m in Sources */,
+				A1C137D51BAA3B3700D8C92A /* WelcomeHomePage.m in Sources */,
 				A11E5D231B8ADE7800D2BA8A /* ResetAuthenticator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

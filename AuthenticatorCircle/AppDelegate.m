@@ -22,8 +22,8 @@
     gUIStrings = [NSDictionary dictionaryWithContentsOfFile:filePathOfUIStrings];
     
 #warning Debug Lines Start
-//    [KeychainWrapper clearKeychains:kKeychainIdentifier];
-//    [[NSFileManager defaultManager] removeItemAtPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile] error:nil];
+    [KeychainWrapper clearKeychains:kKeychainIdentifier];
+    [[NSFileManager defaultManager] removeItemAtPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile] error:nil];
 #warning Debug Lines End
     
     //Set appearance
@@ -39,6 +39,7 @@
     if (!localAuthenticator && !cloudAuthenticator) {
         //New User
 #warning Welcome View
+        [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"WelcomePageView"]];
     }
     else if (!localAuthenticator && cloudAuthenticator) {
         //New Device -> InitialViewController

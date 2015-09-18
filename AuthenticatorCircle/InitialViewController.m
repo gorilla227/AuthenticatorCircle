@@ -26,10 +26,8 @@
     [self.view setBackgroundColor:cViewBackground];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
-    [btn_SetUp.layer setCornerRadius:kButtonCornerRadius];
-    [btn_SetUp.layer setMasksToBounds:YES];
-    [btn_Restore.layer setCornerRadius:kButtonCornerRadius];
-    [btn_Restore.layer setMasksToBounds:YES];
+    [btn_SetUp updateUIButtonStyle:UIButtonStyleLightBlue];
+    [btn_Restore updateUIButtonStyle:UIButtonStyleLightBlue];
     [lb_Description sizeToFit];
     
     regionCodes = [gUIStrings objectForKey:@"SerialRegionCodes"];

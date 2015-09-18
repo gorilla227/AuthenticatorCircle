@@ -29,8 +29,7 @@
     [self.navigationController setNavigationBarHidden:NO];
     [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AppBackground.jpg"]]];
     
-    [btn_Submit.layer setCornerRadius:kButtonCornerRadius];
-    [btn_Submit.layer setMasksToBounds:YES];
+    [btn_Submit updateUIButtonStyle:UIButtonStyleLightBlue];
     [tf_Serial setBackgroundColor:cTextFieldBackground];
     [tf_RestoreCode setBackgroundColor:cTextFieldBackground];
     
@@ -93,7 +92,7 @@
                 [tf_Serial setText:[tf_Serial.text stringByPaddingToLength:potentialString.length withString:@"-" startingAtIndex:0]];
             }
             else {
-                [tf_Serial setText:[tf_Serial.text stringByPaddingToLength:potentialString.length - 1 withString:nil startingAtIndex:0]];
+                [tf_Serial setText:[tf_Serial.text stringByPaddingToLength:potentialString.length - 1 withString:@"" startingAtIndex:0]];
                 return NO;
             }
         }

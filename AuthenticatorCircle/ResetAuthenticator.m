@@ -29,12 +29,8 @@
     [UIView animateWithDuration:1.5f delay:0.0f options:UIViewAnimationOptionAutoreverse|UIViewAnimationOptionRepeat animations:^{
         [iv_WarningSign setTransform:CGAffineTransformMakeScale(1.05f, 1.05f)];
     } completion:nil];
-    [btn_ResetMyAuthenticator.layer setBorderColor:[UIColor grayColor].CGColor];
-    [btn_ResetMyAuthenticator.layer setBorderWidth:1.0f];
-    [btn_ResetMyAuthenticator.layer setCornerRadius:kButtonCornerRadius];
-    [btn_ResetMyAuthenticator.layer setMasksToBounds:YES];
-    [btn_GoBack.layer setCornerRadius:kButtonCornerRadius];
-    [btn_GoBack.layer setMasksToBounds:YES];
+    [btn_ResetMyAuthenticator updateUIButtonStyle:UIButtonStyleDarkBlue1];
+    [btn_GoBack updateUIButtonStyle:UIButtonStyleLightBlue];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sQX-Hg-QNn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sQX-Hg-QNn">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -336,12 +336,14 @@
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HelpTitleCell" textLabel="8ym-HJ-NJR" style="IBUITableViewCellStyleDefault" id="0NS-hW-NuJ">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0NS-hW-NuJ" id="k5a-Mp-CHp">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Help Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="8ym-HJ-NJR">
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -372,7 +374,7 @@
             </objects>
             <point key="canvasLocation" x="2182.5" y="477"/>
         </scene>
-        <!--Help-->
+        <!--Delegate-->
         <scene sceneID="lTT-5B-DTE">
             <objects>
                 <viewController storyboardIdentifier="HelpContent" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fY8-he-tGL" customClass="HelpContent" sceneMemberID="viewController">
@@ -497,11 +499,14 @@
                             <tableViewSection id="eKR-rC-chc">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViewRestoreCode" textLabel="ugU-hP-cZl" imageView="XGX-ml-Nv9" style="IBUITableViewCellStyleDefault" id="Ljs-Yd-elY">
+                                        <rect key="frame" x="0.0" y="99" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ljs-Yd-elY" id="vHj-Y5-sqw">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="View Restore Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugU-hP-cZl">
+                                                    <rect key="frame" x="73" y="0.0" width="512" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -511,6 +516,7 @@
                                                     </variation>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="ViewRestoreCode.png" id="XGX-ml-Nv9">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -521,11 +527,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResetAuthenticator" textLabel="y5a-ro-Vy0" imageView="bpz-W6-sOO" style="IBUITableViewCellStyleDefault" id="M94-52-oK7">
+                                        <rect key="frame" x="0.0" y="143" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M94-52-oK7" id="3Wv-Do-WjO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Reset Authenticator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y5a-ro-Vy0">
+                                                    <rect key="frame" x="73" y="0.0" width="512" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -535,6 +544,7 @@
                                                     </variation>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="ResetAuthenticator.png" id="bpz-W6-sOO">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -549,11 +559,14 @@
                             <tableViewSection id="feJ-vx-R1O">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Help" textLabel="v2l-K8-dSP" imageView="LCL-8q-WJi" style="IBUITableViewCellStyleDefault" id="yjW-0k-XaN">
+                                        <rect key="frame" x="0.0" y="207" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yjW-0k-XaN" id="f9D-Uf-UV2">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Help" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v2l-K8-dSP">
+                                                    <rect key="frame" x="73" y="0.0" width="512" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -563,6 +576,7 @@
                                                     </variation>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Help.png" id="LCL-8q-WJi">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -573,11 +587,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SendFeedback" textLabel="OaB-bg-FHJ" imageView="JPx-aE-KP8" style="IBUITableViewCellStyleDefault" id="dCp-np-y1p">
+                                        <rect key="frame" x="0.0" y="251" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dCp-np-y1p" id="tup-5o-Kja">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Send Feedback" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OaB-bg-FHJ">
+                                                    <rect key="frame" x="73" y="0.0" width="512" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -587,6 +604,7 @@
                                                     </variation>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SendFeedback.png" id="JPx-aE-KP8">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -1066,7 +1084,7 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
             </objects>
             <point key="canvasLocation" x="-235.5" y="1945"/>
         </scene>
-        <!--Set Up Authenticator-->
+        <!--Delegate-->
         <scene sceneID="LSR-lO-3wK">
             <objects>
                 <viewController storyboardIdentifier="SetUpAuthenticator" title="Set Up Authenticator" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QTT-KD-Rhv" customClass="SetUpAuthenticator" sceneMemberID="viewController">
@@ -1358,11 +1376,14 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                             <tableViewSection id="U4M-el-vhR">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="xeZ-pa-imC" rowHeight="60" style="IBUITableViewCellStyleDefault" id="LZj-e5-dmr">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LZj-e5-dmr" id="wHb-zJ-qA5">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Use Restore Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="xeZ-pa-imC">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1376,11 +1397,14 @@ Once you add an authenticator, you'll use it when you play Blizzard games or log
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="lIN-dh-VaE" rowHeight="160" style="IBUITableViewCellStyleDefault" id="lku-RG-S2c">
+                                        <rect key="frame" x="0.0" y="60" width="600" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lku-RG-S2c" id="PIc-YO-Wuf">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="lIN-dh-VaE">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="160"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Enter Your serial number and restore code, then press submit. This operation requires an internet connection.
 
@@ -1402,8 +1426,10 @@ Note: If you took a screenshot when installing the authenticator, refer to it no
                             <tableViewSection id="Ilc-gV-bbx">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="AGs-8Q-JNM">
+                                        <rect key="frame" x="0.0" y="220" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AGs-8Q-JNM" id="NqM-Iv-82d">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Serial" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="laL-Ke-0lM" customClass="UITextField_Inset_PlaceholderFont">
@@ -1465,8 +1491,10 @@ Note: If you took a screenshot when installing the authenticator, refer to it no
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="0a8-iY-iIO">
+                                        <rect key="frame" x="0.0" y="280" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0a8-iY-iIO" id="k2w-he-36e">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restore Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n2a-JD-soC" customClass="UITextField_Inset_PlaceholderFont">
@@ -1532,8 +1560,10 @@ Note: If you took a screenshot when installing the authenticator, refer to it no
                             <tableViewSection id="l0k-XN-oX0">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="A0f-gu-k3G">
+                                        <rect key="frame" x="0.0" y="340" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A0f-gu-k3G" id="mZw-1G-ixB">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rg3-lp-47I">
@@ -2006,7 +2036,6 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                 </variation>
                                 <connections>
                                     <action selector="btn_Continue_OnClicked:" destination="0n7-pO-ZS6" eventType="touchUpInside" id="7cL-SU-MFG"/>
-                                    <action selector="btn_Continue_OnClicked:" destination="QTT-KD-Rhv" eventType="touchUpInside" id="Nhh-aP-Z9x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2672,10 +2701,10 @@ Be sure to write down these numbers in case you ever need to restore your authen
             </objects>
             <point key="canvasLocation" x="609" y="1197"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome Home Page-->
         <scene sceneID="Bq5-lS-G0Q">
             <objects>
-                <viewController id="Ice-Qb-trW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeHomePage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ice-Qb-trW" customClass="WelcomeHomePage" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3U7-G8-Won"/>
                         <viewControllerLayoutGuide type="bottom" id="qTh-Ev-mkg"/>
@@ -2683,17 +2712,162 @@ Be sure to write down these numbers in case you ever need to restore your authen
                     <view key="view" contentMode="scaleToFill" id="6oa-P7-Hsp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WelcomeIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="CWN-oZ-0ey">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CWN-oZ-0ey" secondAttribute="height" multiplier="1:1" id="maM-Pz-f34"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="maM-Pz-f34"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="maM-Pz-f34"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcom to the new Battle.net Mobile Authenticator!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA6-r3-lTl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With a sleek, refined new design, using the app is easier than ever!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTr-P4-bn2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBr-4I-KnU">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="I4l-Zl-4Wp"/>
+                                    <constraint firstAttribute="width" constant="360" id="loh-Bg-C8T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="I4l-Zl-4Wp"/>
+                                        <exclude reference="loh-Bg-C8T"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="I4l-Zl-4Wp"/>
+                                        <exclude reference="loh-Bg-C8T"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.14901960780000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aTr-P4-bn2" firstAttribute="centerY" secondItem="IA6-r3-lTl" secondAttribute="centerY" multiplier="7:5" id="0Yo-Kj-ZNx"/>
+                            <constraint firstItem="DBr-4I-KnU" firstAttribute="trailing" secondItem="aTr-P4-bn2" secondAttribute="trailing" id="1sK-Cz-Pe3"/>
+                            <constraint firstAttribute="centerX" secondItem="CWN-oZ-0ey" secondAttribute="centerX" id="CNz-cN-0PB"/>
+                            <constraint firstItem="IA6-r3-lTl" firstAttribute="leading" secondItem="6oa-P7-Hsp" secondAttribute="leadingMargin" id="Cqr-qZ-fxG"/>
+                            <constraint firstItem="IA6-r3-lTl" firstAttribute="trailing" secondItem="6oa-P7-Hsp" secondAttribute="trailingMargin" id="DM7-fn-0xh"/>
+                            <constraint firstItem="CWN-oZ-0ey" firstAttribute="width" secondItem="6oa-P7-Hsp" secondAttribute="width" multiplier="1:3.5" id="Kj3-Bv-F9Q"/>
+                            <constraint firstAttribute="centerY" secondItem="CWN-oZ-0ey" secondAttribute="centerY" multiplier="2.5:1" constant="150" id="LuG-lJ-okG">
+                                <variation key="widthClass=compact" constant="-60"/>
+                            </constraint>
+                            <constraint firstItem="qTh-Ev-mkg" firstAttribute="top" secondItem="DBr-4I-KnU" secondAttribute="bottom" constant="40" id="N2u-9H-fxU">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="DBr-4I-KnU" firstAttribute="leading" secondItem="aTr-P4-bn2" secondAttribute="leading" id="WXL-4I-vhc"/>
+                            <constraint firstItem="IA6-r3-lTl" firstAttribute="trailing" secondItem="aTr-P4-bn2" secondAttribute="trailing" id="Yxm-3H-mKf"/>
+                            <constraint firstItem="DBr-4I-KnU" firstAttribute="top" secondItem="aTr-P4-bn2" secondAttribute="bottom" constant="160" id="dEC-fZ-wqX">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="aTr-P4-bn2" firstAttribute="top" secondItem="IA6-r3-lTl" secondAttribute="bottom" constant="13" id="mnq-Yi-7df">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="aTr-P4-bn2" firstAttribute="top" secondItem="IA6-r3-lTl" secondAttribute="bottom" constant="8" id="qX3-hH-RhW">
+                                <variation key="widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="IA6-r3-lTl" secondAttribute="centerY" constant="51.5" id="rCR-mf-VZx">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="IA6-r3-lTl" firstAttribute="leading" secondItem="aTr-P4-bn2" secondAttribute="leading" id="tVi-Uy-2JD"/>
+                            <constraint firstAttribute="centerX" secondItem="IA6-r3-lTl" secondAttribute="centerX" id="xNa-tj-Qcu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CWN-oZ-0ey"/>
+                                <exclude reference="IA6-r3-lTl"/>
+                                <exclude reference="aTr-P4-bn2"/>
+                                <exclude reference="DBr-4I-KnU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1sK-Cz-Pe3"/>
+                                <exclude reference="WXL-4I-vhc"/>
+                                <exclude reference="dEC-fZ-wqX"/>
+                                <exclude reference="Cqr-qZ-fxG"/>
+                                <exclude reference="DM7-fn-0xh"/>
+                                <exclude reference="Yxm-3H-mKf"/>
+                                <exclude reference="rCR-mf-VZx"/>
+                                <exclude reference="tVi-Uy-2JD"/>
+                                <exclude reference="xNa-tj-Qcu"/>
+                                <exclude reference="0Yo-Kj-ZNx"/>
+                                <exclude reference="mnq-Yi-7df"/>
+                                <exclude reference="qX3-hH-RhW"/>
+                                <exclude reference="N2u-9H-fxU"/>
+                                <exclude reference="CNz-cN-0PB"/>
+                                <exclude reference="Kj3-Bv-F9Q"/>
+                                <exclude reference="LuG-lJ-okG"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="CWN-oZ-0ey"/>
+                                <include reference="IA6-r3-lTl"/>
+                                <include reference="aTr-P4-bn2"/>
+                                <include reference="DBr-4I-KnU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1sK-Cz-Pe3"/>
+                                <include reference="WXL-4I-vhc"/>
+                                <exclude reference="dEC-fZ-wqX"/>
+                                <include reference="Cqr-qZ-fxG"/>
+                                <include reference="DM7-fn-0xh"/>
+                                <include reference="Yxm-3H-mKf"/>
+                                <include reference="rCR-mf-VZx"/>
+                                <include reference="tVi-Uy-2JD"/>
+                                <include reference="xNa-tj-Qcu"/>
+                                <include reference="0Yo-Kj-ZNx"/>
+                                <exclude reference="mnq-Yi-7df"/>
+                                <exclude reference="qX3-hH-RhW"/>
+                                <include reference="N2u-9H-fxU"/>
+                                <include reference="CNz-cN-0PB"/>
+                                <include reference="Kj3-Bv-F9Q"/>
+                                <include reference="LuG-lJ-okG"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="iv_WelcomeIcon" destination="CWN-oZ-0ey" id="Kmg-dZ-5rJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EpT-GM-RYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1039.5" y="1197"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome Page View-->
+        <scene sceneID="CfM-4F-Xby">
+            <objects>
+                <pageViewController storyboardIdentifier="WelcomePageView" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="luU-5y-dyG" customClass="WelcomePageView" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1s-WF-MzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1909.5" y="1197"/>
+        </scene>
+        <!--Welcome Sync Withi Cloud-->
         <scene sceneID="AnJ-xx-axK">
             <objects>
-                <viewController id="tgH-qX-EkV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeSyncWithiCloud" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tgH-qX-EkV" customClass="WelcomeSyncWithiCloud" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JIJ-eY-wWx"/>
                         <viewControllerLayoutGuide type="bottom" id="HGg-s1-RRo"/>
@@ -2701,8 +2875,178 @@ Be sure to write down these numbers in case you ever need to restore your authen
                     <view key="view" contentMode="scaleToFill" id="nNx-c8-EIv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CloudIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jVR-Yr-emP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jVR-Yr-emP" secondAttribute="height" multiplier="1:1" id="plC-Hf-Xzx"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="plC-Hf-Xzx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="plC-Hf-Xzx"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sync with iCloud" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="70a-sV-50G">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can now backup your authenticator on iCloud, making setup and recovery easy if you switch to a new device" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-EK-Q55">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlJ-ag-12V">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LlJ-ag-12V" secondAttribute="height" multiplier="46:5" id="6zD-z9-XEp"/>
+                                    <constraint firstAttribute="height" constant="40" id="FFf-gU-pAr"/>
+                                </constraints>
+                                <state key="normal" title="Learn How">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6zD-z9-XEp"/>
+                                        <exclude reference="FFf-gU-pAr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="6zD-z9-XEp"/>
+                                        <include reference="FFf-gU-pAr"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58J-XH-bVk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BGF-5G-7OW"/>
+                                    <constraint firstAttribute="width" secondItem="58J-XH-bVk" secondAttribute="height" multiplier="46:5" id="UiV-jN-Drn"/>
+                                </constraints>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BGF-5G-7OW"/>
+                                        <exclude reference="UiV-jN-Drn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="BGF-5G-7OW"/>
+                                        <exclude reference="UiV-jN-Drn"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.14901960780000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LlJ-ag-12V" firstAttribute="leading" secondItem="58J-XH-bVk" secondAttribute="leading" id="28a-0C-A6q"/>
+                            <constraint firstItem="58J-XH-bVk" firstAttribute="top" secondItem="LlJ-ag-12V" secondAttribute="bottom" constant="8" id="2gf-Ik-ua8"/>
+                            <constraint firstAttribute="width" secondItem="jVR-Yr-emP" secondAttribute="width" multiplier="3.5:1" id="5Ci-CP-Psu"/>
+                            <constraint firstAttribute="centerY" secondItem="jVR-Yr-emP" secondAttribute="centerY" multiplier="3:1" constant="196" id="BCG-gk-6o6">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="tKd-EK-Q55" firstAttribute="top" secondItem="70a-sV-50G" secondAttribute="bottom" constant="35" id="DlW-bc-4Sx">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="tKd-EK-Q55" firstAttribute="trailing" secondItem="nNx-c8-EIv" secondAttribute="trailingMargin" id="E70-QN-GSw"/>
+                            <constraint firstItem="tKd-EK-Q55" firstAttribute="trailing" secondItem="70a-sV-50G" secondAttribute="trailing" id="Mhj-o6-eXw"/>
+                            <constraint firstItem="HGg-s1-RRo" firstAttribute="top" secondItem="58J-XH-bVk" secondAttribute="bottom" constant="84" id="UuP-P9-hTD">
+                                <variation key="widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="58J-XH-bVk" firstAttribute="leading" secondItem="nNx-c8-EIv" secondAttribute="leadingMargin" id="Z9m-hZ-Xr4"/>
+                            <constraint firstItem="tKd-EK-Q55" firstAttribute="leading" secondItem="nNx-c8-EIv" secondAttribute="leadingMargin" id="ZaD-Do-FiH"/>
+                            <constraint firstItem="58J-XH-bVk" firstAttribute="centerY" secondItem="nNx-c8-EIv" secondAttribute="centerY" multiplier="3:2" id="Zqn-ZD-Wvh">
+                                <variation key="widthClass=compact" constant="24"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="jVR-Yr-emP" secondAttribute="centerX" id="eUz-gE-Adw"/>
+                            <constraint firstItem="70a-sV-50G" firstAttribute="top" secondItem="jVR-Yr-emP" secondAttribute="bottom" constant="32" id="gAl-rc-Sz4">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="LlJ-ag-12V" firstAttribute="trailing" secondItem="58J-XH-bVk" secondAttribute="trailing" id="hqo-G5-hBt"/>
+                            <constraint firstItem="58J-XH-bVk" firstAttribute="trailing" secondItem="nNx-c8-EIv" secondAttribute="trailingMargin" id="rc0-bq-PFs"/>
+                            <constraint firstAttribute="centerY" secondItem="tKd-EK-Q55" secondAttribute="centerY" constant="8" id="rgQ-Ad-wo2">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="tKd-EK-Q55" firstAttribute="leading" secondItem="70a-sV-50G" secondAttribute="leading" id="wUK-ul-5ey"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jVR-Yr-emP"/>
+                                <exclude reference="70a-sV-50G"/>
+                                <exclude reference="tKd-EK-Q55"/>
+                                <exclude reference="LlJ-ag-12V"/>
+                                <exclude reference="58J-XH-bVk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="gAl-rc-Sz4"/>
+                                <exclude reference="UuP-P9-hTD"/>
+                                <exclude reference="DlW-bc-4Sx"/>
+                                <exclude reference="E70-QN-GSw"/>
+                                <exclude reference="Mhj-o6-eXw"/>
+                                <exclude reference="ZaD-Do-FiH"/>
+                                <exclude reference="rgQ-Ad-wo2"/>
+                                <exclude reference="wUK-ul-5ey"/>
+                                <exclude reference="2gf-Ik-ua8"/>
+                                <exclude reference="Z9m-hZ-Xr4"/>
+                                <exclude reference="Zqn-ZD-Wvh"/>
+                                <exclude reference="rc0-bq-PFs"/>
+                                <exclude reference="28a-0C-A6q"/>
+                                <exclude reference="hqo-G5-hBt"/>
+                                <exclude reference="5Ci-CP-Psu"/>
+                                <exclude reference="BCG-gk-6o6"/>
+                                <exclude reference="eUz-gE-Adw"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jVR-Yr-emP"/>
+                                <include reference="70a-sV-50G"/>
+                                <include reference="tKd-EK-Q55"/>
+                                <include reference="LlJ-ag-12V"/>
+                                <include reference="58J-XH-bVk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="gAl-rc-Sz4"/>
+                                <exclude reference="UuP-P9-hTD"/>
+                                <include reference="DlW-bc-4Sx"/>
+                                <include reference="E70-QN-GSw"/>
+                                <include reference="Mhj-o6-eXw"/>
+                                <include reference="ZaD-Do-FiH"/>
+                                <include reference="rgQ-Ad-wo2"/>
+                                <include reference="wUK-ul-5ey"/>
+                                <include reference="2gf-Ik-ua8"/>
+                                <include reference="Z9m-hZ-Xr4"/>
+                                <include reference="Zqn-ZD-Wvh"/>
+                                <include reference="rc0-bq-PFs"/>
+                                <include reference="28a-0C-A6q"/>
+                                <include reference="hqo-G5-hBt"/>
+                                <include reference="5Ci-CP-Psu"/>
+                                <include reference="BCG-gk-6o6"/>
+                                <include reference="eUz-gE-Adw"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="btn_Continue" destination="58J-XH-bVk" id="Y6s-Wx-AMn"/>
+                        <outlet property="btn_LearnHow" destination="LlJ-ag-12V" id="tsE-Dv-u5d"/>
+                        <outlet property="iv_Cloud" destination="jVR-Yr-emP" id="lNs-uJ-Y5O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZpI-0T-xVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2730,14 +3074,16 @@ Be sure to write down these numbers in case you ever need to restore your authen
     </scenes>
     <resources>
         <image name="BattleNet_Title.png" width="402" height="92"/>
+        <image name="CloudIcon.png" width="512" height="512"/>
         <image name="CompleteSign.png" width="256" height="256"/>
         <image name="Help.png" width="80" height="80"/>
         <image name="ResetAuthenticator.png" width="80" height="80"/>
         <image name="SendFeedback.png" width="80" height="80"/>
         <image name="ViewRestoreCode.png" width="80" height="80"/>
         <image name="WarningSign.png" width="300" height="300"/>
+        <image name="WelcomeIcon.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vq0-v5-gfn"/>
+        <segue reference="f2c-a1-bMc"/>
     </inferredMetricsTieBreakers>
 </document>

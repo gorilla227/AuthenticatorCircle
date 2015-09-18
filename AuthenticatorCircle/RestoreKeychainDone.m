@@ -20,8 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:cViewBackground];
-    [btn_Continue.layer setCornerRadius:kButtonCornerRadius];
-    [btn_Continue.layer setMasksToBounds:YES];
+    [btn_Continue updateUIButtonStyle:UIButtonStyleLightBlue];
     [iv_CompleteSign setTransform:CGAffineTransformMakeScale(1.2f, 1.2f)];
 }
 

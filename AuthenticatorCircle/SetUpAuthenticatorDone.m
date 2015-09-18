@@ -29,12 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     uiStrings = [gUIStrings objectForKey:@"UI_SetUpAuthenticatorDone"];
-    [btn_SaveScreenshot.layer setBorderColor:[UIColor grayColor].CGColor];
-    [btn_SaveScreenshot.layer setBorderWidth:1.0f];
-    [btn_SaveScreenshot.layer setCornerRadius:kButtonCornerRadius];
-    [btn_SaveScreenshot.layer setMasksToBounds:YES];
-    [btn_Continue.layer setCornerRadius:kButtonCornerRadius];
-    [btn_Continue.layer setMasksToBounds:YES];
+    [btn_SaveScreenshot updateUIButtonStyle:UIButtonStyleDarkBlue1];
+    [btn_Continue updateUIButtonStyle:UIButtonStyleLightBlue];
     [self.view setBackgroundColor:cViewBackground];
     
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];

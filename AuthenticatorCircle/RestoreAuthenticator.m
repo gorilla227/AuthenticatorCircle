@@ -23,10 +23,8 @@
     [self.navigationController setNavigationBarHidden:NO];
     [self.view setBackgroundColor:cViewBackground];
     
-    [btn_RestoreFromICloudKeychain.layer setCornerRadius:kButtonCornerRadius];
-    [btn_RestoreFromICloudKeychain.layer setMasksToBounds:YES];
-    [btn_UseRestoreCode.layer setCornerRadius:kButtonCornerRadius];
-    [btn_UseRestoreCode.layer setMasksToBounds:YES];
+    [btn_RestoreFromICloudKeychain updateUIButtonStyle:UIButtonStyleLightBlue];
+    [btn_UseRestoreCode updateUIButtonStyle:UIButtonStyleLightBlue];
 }
 
 - (void)didReceiveMemoryWarning {
