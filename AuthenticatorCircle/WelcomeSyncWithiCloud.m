@@ -7,6 +7,7 @@
 //
 
 #import "WelcomeSyncWithiCloud.h"
+#import "HelpContent.h"
 
 @interface WelcomeSyncWithiCloud ()
 @property (nonatomic, strong) IBOutlet UIImageView *iv_Cloud;
@@ -38,6 +39,21 @@
         [iv_Cloud setTransform:CGAffineTransformMakeScale(1.0f, 1.0f)];
         [iv_Cloud setAlpha:1.0f];
     }];
+}
+
+- (IBAction)btn_LearnHow_OnClicked:(id)sender {
+    HelpContent *helpContent = [self.storyboard instantiateViewControllerWithIdentifier:@"HelpContent"];
+    [helpContent setHelpDetail:[[gUIStrings objectForKey:@"HelpList"] objectAtIndex:1]];
+    [helpContent.navigationController setNavigationBarHidden:NO];
+    [helpContent.navigationItem setRightBarButtonItem:helpContent.btn_Close];
+    UINavigationController *helpNavi = [[UINavigationController alloc] initWithRootViewController:helpContent];
+    [helpNavi.navigationBar setBarTintColor:cMenuTintColor];
+    
+    [self presentViewController:helpNavi animated:YES completion:nil];
+}
+
+- (IBAction)btn_Continue_OnClicked:(id)sender {
+    [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"InitialNavi"] animated:YES completion:nil];
 }
 /*
 #pragma mark - Navigation

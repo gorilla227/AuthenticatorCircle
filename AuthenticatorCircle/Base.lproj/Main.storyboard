@@ -2927,6 +2927,9 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                         <include reference="FFf-gU-pAr"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="btn_LearnHow_OnClicked:" destination="tgH-qX-EkV" eventType="touchUpInside" id="Wwl-b3-uyd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58J-XH-bVk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -2951,6 +2954,9 @@ Be sure to write down these numbers in case you ever need to restore your authen
                                         <exclude reference="UiV-jN-Drn"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="btn_Continue_OnClicked:" destination="tgH-qX-EkV" eventType="touchUpInside" id="PXt-Ff-O7x"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176469999999" green="0.14901960780000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
