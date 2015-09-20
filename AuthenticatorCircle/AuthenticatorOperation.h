@@ -15,4 +15,6 @@
 + (BOOL)saveToCloud:(AuthenticatorSimulator *)authenticator;
 + (BOOL)clearLocalFile:(NSString *)filePath;
 + (BOOL)clearCloud;
++ (NSDate *)lastModificationDateOfCloud;
++ (NSDate *)lastModificationDateOfLocalFile:(NSString *)filePath;
 @end

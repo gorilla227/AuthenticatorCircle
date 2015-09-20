@@ -57,6 +57,7 @@
 		B2BC9C2E1B979F94004481BB /* UINavigationController+NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BC9C2D1B979F94004481BB /* UINavigationController+NavigationController.m */; };
 		B2C11F5C1BA37B2400E9C962 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C11F5B1BA37B2400E9C962 /* TTTAttributedLabel.m */; };
 		B2D2C5661B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D2C5651B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m */; };
+		B2D469081BADFB6C004E76D3 /* FixInconsistency.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D469071BADFB6C004E76D3 /* FixInconsistency.m */; settings = {ASSET_TAGS = (); }; };
 		B2D94D3A1B7D3FFB0010DE6C /* AuthenticatorSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D94D391B7D3FFB0010DE6C /* AuthenticatorSimulator.m */; };
 		B2E7CC5E1B8BDE3B004EA14C /* ProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7CC5D1B8BDE3B004EA14C /* ProcessingViewController.m */; };
 		B2E7CC601B8BF71C004EA14C /* AppBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2E7CC5F1B8BF71C004EA14C /* AppBackground.jpg */; };
@@ -154,6 +155,8 @@
 		B2C11F5B1BA37B2400E9C962 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		B2D2C5641B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextField_Inset_PlaceholderFont.h; sourceTree = "<group>"; };
 		B2D2C5651B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextField_Inset_PlaceholderFont.m; sourceTree = "<group>"; };
+		B2D469061BADFB6C004E76D3 /* FixInconsistency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixInconsistency.h; sourceTree = "<group>"; };
+		B2D469071BADFB6C004E76D3 /* FixInconsistency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixInconsistency.m; sourceTree = "<group>"; };
 		B2D94D381B7D3FFB0010DE6C /* AuthenticatorSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticatorSimulator.h; sourceTree = "<group>"; };
 		B2D94D391B7D3FFB0010DE6C /* AuthenticatorSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticatorSimulator.m; sourceTree = "<group>"; };
 		B2E7CC5C1B8BDE3B004EA14C /* ProcessingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingViewController.h; sourceTree = "<group>"; };
@@ -322,6 +325,8 @@
 				A1C137D41BAA3B3700D8C92A /* WelcomeHomePage.m */,
 				A1C137D61BAA3BA700D8C92A /* WelcomeSyncWithiCloud.h */,
 				A1C137D71BAA3BA700D8C92A /* WelcomeSyncWithiCloud.m */,
+				B2D469061BADFB6C004E76D3 /* FixInconsistency.h */,
+				B2D469071BADFB6C004E76D3 /* FixInconsistency.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -538,6 +543,7 @@
 				A19074BA1B92B5380000526C /* SetUpAuthenticatorDone.m in Sources */,
 				B2F406A61BA394C700E25474 /* HelpContent.m in Sources */,
 				B2C11F5C1BA37B2400E9C962 /* TTTAttributedLabel.m in Sources */,
+				B2D469081BADFB6C004E76D3 /* FixInconsistency.m in Sources */,
 				B2D94D3A1B7D3FFB0010DE6C /* AuthenticatorSimulator.m in Sources */,
 				B2F406A91BA394D800E25474 /* HelpList.m in Sources */,
 				B2BC9C2E1B979F94004481BB /* UINavigationController+NavigationController.m in Sources */,

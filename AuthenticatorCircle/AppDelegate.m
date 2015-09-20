@@ -35,10 +35,9 @@
     NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile];
     AuthenticatorSimulator *localAuthenticator = [AuthenticatorOperation loadFromFile:filePath];
     AuthenticatorSimulator *cloudAuthenticator = [AuthenticatorOperation loadFromCloud];
-    
+
     if (!localAuthenticator && !cloudAuthenticator) {
         //New User
-#warning Welcome View
         [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"WelcomePageView"]];
     }
     else if (!localAuthenticator && cloudAuthenticator) {
@@ -58,9 +57,12 @@
         }
         else {
             //LocalAuthenticatr is not consistent with CloudAuthenticator -> Ask user to make a chioce
-#warning Chioce View
+            [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"FixInconsistency"]];
         }
     }
+    
+    
+
     return YES;
 }
 

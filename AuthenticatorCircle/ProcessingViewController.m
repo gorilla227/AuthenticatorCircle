@@ -33,6 +33,7 @@
             break;
         case ProcessingTypeRestoreWithCode:
         case ProcessingTypeRestoreKeychain:
+        case ProcessingTypeFixInconsistency:
             [lb_Processing setText:[uiStrings objectForKey:@"UI_Processing_Restore"]];
             break;
         default:
@@ -110,6 +111,21 @@
         else {
             NSLog(@"No Serial or Restore Code for Restoring.");
         }
+    }
+    else if (processingType == ProcessingTypeFixInconsistency) {
+        //Fix Inconsistency
+        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        [appDelegate setGAuthenticator:[processingParameters objectForKey:kFixInconsistencyAuthenticatorKey]];
+        
+        if ([[processingParameters objectForKey:kFixInconsistencySaveCloudKey] boolValue]) {
+            [AuthenticatorOperation saveToCloud:appDelegate.gAuthenticator];
+        }
+        else {
+            NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:kLocalSavingFile];
+            [AuthenticatorOperation save:appDelegate.gAuthenticator toFile:filePath];
+        }
+        
+        [self presentViewController:[self.storyboard instantiateInitialViewController] animated:YES completion:nil];
     }
     else {
         

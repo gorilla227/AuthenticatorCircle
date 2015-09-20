@@ -76,4 +76,27 @@
 + (BOOL)clearCloud {
     return [KeychainWrapper clearKeychains:kKeychainIdentifier];
 }
+
+#pragma Last Modification Date
++ (NSDate *)lastModificationDateOfCloud {
+    //Get last modification date of Cloud keychain
+    NSArray *existedKeychains = [KeychainWrapper retriveKeychainsByAttributes:kKeychainIdentifier];
+    for (NSDictionary *keychainAttribute in existedKeychains) {
+        if ([[keychainAttribute objectForKey:(__bridge id)kSecAttrAccount] isEqual:kKeychainAccount] && [[keychainAttribute objectForKey:(__bridge id)kSecAttrService] isEqual:kKeychainService]) {
+            return [keychainAttribute objectForKey:(__bridge id)kSecAttrModificationDate];
+        }
+    }
+    return nil;
+}
+
++ (NSDate *)lastModificationDateOfLocalFile:(NSString *)filePath {
+    //Get last modification date of local file
+    NSDictionary *fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:filePath error:nil];
+    if (fileAttributes) {
+        return [fileAttributes objectForKey:NSFileModificationDate];
+    }
+    else {
+        return nil;
+    }
+}
 @end

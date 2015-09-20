@@ -12,7 +12,8 @@ typedef NS_ENUM(NSInteger, ProcessingType) {
     ProcessingTypeResetting,
     ProcessingTypeSettingUp,
     ProcessingTypeRestoreWithCode,
-    ProcessingTypeRestoreKeychain
+    ProcessingTypeRestoreKeychain,
+    ProcessingTypeFixInconsistency
 };
 
 @interface ProcessingViewController : UIViewController
