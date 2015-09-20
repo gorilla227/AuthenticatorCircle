@@ -91,6 +91,15 @@
             
             [self performSegueWithIdentifier:@"RestoreKeychainDone" sender:self];
         }
+        else {
+            //No Authenticator saved in iCloud
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+                                                                message:[uiStrings objectForKey:@"UI_Processing_NotFoundAuthenticatorOnCloud_Warning"]
+                                                               delegate:self
+                                                      cancelButtonTitle:[uiStrings objectForKey:@"UI_Processing_NotFoundAuthenticatorOnCloud_CancelButton"]
+                                                      otherButtonTitles:nil];
+            [alertView show];
+        }
     }
     else if (processingType == ProcessingTypeRestoreWithCode) {
         //Restore with Serial & RestoreCode
@@ -132,13 +141,16 @@
     }
 }
 
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
 }
-
+*/
 @end

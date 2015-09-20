@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, ProcessingType) {
     ProcessingTypeFixInconsistency
 };
 
-@interface ProcessingViewController : UIViewController
+@interface ProcessingViewController : UIViewController <UIAlertViewDelegate>
 @property (nonatomic) ProcessingType processingType;
 @property (nonatomic) NSDictionary *processingParameters;
 @end

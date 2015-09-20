@@ -135,6 +135,10 @@
 		<string>Setting Up...</string>
 		<key>UI_Processing_Restore</key>
 		<string>Restoring...</string>
+		<key>UI_Processing_NotFoundAuthenticatorOnCloud_Warning</key>
+		<string>Not found authenticator on iCloud.</string>
+		<key>UI_Processing_NotFoundAuthenticatorOnCloud_CancelButton</key>
+		<string>OK</string>
 	</dict>
 	<key>UI_SetUpAuthenticator</key>
 	<dict>
