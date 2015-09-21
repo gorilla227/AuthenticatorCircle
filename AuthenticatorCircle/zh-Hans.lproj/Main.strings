@@ -1,0 +1,243 @@
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "19K-RE-JVG"; */
+"19K-RE-JVG.normalTitle" = "继续";
+
+/* Class = "UILabel"; text = "CN-1234-5678-9012"; ObjectID = "1j0-TM-dvP"; */
+"1j0-TM-dvP.text" = "CN-1234-5678-9012";
+
+/* Class = "UIButton"; normalTitle = "Menu"; ObjectID = "1sG-r7-eGz"; */
+"1sG-r7-eGz.normalTitle" = "菜单";
+
+/* Class = "UIButton"; normalTitle = "Reset My Authenticator"; ObjectID = "2Ae-JY-TiM"; */
+"2Ae-JY-TiM.normalTitle" = "重置安全令";
+
+/* Class = "UILabel"; text = "EIFNALDJBN"; ObjectID = "2S2-uN-y60"; */
+"2S2-uN-y60.text" = "EIFNALDJBN";
+
+/* Class = "UINavigationItem"; title = "Help"; ObjectID = "2aO-L9-ged"; */
+"2aO-L9-ged.title" = "帮助";
+
+/* Class = "UILabel"; text = "You're done!"; ObjectID = "2eV-F6-4mt"; */
+"2eV-F6-4mt.text" = "安装完成！";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "2q2-ml-Yr1"; */
+"2q2-ml-Yr1.title" = "返回";
+
+/* Class = "UIButton"; normalTitle = "Go Back"; ObjectID = "3Ci-si-Zbx"; */
+"3Ci-si-Zbx.normalTitle" = "返回";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "3lY-aX-qHG"; */
+"3lY-aX-qHG.normalTitle" = "继续";
+
+/* Class = "UILabel"; text = "Processing..."; ObjectID = "4ei-tb-LUT"; */
+"4ei-tb-LUT.text" = "Processing...";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "58J-XH-bVk"; */
+"58J-XH-bVk.normalTitle" = "继续";
+
+/* Class = "UILabel"; text = "12345678"; ObjectID = "69Q-zk-SzO"; */
+"69Q-zk-SzO.text" = "12345678";
+
+/* Class = "UILabel"; text = "EIFNALDJBN"; ObjectID = "6Dj-ht-Lk8"; */
+"6Dj-ht-Lk8.text" = "EIFNALDJBN";
+
+/* Class = "UILabel"; text = "Sync with iCloud"; ObjectID = "70a-sV-50G"; */
+"70a-sV-50G.text" = "与iCloud同步";
+
+/* Class = "UILabel"; text = "Restore Code:"; ObjectID = "7up-m8-ZG7"; */
+"7up-m8-ZG7.text" = "还原密码：";
+
+/* Class = "UIButton"; normalTitle = "Use iCloud Information"; ObjectID = "882-Nj-bgF"; */
+"882-Nj-bgF.normalTitle" = "使用iCloud上的信息";
+
+/* Class = "UILabel"; text = "Serial:"; ObjectID = "8ad-aV-VE3"; */
+"8ad-aV-VE3.text" = "序列号：";
+
+/* Class = "UILabel"; text = "Help Title"; ObjectID = "8ym-HJ-NJR"; */
+"8ym-HJ-NJR.text" = "Help Title";
+
+/* Class = "UILabel"; text = "iCloud last synced:"; ObjectID = "9m2-o3-ABM"; */
+"9m2-o3-ABM.text" = "最近在iCloud同步的设备：";
+
+/* Class = "UILabel"; text = "The authenticator information on your device does not match what's on iCloud. Choose which you'd like to use:"; ObjectID = "9ov-Ju-QpZ"; */
+"9ov-Ju-QpZ.text" = "您的设备上所使用的安全令信息与iCloud上所存储的不同。选择您希望使用的一项：";
+
+/* Class = "UILabel"; text = "CN-1234-5678-9012"; ObjectID = "9u0-Ax-rNW"; */
+"9u0-Ax-rNW.text" = "CN-1234-5678-9012";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Btl-RE-fbB"; */
+"Btl-RE-fbB.title" = "返回";
+
+/* Class = "UILabel"; text = "Swipe to continue"; ObjectID = "DBr-4I-KnU"; */
+"DBr-4I-KnU.text" = "滑动继续使用";
+
+/* Class = "UIButton"; normalTitle = "Use Restore Code"; ObjectID = "DeE-e5-MA0"; */
+"DeE-e5-MA0.normalTitle" = "使用还原密码";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "EX4-5a-xOj"; */
+"EX4-5a-xOj.text" = "Date";
+
+/* Class = "UILabel"; text = "The Battle.net Mobile Authenticator increases your account security to help keep it safe.\n\nOnce you add an authenticator, you'll use it when you play Blizzard games or log in to your Battle.net Account."; ObjectID = "FPf-5l-Z97"; */
+"FPf-5l-Z97.text" = "战网手机安全令会为你的账号提供更可靠的安全保障。\n\n安装安全令后，在启动暴雪游戏或使用战网账号登录时都需要使用它进行验证。";
+
+/* Class = "UILabel"; text = "Welcome to the new Battle.net Mobile Authenticator!"; ObjectID = "IA6-r3-lTl"; */
+"IA6-r3-lTl.text" = "欢迎使用全新战网手机安全令！";
+
+/* Class = "UILabel"; text = "Serial:"; ObjectID = "IaE-Lo-Tui"; */
+"IaE-Lo-Tui.text" = "序列号：";
+
+/* Class = "UILabel"; text = "(Serial:)"; ObjectID = "Ikf-EI-YBJ"; */
+"Ikf-EI-YBJ.text" = "(Serial:)";
+
+/* Class = "UILabel"; text = "Serial:"; ObjectID = "Lar-dg-BYV"; */
+"Lar-dg-BYV.text" = "序列号：";
+
+/* Class = "UIButton"; normalTitle = "Learn How"; ObjectID = "LlJ-ag-12V"; */
+"LlJ-ag-12V.normalTitle" = "如何使用";
+
+/* Class = "UILabel"; text = "Device last synced:"; ObjectID = "MX0-Xj-5TJ"; */
+"MX0-Xj-5TJ.text" = "最近同步的设备：";
+
+/* Class = "UILabel"; text = "Send Feedback"; ObjectID = "OaB-bg-FHJ"; */
+"OaB-bg-FHJ.text" = "发送反馈";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OmZ-Ml-gD3"; */
+"OmZ-Ml-gD3.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Reset Authenticator"; ObjectID = "PG2-en-Mqb"; */
+"PG2-en-Mqb.title" = "重置安全令";
+
+/* Class = "UIViewController"; title = "Set Up Authenticator"; ObjectID = "QTT-KD-Rhv"; */
+"QTT-KD-Rhv.title" = "设置安全令";
+
+/* Class = "UIButton"; normalTitle = "Use Device Information"; ObjectID = "Tpb-7H-0Px"; */
+"Tpb-7H-0Px.normalTitle" = "使用本设备上的信息";
+
+/* Class = "UILabel"; text = "Authenticator Code:"; ObjectID = "UKu-i3-bTp"; */
+"UKu-i3-bTp.text" = "验证码：";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "UYj-LS-RhW"; */
+"UYj-LS-RhW.text" = "Date";
+
+/* Class = "UILabel"; text = "If you have Cloud Sync enabled on your previous device, you can quickly restore your authenticator by enabling your iCloud Keychain.\n\nTo enable iCloud, go to Settings > iCloud > Keychain."; ObjectID = "VFk-Lb-KB9"; */
+"VFk-Lb-KB9.text" = "如果您在之前的设备上启动了iCloud同步功能，可能通过启动iCloud钥匙串迅速还原安全令。\n\n要想启动iCloud功能，请前往设置>iCloud>钥匙串";
+
+/* Class = "UILabel"; text = "(Serial:)"; ObjectID = "Y0t-UU-CXo"; */
+"Y0t-UU-CXo.text" = "(Serial:)";
+
+/* Class = "UIButton"; normalTitle = "Restore from iCloud Keychain"; ObjectID = "Z4Q-Lv-0Ng"; */
+"Z4Q-Lv-0Ng.normalTitle" = "从iCloud钥匙串还原";
+
+/* Class = "UILabel"; text = "12345678"; ObjectID = "Z90-T6-F5r"; */
+"Z90-T6-F5r.text" = "12345678";
+
+/* Class = "UILabel"; text = "Your account is now more secure and your backup has been stored on iCloud."; ObjectID = "Zkz-Ai-VMX"; */
+"Zkz-Ai-VMX.text" = "您的账号现在更安全了，您的备份已存储至iCloud。";
+
+/* Class = "UILabel"; text = "With a sleek, refined new design, using the app is easier than ever!"; ObjectID = "aTr-P4-bn2"; */
+"aTr-P4-bn2.text" = "新的设计更加简洁精致，让应用使用起来更加轻松如意！";
+
+/* Class = "UIViewController"; title = "View Restore Code"; ObjectID = "cTP-XN-oAK"; */
+"cTP-XN-oAK.title" = "查看还原密码";
+
+/* Class = "UIViewController"; title = "Processing"; ObjectID = "dOl-Fr-Ob6"; */
+"dOl-Fr-Ob6.title" = "Processing";
+
+/* Class = "UILabel"; text = "The Restore feature reinstalls a previous instance of the app. You'll need to provide the serial number and Restore Code for a previous installation.\n\nWe recommend taking a screenshot of Your Restore code and store it in your gallery in case you need to restore this app in the future."; ObjectID = "dUE-ND-UaQ"; */
+"dUE-ND-UaQ.text" = "还原功能可以在重新安装应用后，将其恢复到之前的状态。您需要提供之前所安装的序列号和还原密码。\n\n我们建议您保存一份还原密码的屏幕截图，并将其存储到手机相册中，以备将来还原应用时使用。";
+
+/* Class = "UILabel"; text = "If you want to reset your authenticator, we recommend you detach it from your Battle.net Account first."; ObjectID = "eHe-Sw-AiS"; */
+"eHe-Sw-AiS.text" = "如果您希望重置安全令，我们建议您先将其与您的展望账号解绑。";
+
+/* Class = "UILabel"; text = "Help Content"; ObjectID = "g37-IL-c1I"; */
+"g37-IL-c1I.text" = "Help Content";
+
+/* Class = "UILabel"; text = "Set up Authenticator"; ObjectID = "gRb-3B-Kzi"; */
+"gRb-3B-Kzi.text" = "设置安全令";
+
+/* Class = "UILabel"; text = "Code copied to clipboard"; ObjectID = "gU2-iw-mPE"; */
+"gU2-iw-mPE.text" = "密码已复制到剪切板";
+
+/* Class = "UIViewController"; title = "Initial"; ObjectID = "h9E-2u-6Ha"; */
+"h9E-2u-6Ha.title" = "Initial";
+
+/* Class = "UINavigationItem"; title = "Menu"; ObjectID = "iK8-PY-d9r"; */
+"iK8-PY-d9r.title" = "菜单";
+
+/* Class = "UILabel"; text = "Restore Code:"; ObjectID = "kL8-MV-bUZ"; */
+"kL8-MV-bUZ.text" = "还原密码：";
+
+/* Class = "UILabel"; text = "Enter Your serial number and restore code, then press submit. This operation requires an internet connection.\n\nNote: If you took a screenshot when installing the authenticator, refer to it now."; ObjectID = "lIN-dh-VaE"; */
+"lIN-dh-VaE.text" = "输入您的序列号和还原密码，然后点击“提交”。此操作需要网络连接。\n\n注意：如果您在安装安全令时保存了屏幕截图，可以输入截图上的字串。";
+
+/* Class = "UITextField"; placeholder = "Serial"; ObjectID = "laL-Ke-0lM"; */
+"laL-Ke-0lM.placeholder" = "序列号";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "lfx-aU-zCF"; */
+"lfx-aU-zCF.normalTitle" = "继续";
+
+/* Class = "UILabel"; text = "Are you sure?"; ObjectID = "mFf-fM-fkf"; */
+"mFf-fM-fkf.text" = "您确定要这样做吗？";
+
+/* Class = "UITextField"; placeholder = "Restore Code"; ObjectID = "n2a-JD-soC"; */
+"n2a-JD-soC.placeholder" = "还原密码";
+
+/* Class = "UIButton"; normalTitle = "Restore Authenticator"; ObjectID = "nB7-DR-dfO"; */
+"nB7-DR-dfO.normalTitle" = "重置安全令";
+
+/* Class = "UIButton"; normalTitle = "Save Screenshot"; ObjectID = "pht-8A-jzm"; */
+"pht-8A-jzm.normalTitle" = "保存屏幕截图";
+
+/* Class = "UIButton"; normalTitle = "Set Up New Authenticator"; ObjectID = "pnA-Mr-7tx"; */
+"pnA-Mr-7tx.normalTitle" = "安装新的安全令";
+
+/* Class = "UIViewController"; title = "Reset Authenticator"; ObjectID = "q5s-EU-K5i"; */
+"q5s-EU-K5i.title" = "重置安全令";
+
+/* Class = "UILabel"; text = "Your Battle.net Account is now more secure.\n\nBe sure to write down these numbers in case you ever need to restore your authenticator (e.g. if you lose your phone)"; ObjectID = "r1i-T7-RXc"; */
+"r1i-T7-RXc.text" = "您的战网账号现在更安全了。\n\n请务必几下这些数字，以供您需要还原安全令时（例如在手机丢失的情况下）使用：";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "rg3-lp-47I"; */
+"rg3-lp-47I.normalTitle" = "提交";
+
+/* Class = "UILabel"; text = "Help Title"; ObjectID = "rtq-tl-EPb"; */
+"rtq-tl-EPb.text" = "Help Title";
+
+/* Class = "UIViewController"; title = "ShowAuthenticator"; ObjectID = "sQX-Hg-QNn"; */
+"sQX-Hg-QNn.title" = "ShowAuthenticator";
+
+/* Class = "UILabel"; text = "CN-1234-5678-9012"; ObjectID = "sXn-dX-4MZ"; */
+"sXn-dX-4MZ.text" = "CN-1234-5678-9012";
+
+/* Class = "UILabel"; text = "You can now backup your authenticator on iCloud, making setup and recovery easy if you switch to a new device."; ObjectID = "tKd-EK-Q55"; */
+"tKd-EK-Q55.text" = "您现在可以在iCloud备份安全令，在使用新设备时可以更加轻松地安装或还原安全令。";
+
+/* Class = "UIButton"; normalTitle = "Save Screenshot"; ObjectID = "tSd-le-MXM"; */
+"tSd-le-MXM.normalTitle" = "保存屏幕截图";
+
+/* Class = "UILabel"; text = "View Restore Code"; ObjectID = "ugU-hP-cZl"; */
+"ugU-hP-cZl.text" = "查看还原密码";
+
+/* Class = "UILabel"; text = "Help"; ObjectID = "v2l-K8-dSP"; */
+"v2l-K8-dSP.text" = "帮助";
+
+/* Class = "UILabel"; text = "1. Go to battle.net/bma and click Continue to Account Management.\n\n2. Click Attach Authenticator in the Battle.net Mobile Authenticator section.\n\n3. Follow the instructions on the website."; ObjectID = "vJP-hn-MvY"; */
+"vJP-hn-MvY.text" = "1.打开battlenet.com.cn/bma，点击“转至账号管理页面”。\n\n2.点击“添加战网手机安全令”按钮。\n\n3.根据网站上的相关步骤进行操作。";
+
+/* Class = "UINavigationItem"; title = "Help"; ObjectID = "vXp-WB-kga"; */
+"vXp-WB-kga.title" = "帮助";
+
+/* Class = "UILabel"; text = "Use Restore Code"; ObjectID = "xeZ-pa-imC"; */
+"xeZ-pa-imC.text" = "使用还原密码";
+
+/* Class = "UILabel"; text = "Reset Authenticator"; ObjectID = "y5a-ro-Vy0"; */
+"y5a-ro-Vy0.text" = "重置安全令";
+
+/* Class = "UILabel"; text = "Authenticator Restored!"; ObjectID = "yQ7-d5-sjG"; */
+"yQ7-d5-sjG.text" = "安全令已还原！";
+
+/* Class = "UILabel"; text = "Restore Authenticator"; ObjectID = "yfS-1s-dIe"; */
+"yfS-1s-dIe.text" = "还原安全令";
+
+/* Class = "UIButton"; normalTitle = "Copy Code"; ObjectID = "zBM-zt-T0V"; */
+"zBM-zt-T0V.normalTitle" = "复制密码";

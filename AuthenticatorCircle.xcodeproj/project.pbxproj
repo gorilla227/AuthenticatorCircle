@@ -17,6 +17,7 @@
 		A1D368051B8049550034F8F5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D368041B8049550034F8F5 /* Menu.m */; };
 		B2293DE81B8D3813004B9A3E /* SetUpAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */; };
 		B22D0BC91B991B4D00BD1857 /* RestoreWithRestoreCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */; };
+		B2384D6B1BB07717000D80BE /* UIStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2384D6D1BB07717000D80BE /* UIStrings.plist */; };
 		B23DD22D1BA8F6BD00A5B9B9 /* WelcomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23DD22C1BA8F6BD00A5B9B9 /* WelcomePageView.m */; };
 		B23E4C1E1B7BBFC900D35088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C1D1B7BBFC900D35088 /* main.m */; };
 		B23E4C211B7BBFC900D35088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C201B7BBFC900D35088 /* AppDelegate.m */; };
@@ -49,7 +50,6 @@
 		B27BE9EC1BA7A1B4006FEBCC /* WelcomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B27BE9EB1BA7A1B4006FEBCC /* WelcomeIcon.png */; };
 		B281E5251BA1FD3200736CC3 /* CompleteSign.png in Resources */ = {isa = PBXBuildFile; fileRef = B281E5241BA1FD3200736CC3 /* CompleteSign.png */; };
 		B281E5281BA205EB00736CC3 /* RestoreKeychainDone.m in Sources */ = {isa = PBXBuildFile; fileRef = B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */; };
-		B283C8301B7E6BC30075D2C7 /* UIStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */; };
 		B2A60E531B814D7C001BB51F /* Help.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E4F1B814D7C001BB51F /* Help.png */; };
 		B2A60E541B814D7C001BB51F /* ResetAuthenticator.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E501B814D7C001BB51F /* ResetAuthenticator.png */; };
 		B2A60E551B814D7C001BB51F /* SendFeedback.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E511B814D7C001BB51F /* SendFeedback.png */; };
@@ -99,6 +99,9 @@
 		B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpAuthenticator.m; sourceTree = "<group>"; };
 		B22D0BC71B991B4D00BD1857 /* RestoreWithRestoreCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreWithRestoreCode.h; sourceTree = "<group>"; };
 		B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreWithRestoreCode.m; sourceTree = "<group>"; };
+		B2384D691BB076E6000D80BE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		B2384D6A1BB076E6000D80BE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B2384D6C1BB07717000D80BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/UIStrings.plist; sourceTree = "<group>"; };
 		B23DD22B1BA8F6BD00A5B9B9 /* WelcomePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomePageView.h; sourceTree = "<group>"; };
 		B23DD22C1BA8F6BD00A5B9B9 /* WelcomePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomePageView.m; sourceTree = "<group>"; };
 		B23E4C181B7BBFC900D35088 /* AuthenticatorCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticatorCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +146,6 @@
 		B281E5241BA1FD3200736CC3 /* CompleteSign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CompleteSign.png; sourceTree = "<group>"; };
 		B281E5261BA205EB00736CC3 /* RestoreKeychainDone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreKeychainDone.h; sourceTree = "<group>"; };
 		B281E5271BA205EB00736CC3 /* RestoreKeychainDone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreKeychainDone.m; sourceTree = "<group>"; };
-		B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIStrings.plist; sourceTree = "<group>"; };
 		B283C8321B7E6E840075D2C7 /* Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
 		B2A60E4F1B814D7C001BB51F /* Help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Help.png; sourceTree = "<group>"; };
 		B2A60E501B814D7C001BB51F /* ResetAuthenticator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResetAuthenticator.png; sourceTree = "<group>"; };
@@ -211,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				B2293DE21B8D1071004B9A3E /* AuthenticatorCircle.entitlements */,
-				B283C82F1B7E6BC30075D2C7 /* UIStrings.plist */,
+				B2384D6D1BB07717000D80BE /* UIStrings.plist */,
 				B23E4C1F1B7BBFC900D35088 /* AppDelegate.h */,
 				B23E4C201B7BBFC900D35088 /* AppDelegate.m */,
 				B2A60E4E1B814D7C001BB51F /* Icon */,
@@ -500,7 +502,7 @@
 				B267F56B1B893C8E00FBB9B5 /* BG_Symmetra.jpg in Resources */,
 				B2A60E561B814D7C001BB51F /* ViewRestoreCode.png in Resources */,
 				B2A60E541B814D7C001BB51F /* ResetAuthenticator.png in Resources */,
-				B283C8301B7E6BC30075D2C7 /* UIStrings.plist in Resources */,
+				B2384D6B1BB07717000D80BE /* UIStrings.plist in Resources */,
 				B267F56C1B893C8E00FBB9B5 /* BG_Torbjorn.jpg in Resources */,
 				B23E4C2C1B7BBFC900D35088 /* LaunchScreen.xib in Resources */,
 				B267F5691B893C8E00FBB9B5 /* BG_Reinhardt.jpg in Resources */,
@@ -580,10 +582,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B2384D6D1BB07717000D80BE /* UIStrings.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2384D6C1BB07717000D80BE /* Base */,
+			);
+			name = UIStrings.plist;
+			sourceTree = "<group>";
+		};
 		B23E4C251B7BBFC900D35088 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B23E4C261B7BBFC900D35088 /* Base */,
+				B2384D691BB076E6000D80BE /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -592,6 +603,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B23E4C2B1B7BBFC900D35088 /* Base */,
+				B2384D6A1BB076E6000D80BE /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
