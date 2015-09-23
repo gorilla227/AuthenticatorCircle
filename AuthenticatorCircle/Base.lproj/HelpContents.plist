@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>HelpTitle</key>
+		<string>What is the Restore code?</string>
+		<key>HelpBody</key>
+		<string>With the Restore code, you can restore a previous version of the Battle.net Authenticator app. This will be helpful if:
+
+• You get a new phone
+• Your current phone requires a factory reset</string>
+		<key>HelpLinks</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>HelpTitle</key>
+		<string>What is Cloud Sync?</string>
+		<key>HelpBody</key>
+		<string>Cloud Sync backs up your authenticator on your #$iCloud Keychain#$, making setup and recovery easy if you switch to a new device. To turn this feature on, you will need to enable the iCloud Keychain.</string>
+		<key>HelpLinks</key>
+		<array>
+			<string>https://support.apple.com/en-us/HT204085</string>
+		</array>
+	</dict>
+	<dict>
+		<key>HelpTitle</key>
+		<string>How can I safely detach my authenticator?</string>
+		<key>HelpBody</key>
+		<string>1. Vist #$battle.net/bma#$
+2. Follow the instructions provided on the site.</string>
+		<key>HelpLinks</key>
+		<array>
+			<string>https://www.battle.net/bma</string>
+		</array>
+	</dict>
+	<dict>
+		<key>HelpTitle</key>
+		<string>Locked yourself out of your Battle.net Account?</string>
+		<key>HelpBody</key>
+		<string>1. If you have the restore code and serial number, you can restore the previous version of your authenticator and use it to log in.
+
+2. If you have SMS Protect set up, you can visit the Account Recovery page, enter your registered email address, and select the option to &quot;use SMS Protect&quot; to unlock your account.</string>
+		<key>HelpLinks</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>HelpTitle</key>
+		<string>Need additional help?</string>
+		<key>HelpBody</key>
+		<string>If you need more help with your Battle.net Mobile Authenticator, please contact Blizzard Entertainment customer support:
+
+• Americas, Europe, Korea, Taiwan: #$https://battle.net/support/#$
+• China: #$https://www.battlenet.com.cn/support/#$</string>
+		<key>HelpLinks</key>
+		<array>
+			<string>https://www.battle.net/support/</string>
+			<string>https://www.battlenet.com.cn/support/</string>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -43,7 +43,8 @@
 
 - (IBAction)btn_LearnHow_OnClicked:(id)sender {
     HelpContent *helpContent = [self.storyboard instantiateViewControllerWithIdentifier:@"HelpContent"];
-    [helpContent setHelpDetail:[[gUIStrings objectForKey:@"HelpList"] objectAtIndex:1]];
+    NSArray *helpList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"HelpContents" ofType:@"plist"]];
+    [helpContent setHelpDetail:[helpList objectAtIndex:1]];
     [helpContent.navigationController setNavigationBarHidden:NO];
     [helpContent.navigationItem setRightBarButtonItem:helpContent.btn_Close];
     UINavigationController *helpNavi = [[UINavigationController alloc] initWithRootViewController:helpContent];

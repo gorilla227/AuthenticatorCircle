@@ -1,0 +1,101 @@
+/* FeedbackMail_Body */
+"FeedbackMail_Body" = "
+
+
+---------------
+请勿删除以下诊断信息，这些数据可以协助我们的工程师改善这个应用。
+
+App version: %@
+Locale: %@
+Device: %@
+iOS version: %@
+---------------";
+
+/* FeedbackMail_Subject */
+"FeedbackMail_Subject" = "Authenticator Feedback";
+
+/* FeedbackMail_Recipients */
+"FeedbackMail_To" = "axu@blizzard.com";
+
+/* Serial Number */
+"UI_FI_Serial" = "（序列号：%@）";
+
+/* Cancel */
+"UI_Initial_SelectRegion_ActionSheetCancel" = "取消";
+
+/* Select Region */
+"UI_Initial_SelectRegion_ActionSheetTitle" = "选择地区";
+
+/* Cancel */
+"UI_Processing_NotFoundAuthenticatorOnCloud_CancelButton" = "取消";
+
+/* Try Again */
+"UI_Processing_NotFoundAuthenticatorOnCloud_TryAgainButton" = "重试";
+
+/* Not found authenticator on iCloud. */
+"UI_Processing_NotFoundAuthenticatorOnCloud_Warning" = "我们无法在iCloud钥匙链上找到备份。请打开钥匙链功能重新尝试。";
+
+/* Resetting */
+"UI_Processing_Resetting" = "正在重置……";
+
+/* Restoring */
+"UI_Processing_Restoring" = "正在还原……";
+
+/* SettingUp */
+"UI_Processing_SettingUp" = "正在设置……";
+
+/* Cancel */
+"UI_RA_Reset_Cancel" = "取消";
+
+/* Warning about reset authenticator. */
+"UI_RA_Reset_Message" = "本台设备上的安全令密钥将被覆盖。是否继续？";
+
+/* Reset */
+"UI_RA_Reset_Reset" = "重置";
+
+/* OK */
+"UI_RWRC_NotComplete_AlertViewCancel" = "取消";
+
+/* Warning of fill all fields */
+"UI_RWRC_NotComplete_AlertViewMessage" = "在点击“提交”按钮前请填写相应的内容。";
+
+/* Not working? */
+"UI_SA_Resync_NotWorking" = "无法工作？";
+
+/* Resyncing... */
+"UI_SA_Resync_Resyncing" = "正在校准……";
+
+/* Still not working? --- Click to turn to help. */
+"UI_SA_Resync_StillNotWorking" = "仍然无法工作？";
+
+/* Sync complete. */
+"UI_SA_Resync_SyncComplete" = "校准完成。";
+
+/* Try resyncing. --- Click to resync. */
+"UI_SA_Resync_TryResyncing" = "请尝试重新校准。";
+
+/* OK */
+"UI_SUAD_SaveScreenshot_CancelButton" = "确认";
+
+/* Screenshot saved */
+"UI_SUAD_SaveScreenshot_Message" = "屏幕截图已保存";
+
+/* Link text of battle.net/bma */
+"UI_SUA_BMA_LinkText" = "battlenet.com.cn/bma";
+
+/* Link URL of battle.net/bma */
+"UI_SUA_BMA_LinkURL" = "https://www.battlenet.com.cn/account/support/mobile-authenticator.html";
+
+/* Instruction text */
+"UI_SUA_Instruction" = "1. 打开%@，点击“转至账号管理页面”。
+
+2. 点击“添加战网手机安全令”按钮。
+
+3. 根据网站上的相关步骤进行操作。";
+
+/* OK */
+"UI_VRC_SaveScreenshot_CancelButton" = "确认";
+
+/* Screenshot saved */
+"UI_VRC_SaveScreenshot_Message" = "屏幕截图已保存";
+

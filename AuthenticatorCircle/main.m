@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-NSDictionary *gUIStrings;
+NSDictionary *gConfiguration;
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {

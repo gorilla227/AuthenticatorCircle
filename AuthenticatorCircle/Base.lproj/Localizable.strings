@@ -1,0 +1,70 @@
+/* 
+  Localizable.strings
+  AuthenticatorCircle
+
+  Created by Andy on 15/9/21.
+  Copyright © 2015年 Andy Xu. All rights reserved.
+*/
+
+//--------------------FeecbackMail--------------------
+"FeedbackMail_Subject" = "Authenticator Feedback";
+"FeedbackMail_To" = "axu@blizzard.com";
+"FeedbackMail_Body" = "
+
+
+---------------
+Please do not delete the diagnostics information below; this data helps our engineers improve the app.
+
+App version: %@
+Locale: %@
+Device: %@
+iOS version: %@
+---------------";
+
+//--------------------ShowAuthenticator--------------------
+"UI_SA_Resync_NotWorking" = "Not working?";
+"UI_SA_Resync_TryResyncing" = "Try Resyncing.";
+"UI_SA_Resync_Resyncing" = "Resyncing...";
+"UI_SA_Resync_SyncComplete" = "Sync complete.";
+"UI_SA_Resync_StillNotWorking" = "Still not working?";
+
+//--------------------ViewRestoreCode--------------------
+"UI_VRC_SaveScreenshot_Message" = "Screenshot saved";
+"UI_VRC_SaveScreenshot_CancelButton" = "OK";
+
+//--------------------ResetAuthenticator--------------------
+"UI_RA_Reset_Message" = "The authenticator keys from your device will be erased. Continue?";
+"UI_RA_Reset_Cancel" = "Cancel";
+"UI_RA_Reset_Reset" = "Reset";
+
+//--------------------Processing--------------------
+"UI_Processing_Resetting" = "Resetting...";
+"UI_Processing_SettingUp" = "Setting Up...";
+"UI_Processing_Restoring" = "Restoring...";
+"UI_Processing_NotFoundAuthenticatorOnCloud_Warning" = "We can't detect an iCloud keychain backup. Please turn on Keychain and try again.";
+"UI_Processing_NotFoundAuthenticatorOnCloud_CancelButton" = "Cancel";
+"UI_Processing_NotFoundAuthenticatorOnCloud_TryAgainButton" = "Try Again";
+
+//--------------------SetUpAuthenticator--------------------
+"UI_SUA_BMA_LinkText" = "battle.net/bma";
+"UI_SUA_BMA_LinkURL" = "https://www.battle.net/bma";
+"UI_SUA_Instruction" = "1. Go to %@ and click Continue to Account Management.
+
+2. Click Attach Authenticator in the Battle.net Mobile Authenticator section.
+
+3. Follow the instructions on the website.";
+
+//--------------------SetUpAuthenticatorDone--------------------
+"UI_SUAD_SaveScreenshot_Message" = "Screenshot saved";
+"UI_SUAD_SaveScreenshot_CancelButton" = "OK";
+
+//--------------------RestoreWithRestoreCode--------------------
+"UI_RWRC_NotComplete_AlertViewMessage" = "Please fill out the required fields before you press Submit.";
+"UI_RWRC_NotComplete_AlertViewCancel" = "OK";
+
+//--------------------Initial--------------------
+"UI_Initial_SelectRegion_ActionSheetTitle" = "Select Region";
+"UI_Initial_SelectRegion_ActionSheetCancel" = "Cancel";
+
+//--------------------FixInconsistency--------------------
+"UI_FI_Serial" = "(Serial: %@)";

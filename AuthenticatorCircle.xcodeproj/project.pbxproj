@@ -16,8 +16,10 @@
 		A1C137D81BAA3BA700D8C92A /* WelcomeSyncWithiCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C137D71BAA3BA700D8C92A /* WelcomeSyncWithiCloud.m */; settings = {ASSET_TAGS = (); }; };
 		A1D368051B8049550034F8F5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D368041B8049550034F8F5 /* Menu.m */; };
 		B2293DE81B8D3813004B9A3E /* SetUpAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */; };
+		B22B5CE71BB22D34001CAF7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B22B5CE51BB22D34001CAF7A /* InfoPlist.strings */; settings = {ASSET_TAGS = (); }; };
+		B22B5CE91BB22FE0001CAF7A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B22B5CE81BB22FE0001CAF7A /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		B22D0BC91B991B4D00BD1857 /* RestoreWithRestoreCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */; };
-		B2384D6B1BB07717000D80BE /* UIStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2384D6D1BB07717000D80BE /* UIStrings.plist */; };
+		B2384D6B1BB07717000D80BE /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2384D6D1BB07717000D80BE /* Configuration.plist */; };
 		B23DD22D1BA8F6BD00A5B9B9 /* WelcomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23DD22C1BA8F6BD00A5B9B9 /* WelcomePageView.m */; };
 		B23E4C1E1B7BBFC900D35088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C1D1B7BBFC900D35088 /* main.m */; };
 		B23E4C211B7BBFC900D35088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C201B7BBFC900D35088 /* AppDelegate.m */; };
@@ -28,6 +30,7 @@
 		B23E4C461B7BC79E00D35088 /* ArcProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C451B7BC79E00D35088 /* ArcProgressView.m */; };
 		B23E4C491B7BCAD200D35088 /* ShowAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C481B7BCAD200D35088 /* ShowAuthenticator.m */; };
 		B23E4C4C1B7BCBBF00D35088 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C4B1B7BCBBF00D35088 /* KeychainWrapper.m */; };
+		B2438D1D1BB2281300EFB480 /* HelpContents.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2438D1F1BB2281300EFB480 /* HelpContents.plist */; };
 		B25E461D1B98E95E00C7FD60 /* RestoreAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B25E461C1B98E95E00C7FD60 /* RestoreAuthenticator.m */; };
 		B265C7DB1BAB7DD500DC238B /* UIButton+StyleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B265C7DA1BAB7DD500DC238B /* UIButton+StyleButton.m */; settings = {ASSET_TAGS = (); }; };
 		B267F5621B893C8E00FBB9B5 /* BG_Bastion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5521B893C8E00FBB9B5 /* BG_Bastion.jpg */; };
@@ -46,6 +49,7 @@
 		B267F56F1B893C8E00FBB9B5 /* BG_Winston.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F55F1B893C8E00FBB9B5 /* BG_Winston.jpg */; };
 		B267F5701B893C8E00FBB9B5 /* BG_Zarya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5601B893C8E00FBB9B5 /* BG_Zarya.jpg */; };
 		B267F5711B893C8E00FBB9B5 /* BG_Zenyatta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */; };
+		B26D8EC51BB20F8A00706539 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B26D8EC71BB20F8A00706539 /* Localizable.strings */; };
 		B27BE9EA1BA7A1AE006FEBCC /* CloudIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B27BE9E91BA7A1AE006FEBCC /* CloudIcon.png */; };
 		B27BE9EC1BA7A1B4006FEBCC /* WelcomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B27BE9EB1BA7A1B4006FEBCC /* WelcomeIcon.png */; };
 		B281E5251BA1FD3200736CC3 /* CompleteSign.png in Resources */ = {isa = PBXBuildFile; fileRef = B281E5241BA1FD3200736CC3 /* CompleteSign.png */; };
@@ -97,15 +101,14 @@
 		B2293DE21B8D1071004B9A3E /* AuthenticatorCircle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AuthenticatorCircle.entitlements; sourceTree = "<group>"; };
 		B2293DE61B8D3813004B9A3E /* SetUpAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpAuthenticator.h; sourceTree = "<group>"; };
 		B2293DE71B8D3813004B9A3E /* SetUpAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpAuthenticator.m; sourceTree = "<group>"; };
+		B22B5CE61BB22D34001CAF7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		B22B5CE81BB22FE0001CAF7A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B22D0BC71B991B4D00BD1857 /* RestoreWithRestoreCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreWithRestoreCode.h; sourceTree = "<group>"; };
 		B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreWithRestoreCode.m; sourceTree = "<group>"; };
-		B2384D691BB076E6000D80BE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		B2384D6A1BB076E6000D80BE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		B2384D6C1BB07717000D80BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/UIStrings.plist; sourceTree = "<group>"; };
+		B2384D6C1BB07717000D80BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Configuration.plist; sourceTree = "<group>"; };
 		B23DD22B1BA8F6BD00A5B9B9 /* WelcomePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomePageView.h; sourceTree = "<group>"; };
 		B23DD22C1BA8F6BD00A5B9B9 /* WelcomePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomePageView.m; sourceTree = "<group>"; };
 		B23E4C181B7BBFC900D35088 /* AuthenticatorCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticatorCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B23E4C1C1B7BBFC900D35088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B23E4C1D1B7BBFC900D35088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B23E4C1F1B7BBFC900D35088 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B23E4C201B7BBFC900D35088 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +124,11 @@
 		B23E4C481B7BCAD200D35088 /* ShowAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAuthenticator.m; sourceTree = "<group>"; };
 		B23E4C4A1B7BCBBF00D35088 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		B23E4C4B1B7BCBBF00D35088 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		B2438D1E1BB2281300EFB480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/HelpContents.plist; sourceTree = "<group>"; };
+		B25300391BB228E300CE87D2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		B253003A1BB228E300CE87D2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B253003B1BB228E400CE87D2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/HelpContents.plist"; sourceTree = "<group>"; };
+		B253003C1BB228E400CE87D2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B25E461B1B98E95E00C7FD60 /* RestoreAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreAuthenticator.h; sourceTree = "<group>"; };
 		B25E461C1B98E95E00C7FD60 /* RestoreAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreAuthenticator.m; sourceTree = "<group>"; };
 		B265C7D91BAB7DD500DC238B /* UIButton+StyleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+StyleButton.h"; sourceTree = "<group>"; };
@@ -141,6 +149,7 @@
 		B267F55F1B893C8E00FBB9B5 /* BG_Winston.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Winston.jpg; sourceTree = "<group>"; };
 		B267F5601B893C8E00FBB9B5 /* BG_Zarya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Zarya.jpg; sourceTree = "<group>"; };
 		B267F5611B893C8E00FBB9B5 /* BG_Zenyatta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Zenyatta.jpg; sourceTree = "<group>"; };
+		B26D8EC61BB20F8A00706539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B27BE9E91BA7A1AE006FEBCC /* CloudIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloudIcon.png; sourceTree = "<group>"; };
 		B27BE9EB1BA7A1B4006FEBCC /* WelcomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeIcon.png; sourceTree = "<group>"; };
 		B281E5241BA1FD3200736CC3 /* CompleteSign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CompleteSign.png; sourceTree = "<group>"; };
@@ -212,8 +221,9 @@
 		B23E4C1A1B7BBFC900D35088 /* AuthenticatorCircle */ = {
 			isa = PBXGroup;
 			children = (
+				B2438D1F1BB2281300EFB480 /* HelpContents.plist */,
 				B2293DE21B8D1071004B9A3E /* AuthenticatorCircle.entitlements */,
-				B2384D6D1BB07717000D80BE /* UIStrings.plist */,
+				B2384D6D1BB07717000D80BE /* Configuration.plist */,
 				B23E4C1F1B7BBFC900D35088 /* AppDelegate.h */,
 				B23E4C201B7BBFC900D35088 /* AppDelegate.m */,
 				B2A60E4E1B814D7C001BB51F /* Icon */,
@@ -232,9 +242,11 @@
 		B23E4C1B1B7BBFC900D35088 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B26D8EC71BB20F8A00706539 /* Localizable.strings */,
 				B283C8321B7E6E840075D2C7 /* Prefix.h */,
 				A12EE3D91B8593EB005DDCFC /* AuthenticatorCircle-Prefix.pch */,
-				B23E4C1C1B7BBFC900D35088 /* Info.plist */,
+				B22B5CE81BB22FE0001CAF7A /* Info.plist */,
+				B22B5CE51BB22D34001CAF7A /* InfoPlist.strings */,
 				B23E4C1D1B7BBFC900D35088 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -469,6 +481,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = B23E4C0F1B7BBFC900D35088;
 			productRefGroup = B23E4C191B7BBFC900D35088 /* Products */;
@@ -489,12 +502,14 @@
 				A11E5D201B8AD6DA00D2BA8A /* WarningSign.png in Resources */,
 				B27BE9EC1BA7A1B4006FEBCC /* WelcomeIcon.png in Resources */,
 				B267F5701B893C8E00FBB9B5 /* BG_Zarya.jpg in Resources */,
+				B2438D1D1BB2281300EFB480 /* HelpContents.plist in Resources */,
 				B2A60E531B814D7C001BB51F /* Help.png in Resources */,
 				B2E7CC601B8BF71C004EA14C /* AppBackground.jpg in Resources */,
 				B267F5631B893C8E00FBB9B5 /* BG_Hanzo.jpg in Resources */,
 				B281E5251BA1FD3200736CC3 /* CompleteSign.png in Resources */,
 				B2E7CC621B8BF8A4004EA14C /* BattleNet_Title.png in Resources */,
 				B23E4C271B7BBFC900D35088 /* Main.storyboard in Resources */,
+				B22B5CE91BB22FE0001CAF7A /* Info.plist in Resources */,
 				B267F56F1B893C8E00FBB9B5 /* BG_Winston.jpg in Resources */,
 				B267F56E1B893C8E00FBB9B5 /* BG_Widowmaker.jpg in Resources */,
 				B267F5711B893C8E00FBB9B5 /* BG_Zenyatta.jpg in Resources */,
@@ -502,7 +517,8 @@
 				B267F56B1B893C8E00FBB9B5 /* BG_Symmetra.jpg in Resources */,
 				B2A60E561B814D7C001BB51F /* ViewRestoreCode.png in Resources */,
 				B2A60E541B814D7C001BB51F /* ResetAuthenticator.png in Resources */,
-				B2384D6B1BB07717000D80BE /* UIStrings.plist in Resources */,
+				B26D8EC51BB20F8A00706539 /* Localizable.strings in Resources */,
+				B2384D6B1BB07717000D80BE /* Configuration.plist in Resources */,
 				B267F56C1B893C8E00FBB9B5 /* BG_Torbjorn.jpg in Resources */,
 				B23E4C2C1B7BBFC900D35088 /* LaunchScreen.xib in Resources */,
 				B267F5691B893C8E00FBB9B5 /* BG_Reinhardt.jpg in Resources */,
@@ -515,6 +531,7 @@
 				B267F5651B893C8E00FBB9B5 /* BG_McCree.jpg in Resources */,
 				B267F5681B893C8E00FBB9B5 /* BG_Reaper.jpg in Resources */,
 				B267F56A1B893C8E00FBB9B5 /* BG_Soldier76.jpg in Resources */,
+				B22B5CE71BB22D34001CAF7A /* InfoPlist.strings in Resources */,
 				B27BE9EA1BA7A1AE006FEBCC /* CloudIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,19 +599,27 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B2384D6D1BB07717000D80BE /* UIStrings.plist */ = {
+		B22B5CE51BB22D34001CAF7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B22B5CE61BB22D34001CAF7A /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B2384D6D1BB07717000D80BE /* Configuration.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B2384D6C1BB07717000D80BE /* Base */,
 			);
-			name = UIStrings.plist;
+			name = Configuration.plist;
 			sourceTree = "<group>";
 		};
 		B23E4C251B7BBFC900D35088 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B23E4C261B7BBFC900D35088 /* Base */,
-				B2384D691BB076E6000D80BE /* zh-Hans */,
+				B25300391BB228E300CE87D2 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -603,9 +628,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				B23E4C2B1B7BBFC900D35088 /* Base */,
-				B2384D6A1BB076E6000D80BE /* zh-Hans */,
+				B253003A1BB228E300CE87D2 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B2438D1F1BB2281300EFB480 /* HelpContents.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2438D1E1BB2281300EFB480 /* Base */,
+				B253003B1BB228E400CE87D2 /* zh-Hans */,
+			);
+			name = HelpContents.plist;
+			sourceTree = "<group>";
+		};
+		B26D8EC71BB20F8A00706539 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26D8EC61BB20F8A00706539 /* Base */,
+				B253003C1BB228E400CE87D2 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -650,7 +693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -689,7 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -13,28 +13,25 @@
 @property (nonatomic, strong) IBOutlet UIActivityIndicatorView *ai_Processing;
 @end
 
-@implementation ProcessingViewController {
-    NSDictionary *uiStrings;
-}
+@implementation ProcessingViewController
 @synthesize lb_Processing, ai_Processing, processingType, processingParameters;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    uiStrings = [gUIStrings objectForKey:@"UI_Processing"];
     [self.view setBackgroundColor:cViewBackground];
     [self.navigationController setNavigationBarHidden:YES];
     switch (processingType) {
         case ProcessingTypeResetting:
-            [lb_Processing setText:[uiStrings objectForKey:@"UI_Processing_Resetting"]];
+            [lb_Processing setText:NSLocalizedString(@"UI_Processing_Resetting", @"Resetting")];
             break;
         case ProcessingTypeSettingUp:
-            [lb_Processing setText:[uiStrings objectForKey:@"UI_Processing_SettingUp"]];
+            [lb_Processing setText:NSLocalizedString(@"UI_Processing_SettingUp", @"SettingUp")];
             break;
         case ProcessingTypeRestoreWithCode:
         case ProcessingTypeRestoreKeychain:
         case ProcessingTypeFixInconsistency:
-            [lb_Processing setText:[uiStrings objectForKey:@"UI_Processing_Restore"]];
+            [lb_Processing setText:NSLocalizedString(@"UI_Processing_Restoring", @"Restoring")];
             break;
         default:
             [lb_Processing setText:nil];
@@ -94,10 +91,10 @@
         else {
             //No Authenticator saved in iCloud
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
-                                                                message:[uiStrings objectForKey:@"UI_Processing_NotFoundAuthenticatorOnCloud_Warning"]
+                                                                message:NSLocalizedString(@"UI_Processing_NotFoundAuthenticatorOnCloud_Warning", @"Not found authenticator on iCloud.")
                                                                delegate:self
-                                                      cancelButtonTitle:[uiStrings objectForKey:@"UI_Processing_NotFoundAuthenticatorOnCloud_CancelButton"]
-                                                      otherButtonTitles:nil];
+                                                      cancelButtonTitle:NSLocalizedString(@"UI_Processing_NotFoundAuthenticatorOnCloud_CancelButton", @"Cancel")
+                                                      otherButtonTitles:NSLocalizedString(@"UI_Processing_NotFoundAuthenticatorOnCloud_TryAgainButton", @"Try Again"), nil];
             [alertView show];
         }
     }
@@ -142,7 +139,13 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (alertView.cancelButtonIndex == buttonIndex) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    else {
+        [ai_Processing startAnimating];
+        [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(completeProcess) userInfo:nil repeats:NO];
+    }
 }
 /*
 #pragma mark - Navigation

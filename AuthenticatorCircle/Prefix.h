@@ -9,7 +9,7 @@
 #ifndef AuthenticatorCircle_Prefix_h
 #define AuthenticatorCircle_Prefix_h
 //Global Variables
-extern NSDictionary *gUIStrings;
+extern NSDictionary *gConfiguration;
 #endif
 
 #define cMenuTintColor [UIColor colorWithRed:54.0/255.0 green:61.0/255.0 blue:78.0/255.0 alpha:1.0f]
@@ -28,3 +28,6 @@ extern NSDictionary *gUIStrings;
 #define kFixInconsistencyAuthenticatorKey @"FixInconsistencyAuthenticator"
 #define kFixInconsistencySaveCloudKey @"FixInconsistencySaveCloud"
 #define kLinkSeperator @"#$"
+#define kHelpTitleKey @"HelpTitle"
+#define kHelpBodyKey @"HelpBody"
+#define kHelpLinkKey @"HelpLinks"

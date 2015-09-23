@@ -21,14 +21,12 @@
 
 @implementation SetUpAuthenticatorDone {
     AuthenticatorSimulator *authenticator;
-    NSDictionary *uiStrings;
 }
 @synthesize lb_YouAreDone, lb_Description, lb_SerialTitle, lb_SerialNumber, lb_RestoreTitle, lb_RestoreCode, btn_SaveScreenshot, btn_Continue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    uiStrings = [gUIStrings objectForKey:@"UI_SetUpAuthenticatorDone"];
     [btn_SaveScreenshot updateUIButtonStyle:UIButtonStyleDarkBlue1];
     [btn_Continue updateUIButtonStyle:UIButtonStyleLightBlue];
     [self.view setBackgroundColor:cViewBackground];
@@ -59,7 +57,11 @@
 
 - (void)screenshot:(UIImage *)screenshot didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
     if (!error) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:[uiStrings objectForKey:@"UI_SUAD_SaveScreenshot_Message"] delegate:nil cancelButtonTitle:[uiStrings objectForKey:@"UI_SUAD_SaveScreenshot_CancelButton"] otherButtonTitles:nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+                                                            message:NSLocalizedString(@"UI_SUAD_SaveScreenshot_Message", @"Screenshot saved")
+                                                           delegate:nil
+                                                  cancelButtonTitle:NSLocalizedString(@"UI_SUAD_SaveScreenshot_CancelButton", @"OK")
+                                                  otherButtonTitles:nil];
         [alertView show];
     }
 }

@@ -23,7 +23,6 @@ extern AuthenticatorSimulator *gAuthenticator;
     UIImageView *backgroundImageView;
     NSMutableArray *bgImages;
     UIImage *currentBackgroundImage;
-    NSDictionary *uiStrings;
     AuthenticatorSimulator *authenticatorSimulator;
 }
 @synthesize progressViewContainer, lb_Passcode, btn_Copy, lb_Copied, lb_Sync;
@@ -36,7 +35,6 @@ extern AuthenticatorSimulator *gAuthenticator;
     
     [progressViewContainer setBackgroundColor:[UIColor clearColor]];
     [self.view setBackgroundColor:[UIColor clearColor]];
-    uiStrings = [gUIStrings objectForKey:@"UI_ShowAuthenticator"];
     
     //Set BackgroundImageView and gradient layer
     backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
@@ -118,18 +116,18 @@ extern AuthenticatorSimulator *gAuthenticator;
     [lb_Sync setTag:tag];
     switch (tag) {
         case 0://Click to Resync
-            prefixText = [uiStrings objectForKey:@"UI_SA_Resync_NotWorking"];
-            linkText = [uiStrings objectForKey:@"UI_SA_Resync_TryResyncing"];
+            prefixText = NSLocalizedString(@"UI_SA_Resync_NotWorking", @"Not working?");
+            linkText = NSLocalizedString(@"UI_SA_Resync_TryResyncing", @"Try resyncing. --- Click to resync.");
             [lb_Sync setText:[NSString stringWithFormat:@"%@ %@", prefixText, linkText]];
             linkRange = [lb_Sync.text rangeOfString:linkText];
             [lb_Sync addLinkToURL:nil withRange:linkRange];
             break;
         case 1://Resyncing
-            [lb_Sync setText:[uiStrings objectForKey:@"UI_SA_Resync_Resyncing"]];
+            [lb_Sync setText:NSLocalizedString(@"UI_SA_Resync_Resyncing", @"Resyncing...")];
             break;
         case 2://Still not working
-            prefixText = [uiStrings objectForKey:@"UI_SA_Resync_SyncComplete"];
-            linkText = [uiStrings objectForKey:@"UI_SA_Resync_StillNotWorking"];
+            prefixText = NSLocalizedString(@"UI_SA_Resync_SyncComplete", @"Sync complete.");
+            linkText = NSLocalizedString(@"UI_SA_Resync_StillNotWorking", @"Still not working? --- Click to turn to help.");
             [lb_Sync setText:[NSString stringWithFormat:@"%@ %@", prefixText, linkText]];
             linkRange = [lb_Sync.text rangeOfString:linkText];
             [lb_Sync addLinkToURL:nil withRange:linkRange];
@@ -148,7 +146,8 @@ extern AuthenticatorSimulator *gAuthenticator;
     else if (lb_Sync.tag == 2) {
         //Show help content
         HelpContent *helpContent = [self.storyboard instantiateViewControllerWithIdentifier:@"HelpContent"];
-        [helpContent setHelpDetail:[[gUIStrings objectForKey:@"HelpList"] lastObject]];
+        NSArray *helpList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"HelpContents" ofType:@"plist"]];
+        [helpContent setHelpDetail:helpList.lastObject];
         [helpContent.navigationController setNavigationBarHidden:NO];
         [helpContent.navigationItem setRightBarButtonItem:helpContent.btn_Close];
         UINavigationController *helpNavi = [[UINavigationController alloc] initWithRootViewController:helpContent];

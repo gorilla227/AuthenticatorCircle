@@ -19,7 +19,6 @@
 @end
 
 @implementation FixInconsistency {
-    NSDictionary *uiStrings;
     AuthenticatorSimulator *localAuthenticator;
     AuthenticatorSimulator *cloudAuthenticator;
 }
@@ -28,8 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    uiStrings = [gUIStrings objectForKey:@"UI_FixInconsistency"];
-    
     [UIView animateWithDuration:1.5f delay:0.0f options:UIViewAnimationOptionAutoreverse|UIViewAnimationOptionRepeat animations:^{
         [iv_WarningSign setTransform:CGAffineTransformMakeScale(1.05f, 1.05f)];
     } completion:nil];
@@ -46,8 +43,8 @@
     [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
     [lb_LocalDate setText:[dateFormatter stringFromDate:localLastModificationDate]];
     [lb_CloudDate setText:[dateFormatter stringFromDate:cloudLastModificationDate]];
-    [lb_LocalSerial setText:[NSString stringWithFormat:[uiStrings objectForKey:@"UI_FI_Serial"], [localAuthenticator retrieveSeriesNumber]]];
-    [lb_CloudSerial setText:[NSString stringWithFormat:[uiStrings objectForKey:@"UI_FI_Serial"], [cloudAuthenticator retrieveSeriesNumber]]];
+    [lb_LocalSerial setText:[NSString stringWithFormat:NSLocalizedString(@"UI_FI_Serial", @"Serial Number"), [localAuthenticator retrieveSeriesNumber]]];
+    [lb_CloudSerial setText:[NSString stringWithFormat:NSLocalizedString(@"UI_FI_Serial", @"Serial Number"), [cloudAuthenticator retrieveSeriesNumber]]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -26,13 +26,13 @@
     
     if (helpDetail) {
         //Set Help Title
-        [lb_HelpTitle setText:[helpDetail objectForKey:@"HelpTitle"]];
+        [lb_HelpTitle setText:[helpDetail objectForKey:kHelpTitleKey]];
         
         //Set Help Content
-        NSArray *links = [helpDetail objectForKey:@"Links"];
+        NSArray *links = [helpDetail objectForKey:kHelpLinkKey];
         if (links && links.count) {
             //Have links
-            NSArray *helpContentArray = [[helpDetail objectForKey:@"HelpContent"] componentsSeparatedByString:kLinkSeperator];
+            NSArray *helpContentArray = [[helpDetail objectForKey:kHelpBodyKey] componentsSeparatedByString:kLinkSeperator];
             if (helpContentArray.count / 2 <= links.count) {
                 NSString *finalString = [NSString new];
                 NSMutableDictionary *linksDictionary = [NSMutableDictionary new];
@@ -54,13 +54,13 @@
             }
             else {
                 //Don't have enough links for token in HelpContent.
-                [lb_HelpContent setText:[helpDetail objectForKey:@"HelpContent"]];
+                [lb_HelpContent setText:[helpDetail objectForKey:kHelpBodyKey]];
                 NSLog(@"Don't have enough links for token in HelpContent.");
             }
         }
         else {
             //No links
-            [lb_HelpContent setText:[helpDetail objectForKey:@"HelpContent"]];
+            [lb_HelpContent setText:[helpDetail objectForKey:kHelpBodyKey]];
         }
     }
 }

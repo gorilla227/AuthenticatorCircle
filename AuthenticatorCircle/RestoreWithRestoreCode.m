@@ -18,14 +18,12 @@
 @implementation RestoreWithRestoreCode {
     UISegmentedControl *sc_RegionCodes;
     NSArray *regionCodes;
-    NSDictionary *uiStrings;
 }
 @synthesize lb_Description, tf_Serial, tf_RestoreCode, btn_Submit;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    uiStrings = [gUIStrings objectForKey:@"UI_RestoreWithRestoreCode"];
     [self.navigationController setNavigationBarHidden:NO];
     [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AppBackground.jpg"]]];
     
@@ -34,7 +32,7 @@
     [tf_RestoreCode setBackgroundColor:cTextFieldBackground];
     
     //Set Region Selection
-    regionCodes = [gUIStrings objectForKey:@"SerialRegionCodes"];
+    regionCodes = [gConfiguration objectForKey:@"SerialRegionCodes"];
     sc_RegionCodes = [[UISegmentedControl alloc] initWithItems:regionCodes];
     [sc_RegionCodes setBackgroundColor:cBackground];
     [sc_RegionCodes setTintColor:[UIColor colorWithWhite:0.9f alpha:1.0f]];
@@ -53,7 +51,11 @@
         [self performSegueWithIdentifier:@"RestoreWithCode" sender:self];        
     }
     else {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:[uiStrings objectForKey:@"UI_RWRC_NotComplete_AlertViewMessage"] delegate:nil cancelButtonTitle:[uiStrings objectForKey:@"UI_RWRC_NotComplete_AlertViewCancel"] otherButtonTitles:nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+                                                            message:NSLocalizedString(@"UI_RWRC_NotComplete_AlertViewMessage", @"Warning of fill all fields")
+                                                           delegate:nil
+                                                  cancelButtonTitle:NSLocalizedString(@"UI_RWRC_NotComplete_AlertViewCancel", @"OK")
+                                                  otherButtonTitles:nil];
         [alertView show];
     }
 }

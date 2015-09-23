@@ -17,15 +17,12 @@
 @property (nonatomic, strong) IBOutlet UIButton *btn_ResetMyAuthenticator;
 @end
 
-@implementation ResetAuthenticator {
-    NSDictionary *uiStrings;
-}
+@implementation ResetAuthenticator
 @synthesize iv_WarningSign, lb_Question, lb_Warning, btn_GoBack, btn_ResetMyAuthenticator;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    uiStrings = [gUIStrings objectForKey:@"UI_ResetAuthenticator"];
     [UIView animateWithDuration:1.5f delay:0.0f options:UIViewAnimationOptionAutoreverse|UIViewAnimationOptionRepeat animations:^{
         [iv_WarningSign setTransform:CGAffineTransformMakeScale(1.05f, 1.05f)];
     } completion:nil];
@@ -47,7 +44,11 @@
 }
 
 - (IBAction)btn_ResetMyAuthenticator_OnClicked:(id)sender {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:[uiStrings objectForKey:@"UI_RA_Reset_Message"] delegate:self cancelButtonTitle:[uiStrings objectForKey:@"UI_RA_Reset_Cancel"] otherButtonTitles:[uiStrings objectForKey:@"UI_RA_Reset_Reset"], nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+                                                        message:NSLocalizedString(@"UI_RA_Reset_Message", @"Warning about reset authenticator.")
+                                                       delegate:self
+                                              cancelButtonTitle:NSLocalizedString(@"UI_RA_Reset_Cancel", @"Cancel")
+                                              otherButtonTitles:NSLocalizedString(@"UI_RA_Reset_Reset", @"Reset"), nil];
     [alertView show];
 }
 

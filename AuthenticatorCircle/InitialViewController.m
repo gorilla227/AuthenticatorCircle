@@ -16,7 +16,6 @@
 
 @implementation InitialViewController {
     NSArray *regionCodes;
-    NSDictionary *uiStrings;
 }
 @synthesize lb_Description, btn_SetUp, btn_Restore;
 
@@ -30,8 +29,7 @@
     [btn_Restore updateUIButtonStyle:UIButtonStyleLightBlue];
     [lb_Description sizeToFit];
     
-    regionCodes = [gUIStrings objectForKey:@"SerialRegionCodes"];
-    uiStrings = [gUIStrings objectForKey:@"UI_Initial"];
+    regionCodes = [gConfiguration objectForKey:@"SerialRegionCodes"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,8 +47,9 @@
 }
 
 - (IBAction)btn_SetUp_OnClicked:(id)sender {
-    UIActionSheet *selectionRegioin = [[UIActionSheet alloc] initWithTitle:[uiStrings objectForKey:@"UI_Initial_SelectRegion_ActionSheetTitle"]
-                                                                  delegate:self cancelButtonTitle:[uiStrings objectForKey:@"UI_Initial_SelectRegion_ActionSheetCancel"]
+    UIActionSheet *selectionRegioin = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"UI_Initial_SelectRegion_ActionSheetTitle", @"Select Region")
+                                                                  delegate:self
+                                                         cancelButtonTitle:NSLocalizedString(@"UI_Initial_SelectRegion_ActionSheetCancel", @"Cancel")
                                                     destructiveButtonTitle:nil
                                                          otherButtonTitles:nil];
     for (NSString *region in regionCodes) {

@@ -17,16 +17,12 @@
 @property (nonatomic, strong) IBOutlet UIButton *btn_SaveScreenshot;
 @end
 
-@implementation ViewRestoreCode {
-    NSDictionary *uiStrings;
-}
+@implementation ViewRestoreCode
 @synthesize lb_SerialTitle, lb_SerialNumber, lb_RestoreCodeTitle, lb_RestoreCodeNumber, lb_Notification, btn_SaveScreenshot;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    uiStrings = [gUIStrings objectForKey:@"UI_ViewRestoreCode"];
-    
     [self.view setBackgroundColor:cBackground];
     [lb_SerialTitle setTextColor:[UIColor whiteColor]];
     [lb_SerialNumber setTextColor:[UIColor yellowColor]];
@@ -56,7 +52,11 @@
 
 - (void)screenshot:(UIImage *)screenshot didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
     if (!error) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:[uiStrings objectForKey:@"UI_VRC_SaveScreenshot_Message"] delegate:nil cancelButtonTitle:[uiStrings objectForKey:@"UI_VRC_SaveScreenshot_CancelButton"] otherButtonTitles:nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+                                                            message:NSLocalizedString(@"UI_VRC_SaveScreenshot_Message", @"Screenshot saved")
+                                                           delegate:nil
+                                                  cancelButtonTitle:NSLocalizedString(@"UI_VRC_SaveScreenshot_CancelButton", @"OK")
+                                                  otherButtonTitles:nil];
         [alertView show];
     }
 }

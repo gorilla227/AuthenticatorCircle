@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-    helpList = [gUIStrings objectForKey:@"HelpList"];
+    helpList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"HelpContents" ofType:@"plist"]];
     [self.tableView setEstimatedRowHeight:44.0f];
     [self.tableView setRowHeight:UITableViewAutomaticDimension];
 }
@@ -60,7 +60,7 @@
     }
     
     //Set help title
-    [cell.textLabel setText:[[helpList objectAtIndex:indexPath.row] objectForKey:@"HelpTitle"]];
+    [cell.textLabel setText:[[helpList objectAtIndex:indexPath.row] objectForKey:kHelpTitleKey]];
     return cell;
 }
 

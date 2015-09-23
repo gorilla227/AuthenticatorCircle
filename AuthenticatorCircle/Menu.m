@@ -60,20 +60,13 @@
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if ([cell.reuseIdentifier isEqualToString:@"SendFeedback"]) {
         if ([MFMailComposeViewController canSendMail]) {
-            NSDictionary *feedbackMailComponents = [gUIStrings objectForKey:@"FeedbackMailComponents"];
             MFMailComposeViewController *compose = [[MFMailComposeViewController alloc] init];
             [compose setMailComposeDelegate:self];
             [compose.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
             [compose.navigationBar setTintColor:self.view.tintColor];
-            [compose setSubject:[feedbackMailComponents objectForKey:@"Subject"]];
-            [compose setToRecipients:@[[feedbackMailComponents objectForKey:@"To"]]];
-            
-            NSString *warningMessage = [feedbackMailComponents objectForKey:@"WarningMessage"];
-            NSString *appVersion = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"AppVersion"], [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]];
-            NSString *locale = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Locale"], [[NSBundle mainBundle] preferredLocalizations].firstObject];
-            NSString *device = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Device"], [UIDevice currentDevice].model];
-            NSString *iosVersion = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"IOSVersion"], [UIDevice currentDevice].systemVersion];
-            NSString *body = [NSString stringWithFormat:[feedbackMailComponents objectForKey:@"Body"], warningMessage, appVersion, locale, device, iosVersion];
+            [compose setSubject:NSLocalizedString(@"FeedbackMail_Subject", @"FeedbackMail_Subject")];
+            [compose setToRecipients:@[NSLocalizedString(@"FeedbackMail_To", @"FeedbackMail_Recipients")]];
+            NSString *body = [NSString localizedStringWithFormat:NSLocalizedString(@"FeedbackMail_Body", @"FeedbackMail_Body"), [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"], [[NSBundle mainBundle] preferredLocalizations].firstObject, [UIDevice currentDevice].model, [UIDevice currentDevice].systemVersion];
             [compose setMessageBody:body isHTML:NO];
             
             [self presentViewController:compose animated:YES completion:nil];

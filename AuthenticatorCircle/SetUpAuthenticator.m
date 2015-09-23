@@ -18,7 +18,6 @@
 
 @implementation SetUpAuthenticator {
     AuthenticatorSimulator *authenticator;
-    NSDictionary *uiStrings;
 }
 @synthesize lb_SerialNumber, lb_AuthenticatorCode, pv_ProgressView, btn_Continue, lb_Instuction;
 
@@ -42,16 +41,15 @@
     [pv_ProgressView.layer setMasksToBounds:YES];
     
     //Set URL link in Instruction
-    uiStrings = [gUIStrings objectForKey:@"UI_SetUpAuthenticator"];
     [lb_Instuction setLinkAttributes:@{(id)kCTForegroundColorAttributeName:(id)self.view.tintColor.CGColor,
                                        NSUnderlineStyleAttributeName:@(NSUnderlineStyleNone)}];
     [lb_Instuction setActiveLinkAttributes:@{(id)kCTForegroundColorAttributeName:(id)[UIColor grayColor].CGColor}];
     
-    NSString *linkText = [uiStrings objectForKey:@"UI_SUA_BMA_LinkText"];
-    NSString *instructionString = [NSString stringWithFormat:[uiStrings objectForKey:@"UI_SUA_Instruction"], linkText];
+    NSString *linkText = NSLocalizedString(@"UI_SUA_BMA_LinkText", @"Link text of battle.net/bma");
+    NSString *instructionString = [NSString stringWithFormat:NSLocalizedString(@"UI_SUA_Instruction", @"Instruction text"), linkText];
     NSRange linkRange = [instructionString rangeOfString:linkText];
     [lb_Instuction setText:instructionString];
-    [lb_Instuction addLinkToURL:[NSURL URLWithString:[uiStrings objectForKey:@"UI_SUA_BMA_LinkURL"]] withRange:linkRange];
+    [lb_Instuction addLinkToURL:[NSURL URLWithString:NSLocalizedString(@"UI_SUA_BMA_LinkURL", @"Link URL of battle.net/bma")] withRange:linkRange];
 }
 
 - (void)didReceiveMemoryWarning {
