@@ -18,8 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     //Initial gConfiguration
-    NSString *filePathOfUIStrings = [[NSBundle mainBundle] pathForResource:@"UIStrings" ofType:@"plist"];
-    gConfiguration = [NSDictionary dictionaryWithContentsOfFile:filePathOfUIStrings];
+    gConfiguration = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Configuration" ofType:@"plist"]];
     
 #warning Debug Lines Start
 //    [KeychainWrapper clearKeychains:kKeychainIdentifier];

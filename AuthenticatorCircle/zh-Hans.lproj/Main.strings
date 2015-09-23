@@ -190,7 +190,7 @@
 "n2a-JD-soC.placeholder" = "还原密码";
 
 /* Class = "UIButton"; normalTitle = "Restore Authenticator"; ObjectID = "nB7-DR-dfO"; */
-"nB7-DR-dfO.normalTitle" = "重置安全令";
+"nB7-DR-dfO.normalTitle" = "还原安全令";
 
 /* Class = "UIButton"; normalTitle = "Save Screenshot"; ObjectID = "pht-8A-jzm"; */
 "pht-8A-jzm.normalTitle" = "保存屏幕截图";
