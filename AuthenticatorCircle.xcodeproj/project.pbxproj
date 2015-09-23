@@ -209,12 +209,12 @@
 				B23694B91BB3119A00D747A3 /* Debug.xcconfig */,
 			);
 			name = Configuration;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B23E4C0F1B7BBFC900D35088 = {
 			isa = PBXGroup;
 			children = (
-				B23694BB1BB322F200D747A3 /* Configuration */,
 				B23E4C1A1B7BBFC900D35088 /* AuthenticatorCircle */,
 				B23E4C341B7BBFCA00D35088 /* AuthenticatorCircleTests */,
 				B23E4C191B7BBFC900D35088 /* Products */,
@@ -233,9 +233,6 @@
 		B23E4C1A1B7BBFC900D35088 /* AuthenticatorCircle */ = {
 			isa = PBXGroup;
 			children = (
-				B2438D1F1BB2281300EFB480 /* HelpContents.plist */,
-				B2293DE21B8D1071004B9A3E /* AuthenticatorCircle.entitlements */,
-				B2384D6D1BB07717000D80BE /* Configuration.plist */,
 				B23E4C1F1B7BBFC900D35088 /* AppDelegate.h */,
 				B23E4C201B7BBFC900D35088 /* AppDelegate.m */,
 				B2A60E4E1B814D7C001BB51F /* Icon */,
@@ -246,6 +243,7 @@
 				B23E4C251B7BBFC900D35088 /* Main.storyboard */,
 				B23E4C281B7BBFC900D35088 /* Images.xcassets */,
 				B23E4C2A1B7BBFC900D35088 /* LaunchScreen.xib */,
+				B23694BB1BB322F200D747A3 /* Configuration */,
 				B23E4C1B1B7BBFC900D35088 /* Supporting Files */,
 			);
 			path = AuthenticatorCircle;
@@ -254,6 +252,9 @@
 		B23E4C1B1B7BBFC900D35088 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2438D1F1BB2281300EFB480 /* HelpContents.plist */,
+				B2293DE21B8D1071004B9A3E /* AuthenticatorCircle.entitlements */,
+				B2384D6D1BB07717000D80BE /* Configuration.plist */,
 				B26D8EC71BB20F8A00706539 /* Localizable.strings */,
 				B283C8321B7E6E840075D2C7 /* Prefix.h */,
 				A12EE3D91B8593EB005DDCFC /* AuthenticatorCircle-Prefix.pch */,
