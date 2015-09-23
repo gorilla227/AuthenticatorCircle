@@ -32,6 +32,7 @@
 		B23E4C4C1B7BCBBF00D35088 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E4C4B1B7BCBBF00D35088 /* KeychainWrapper.m */; };
 		B2438D1D1BB2281300EFB480 /* HelpContents.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2438D1F1BB2281300EFB480 /* HelpContents.plist */; };
 		B25E461D1B98E95E00C7FD60 /* RestoreAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B25E461C1B98E95E00C7FD60 /* RestoreAuthenticator.m */; };
+		B26325DE1BB352D1005605AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B26325E01BB352D1005605AE /* InfoPlist.strings */; };
 		B265C7DB1BAB7DD500DC238B /* UIButton+StyleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B265C7DA1BAB7DD500DC238B /* UIButton+StyleButton.m */; settings = {ASSET_TAGS = (); }; };
 		B267F5621B893C8E00FBB9B5 /* BG_Bastion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5521B893C8E00FBB9B5 /* BG_Bastion.jpg */; };
 		B267F5631B893C8E00FBB9B5 /* BG_Hanzo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B267F5531B893C8E00FBB9B5 /* BG_Hanzo.jpg */; };
@@ -133,6 +134,7 @@
 		B253003C1BB228E400CE87D2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B25E461B1B98E95E00C7FD60 /* RestoreAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreAuthenticator.h; sourceTree = "<group>"; };
 		B25E461C1B98E95E00C7FD60 /* RestoreAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreAuthenticator.m; sourceTree = "<group>"; };
+		B26325DF1BB352D1005605AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		B265C7D91BAB7DD500DC238B /* UIButton+StyleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+StyleButton.h"; sourceTree = "<group>"; };
 		B265C7DA1BAB7DD500DC238B /* UIButton+StyleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+StyleButton.m"; sourceTree = "<group>"; };
 		B267F5521B893C8E00FBB9B5 /* BG_Bastion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG_Bastion.jpg; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 		B23E4C351B7BBFCA00D35088 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B26325E01BB352D1005605AE /* InfoPlist.strings */,
 				B23E4C361B7BBFCA00D35088 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -553,6 +556,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26325DE1BB352D1005605AE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +657,14 @@
 				B253003B1BB228E400CE87D2 /* zh-Hans */,
 			);
 			name = HelpContents.plist;
+			sourceTree = "<group>";
+		};
+		B26325E01BB352D1005605AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26325DF1BB352D1005605AE /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		B26D8EC71BB20F8A00706539 /* Localizable.strings */ = {

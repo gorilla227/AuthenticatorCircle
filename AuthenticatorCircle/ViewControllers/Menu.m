@@ -22,9 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController.navigationBar setBarTintColor:cMenuTintColor];
-    [self.tableView setBackgroundColor:cBackground];
-    [lb_CopyRights setBackgroundColor:cBackground];
-    [lb_CopyRights sizeToFit];
+    [self.tableView setBackgroundColor:[UIColor clearColor]];
+    [lb_CopyRights setBackgroundColor:[UIColor clearColor]];
+    [self.tableView setBackgroundView:[[UIView alloc] initWithFrame:self.tableView.bounds]];
+    [self.tableView.backgroundView addSubview:lb_CopyRights];
+    [self.tableView.backgroundView setBackgroundColor:cBackground];
     if (![[[[NSBundle mainBundle] infoDictionary] objectForKey:@"ClearAuthenticatorButton"] boolValue]) {
         [self.navigationItem setLeftBarButtonItem:nil];
     }
@@ -45,11 +47,9 @@
 }
 
 - (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
     if (!isCopyRightFrameSet) {
-        CGRect copyRightsFrame = lb_CopyRights.frame;
-        copyRightsFrame.origin.y = self.tableView.bounds.size.height - self.tableView.contentSize.height + lb_CopyRights.frame.origin.y - (108.0f - copyRightsFrame.size.height);
-        copyRightsFrame.size.height = 108.0f;
-        [lb_CopyRights setFrame:copyRightsFrame];
+        [lb_CopyRights setFrame:CGRectMake(0, self.tableView.bounds.size.height - kCopyRightFrameHeight, self.tableView.bounds.size.width, kCopyRightFrameHeight)];
         isCopyRightFrameSet = YES;
     }
 }

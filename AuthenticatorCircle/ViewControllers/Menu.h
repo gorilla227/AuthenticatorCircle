@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define kCopyRightFrameHeight 108.0f
 @interface Menu : UITableViewController <MFMailComposeViewControllerDelegate>
 
 @end

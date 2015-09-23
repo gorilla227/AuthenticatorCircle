@@ -669,29 +669,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.12941176470588237" green="0.14901960784313725" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K8c-07-PC2" userLabel="Battle.net Mobile Authenticator v2.0.0 2015 Blizzard Entertainment, Inc. All rights reserved.">
-                            <rect key="frame" x="0.0" y="305" width="600" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.12941176469999999" green="0.14901960780000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="72" id="Yd0-8U-Dwo">
-                                    <variation key="widthClass=compact" constant="108"/>
-                                </constraint>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                            <variation key="default">
-                                <mask key="constraints">
-                                    <exclude reference="Yd0-8U-Dwo"/>
-                                </mask>
-                            </variation>
-                            <variation key="widthClass=compact">
-                                <mask key="constraints">
-                                    <exclude reference="Yd0-8U-Dwo"/>
-                                </mask>
-                            </variation>
-                        </label>
                         <sections>
                             <tableViewSection id="eKR-rC-chc">
                                 <cells>
@@ -830,10 +807,21 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btn_Debug" destination="Ip5-Us-56w" id="pUu-s8-5Us"/>
-                        <outlet property="lb_CopyRights" destination="K8c-07-PC2" id="CeF-jB-Vcc"/>
+                        <outlet property="lb_CopyRights" destination="dLR-Tf-OAg" id="3xH-ZP-n6j"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvd-Kd-QPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dLR-Tf-OAg">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.12941176469999999" green="0.14901960780000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <string key="text">Battle.net Mobile Authenticator v2.0.1
+©2015 Blizzard Entertainment, Inc.
+All rights reserved.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </objects>
             <point key="canvasLocation" x="1413" y="1197"/>
         </scene>

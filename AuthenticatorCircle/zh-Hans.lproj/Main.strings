@@ -90,6 +90,11 @@
 /* Class = "UILabel"; text = "(Serial:)"; ObjectID = "Ikf-EI-YBJ"; */
 "Ikf-EI-YBJ.text" = "(Serial:)";
 
+/* Class = "UILabel"; text = "Battle.net Mobile Authenticator v2.0.1\n©2015 Blizzard Entertainment, Inc.\nAll rights reserved."; ObjectID = "dLR-Tf-OAg"; */
+"dLR-Tf-OAg.text" = "战网手机安全令 v2.0.1
+©2015 暴雪娱乐股份有限公司
+保留所有权利";
+
 /* Class = "UILabel"; text = "Serial:"; ObjectID = "Lar-dg-BYV"; */
 "Lar-dg-BYV.text" = "序列号：";
 
