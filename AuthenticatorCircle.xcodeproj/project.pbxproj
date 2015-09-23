@@ -60,6 +60,10 @@
 		B2A60E561B814D7C001BB51F /* ViewRestoreCode.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A60E521B814D7C001BB51F /* ViewRestoreCode.png */; };
 		B2BC9C2E1B979F94004481BB /* UINavigationController+NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BC9C2D1B979F94004481BB /* UINavigationController+NavigationController.m */; };
 		B2C11F5C1BA37B2400E9C962 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C11F5B1BA37B2400E9C962 /* TTTAttributedLabel.m */; };
+		B2C249BD1BB3312A00EAF253 /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C249B91BB3312A00EAF253 /* AppIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		B2C249BE1BB3312A00EAF253 /* AppIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C249BA1BB3312A00EAF253 /* AppIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		B2C249BF1BB3312A00EAF253 /* SettingIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C249BB1BB3312A00EAF253 /* SettingIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		B2C249C01BB3312A00EAF253 /* SettingIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C249BC1BB3312A00EAF253 /* SettingIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
 		B2D2C5661B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D2C5651B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m */; };
 		B2D469081BADFB6C004E76D3 /* FixInconsistency.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D469071BADFB6C004E76D3 /* FixInconsistency.m */; settings = {ASSET_TAGS = (); }; };
 		B2D94D3A1B7D3FFB0010DE6C /* AuthenticatorSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D94D391B7D3FFB0010DE6C /* AuthenticatorSimulator.m */; };
@@ -166,6 +170,10 @@
 		B2BC9C2D1B979F94004481BB /* UINavigationController+NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NavigationController.m"; sourceTree = "<group>"; };
 		B2C11F5A1BA37B2400E9C962 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
 		B2C11F5B1BA37B2400E9C962 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		B2C249B91BB3312A00EAF253 /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
+		B2C249BA1BB3312A00EAF253 /* AppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@3x.png"; sourceTree = "<group>"; };
+		B2C249BB1BB3312A00EAF253 /* SettingIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SettingIcon@2x.png"; sourceTree = "<group>"; };
+		B2C249BC1BB3312A00EAF253 /* SettingIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SettingIcon@3x.png"; sourceTree = "<group>"; };
 		B2D2C5641B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextField_Inset_PlaceholderFont.h; sourceTree = "<group>"; };
 		B2D2C5651B9A1D9100AAA5C0 /* UITextField_Inset_PlaceholderFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextField_Inset_PlaceholderFont.m; sourceTree = "<group>"; };
 		B2D469061BADFB6C004E76D3 /* FixInconsistency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixInconsistency.h; sourceTree = "<group>"; };
@@ -375,6 +383,10 @@
 		B2A60E4E1B814D7C001BB51F /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				B2C249B91BB3312A00EAF253 /* AppIcon@2x.png */,
+				B2C249BA1BB3312A00EAF253 /* AppIcon@3x.png */,
+				B2C249BB1BB3312A00EAF253 /* SettingIcon@2x.png */,
+				B2C249BC1BB3312A00EAF253 /* SettingIcon@3x.png */,
 				B27BE9E91BA7A1AE006FEBCC /* CloudIcon.png */,
 				B281E5241BA1FD3200736CC3 /* CompleteSign.png */,
 				B2E7CC611B8BF8A4004EA14C /* BattleNet_Title.png */,
@@ -519,6 +531,7 @@
 				B2A60E531B814D7C001BB51F /* Help.png in Resources */,
 				B2E7CC601B8BF71C004EA14C /* AppBackground.jpg in Resources */,
 				B267F5631B893C8E00FBB9B5 /* BG_Hanzo.jpg in Resources */,
+				B2C249BD1BB3312A00EAF253 /* AppIcon@2x.png in Resources */,
 				B281E5251BA1FD3200736CC3 /* CompleteSign.png in Resources */,
 				B2E7CC621B8BF8A4004EA14C /* BattleNet_Title.png in Resources */,
 				B23E4C271B7BBFC900D35088 /* Main.storyboard in Resources */,
@@ -534,12 +547,15 @@
 				B2384D6B1BB07717000D80BE /* Configuration.plist in Resources */,
 				B267F56C1B893C8E00FBB9B5 /* BG_Torbjorn.jpg in Resources */,
 				B23E4C2C1B7BBFC900D35088 /* LaunchScreen.xib in Resources */,
+				B2C249BF1BB3312A00EAF253 /* SettingIcon@2x.png in Resources */,
 				B267F5691B893C8E00FBB9B5 /* BG_Reinhardt.jpg in Resources */,
 				B267F5661B893C8E00FBB9B5 /* BG_Mercy.jpg in Resources */,
 				B23E4C291B7BBFC900D35088 /* Images.xcassets in Resources */,
+				B2C249BE1BB3312A00EAF253 /* AppIcon@3x.png in Resources */,
 				B267F56D1B893C8E00FBB9B5 /* BG_Tracer.jpg in Resources */,
 				B267F5621B893C8E00FBB9B5 /* BG_Bastion.jpg in Resources */,
 				B267F5641B893C8E00FBB9B5 /* BG_Lucio.jpg in Resources */,
+				B2C249C01BB3312A00EAF253 /* SettingIcon@3x.png in Resources */,
 				B267F5671B893C8E00FBB9B5 /* BG_Pharah.jpg in Resources */,
 				B267F5651B893C8E00FBB9B5 /* BG_McCree.jpg in Resources */,
 				B267F5681B893C8E00FBB9B5 /* BG_Reaper.jpg in Resources */,
