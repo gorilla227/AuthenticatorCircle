@@ -50,8 +50,10 @@
 		<key>HelpBody</key>
 		<string>If you need more help with your Battle.net Mobile Authenticator, please contact Blizzard Entertainment customer support:
 
-• Americas, Europe, Korea, Taiwan: #$https://battle.net/support/#$
-• China: #$https://www.battlenet.com.cn/support/#$</string>
+• Americas, Europe, Korea, Taiwan:
+#$https://battle.net/support/#$
+• China:
+#$https://www.battlenet.com.cn/support/#$</string>
 		<key>HelpLinks</key>
 		<array>
 			<string>https://www.battle.net/support/</string>

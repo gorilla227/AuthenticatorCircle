@@ -4,54 +4,57 @@
 <array>
 	<dict>
 		<key>HelpTitle</key>
-		<string>What is the Restore code?</string>
+		<string>什么是还原密码？</string>
 		<key>HelpBody</key>
-		<string>With the Restore code, you can restore a previous version of the Battle.net Authenticator app. This will be helpful if:
+		<string>您可以使用上一次安装时记录的还原密码及序列号，将战网安全令应用还原至之前的状态。
+下列情况发生时，您可能会需要使用此功能：
 
-• You get a new phone
-• Your current phone requires a factory reset</string>
+•您更换了新的手机。
+•您当前的手机需要还原至出厂设置。</string>
 		<key>HelpLinks</key>
 		<array/>
 	</dict>
 	<dict>
 		<key>HelpTitle</key>
-		<string>What is Cloud Sync?</string>
+		<string>什么是云同步？</string>
 		<key>HelpBody</key>
-		<string>Cloud Sync backs up your authenticator on your #$iCloud Keychain#$, making setup and recovery easy if you switch to a new device. To turn this feature on, you will need to enable the iCloud Keychain.</string>
+		<string>云同步功能将在#$iCloud钥匙串#$上备份您的安全令，以便您在更换新的设备时安装并恢复安全令时使用。要想打开此功能，您需要先开启iCloud钥匙串。</string>
 		<key>HelpLinks</key>
 		<array>
-			<string>https://support.apple.com/en-us/HT204085</string>
+			<string>https://support.apple.com/zh-cn/HT204085</string>
 		</array>
 	</dict>
 	<dict>
 		<key>HelpTitle</key>
-		<string>How can I safely detach my authenticator?</string>
+		<string>我应当如何安全地解除安全令的绑定？</string>
 		<key>HelpBody</key>
-		<string>1. Vist #$battle.net/bma#$
-2. Follow the instructions provided on the site.</string>
+		<string>1. 打开网页：#$battlenet.com.cn/support/zh/article/537#2#$
+2. 按照网页上的介绍进行操作。</string>
 		<key>HelpLinks</key>
 		<array>
-			<string>https://www.battle.net/bma</string>
+			<string>https://www.battlenet.com.cn/support/zh/article/537#2</string>
 		</array>
 	</dict>
 	<dict>
 		<key>HelpTitle</key>
-		<string>Locked yourself out of your Battle.net Account?</string>
+		<string>由于安全令操作无法登录战网账号？</string>
 		<key>HelpBody</key>
-		<string>1. If you have the restore code and serial number, you can restore the previous version of your authenticator and use it to log in.
+		<string>1. 如果您已经存储了还原密码和序列号，可以将您的安全令恢复至以前的版本，然后使用安全令登录。
 
-2. If you have SMS Protect set up, you can visit the Account Recovery page, enter your registered email address, and select the option to &quot;use SMS Protect&quot; to unlock your account.</string>
+2. 如果您开通了短信保护功能，您可以访问账号恢复页面，输入您的注册邮箱地址，然后选择“使用短信保护”解锁您的账号。</string>
 		<key>HelpLinks</key>
 		<array/>
 	</dict>
 	<dict>
 		<key>HelpTitle</key>
-		<string>Need additional help?</string>
+		<string>需要进一步的帮助？</string>
 		<key>HelpBody</key>
-		<string>If you need more help with your Battle.net Mobile Authenticator, please contact Blizzard Entertainment customer support:
+		<string>如果您需要关于战网手机安全令的更多帮助，请联系暴雪客服：
 
-• Americas, Europe, Korea, Taiwan: #$https://battle.net/support/#$
-• China: #$https://www.battlenet.com.cn/support/#$</string>
+• 美洲、欧洲、韩国、台湾：
+#$https://battle.net/support/#$
+• 中国大陆：
+#$https://www.battlenet.com.cn/support/#$</string>
 		<key>HelpLinks</key>
 		<array>
 			<string>https://www.battle.net/support/</string>
