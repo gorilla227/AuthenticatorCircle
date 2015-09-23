@@ -105,8 +105,8 @@
 		B22B5CE81BB22FE0001CAF7A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B22D0BC71B991B4D00BD1857 /* RestoreWithRestoreCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreWithRestoreCode.h; sourceTree = "<group>"; };
 		B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreWithRestoreCode.m; sourceTree = "<group>"; };
-		B23694B91BB3119A00D747A3 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = AuthenticatorCircle/Debug.xcconfig; sourceTree = "<group>"; };
-		B23694BA1BB318E900D747A3 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = AuthenticatorCircle/Release.xcconfig; sourceTree = "<group>"; };
+		B23694B91BB3119A00D747A3 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		B23694BA1BB318E900D747A3 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		B2384D6C1BB07717000D80BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Configuration.plist; sourceTree = "<group>"; };
 		B23DD22B1BA8F6BD00A5B9B9 /* WelcomePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomePageView.h; sourceTree = "<group>"; };
 		B23DD22C1BA8F6BD00A5B9B9 /* WelcomePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomePageView.m; sourceTree = "<group>"; };
@@ -208,8 +208,7 @@
 				B23694BA1BB318E900D747A3 /* Release.xcconfig */,
 				B23694B91BB3119A00D747A3 /* Debug.xcconfig */,
 			);
-			name = Configuration;
-			path = ..;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		B23E4C0F1B7BBFC900D35088 = {
@@ -314,7 +313,7 @@
 				A1827DEF1BA68EFA0090783B /* AuthenticatorOperation.h */,
 				A1827DF01BA68EFA0090783B /* AuthenticatorOperation.m */,
 			);
-			name = AuthenticatorOperation;
+			path = AuthenticatorOperation;
 			sourceTree = "<group>";
 		};
 		B27BE9E71BA79BFA006FEBCC /* ViewControllers */ = {
@@ -355,7 +354,7 @@
 				B2D469061BADFB6C004E76D3 /* FixInconsistency.h */,
 				B2D469071BADFB6C004E76D3 /* FixInconsistency.m */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B27BE9E81BA79C0C006FEBCC /* UIControlCustomization */ = {
@@ -370,7 +369,7 @@
 				B265C7D91BAB7DD500DC238B /* UIButton+StyleButton.h */,
 				B265C7DA1BAB7DD500DC238B /* UIButton+StyleButton.m */,
 			);
-			name = UIControlCustomization;
+			path = UIControlCustomization;
 			sourceTree = "<group>";
 		};
 		B2A60E4E1B814D7C001BB51F /* Icon */ = {
@@ -405,6 +404,7 @@
 				B2D94D391B7D3FFB0010DE6C /* AuthenticatorSimulator.m */,
 			);
 			name = Simulator;
+			path = AuthenticatorSimulator;
 			sourceTree = "<group>";
 		};
 		B2D94D3C1B7D4BAE0010DE6C /* ArcProgressView */ = {
@@ -422,7 +422,7 @@
 				B23E4C4A1B7BCBBF00D35088 /* KeychainWrapper.h */,
 				B23E4C4B1B7BCBBF00D35088 /* KeychainWrapper.m */,
 			);
-			name = KeychainWrapper;
+			path = KeychainWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
