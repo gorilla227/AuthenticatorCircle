@@ -369,7 +369,7 @@
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="veL-3C-v1p"/>
+                                                <exclude reference="veL-3C-v1p"/>
                                             </mask>
                                         </variation>
                                     </label>
