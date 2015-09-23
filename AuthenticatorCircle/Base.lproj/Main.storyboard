@@ -829,6 +829,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btn_Debug" destination="Ip5-Us-56w" id="pUu-s8-5Us"/>
                         <outlet property="lb_CopyRights" destination="K8c-07-PC2" id="CeF-jB-Vcc"/>
                     </connections>
                 </tableViewController>
@@ -3287,6 +3288,6 @@ Be sure to write down these numbers in case you ever need to restore your authen
         <image name="WelcomeIcon.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vq0-v5-gfn"/>
+        <segue reference="geD-Ir-cw7"/>
     </inferredMetricsTieBreakers>
 </document>

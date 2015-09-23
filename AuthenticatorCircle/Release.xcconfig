@@ -1,0 +1,9 @@
+//
+//  Release.xcconfig
+//  AuthenticatorCircle
+//
+//  Created by Andy Xu on 15/9/23.
+//  Copyright © 2015年 Andy Xu. All rights reserved.
+//
+
+FEEDBACK_EMAIL_TO = moblie-app-support@blizzard.com

@@ -40,5 +40,9 @@
 	<true/>
 	<key>CFBundleDisplayName</key>
 	<string>Authenticator</string>
+	<key>FeedbackMailTo</key>
+	<string>${FEEDBACK_EMAIL_TO}</string>
+	<key>ClearAuthenticatorButton</key>
+	<string>${CLEAR_AUTHENTICATOR}</string>
 </dict>
 </plist>

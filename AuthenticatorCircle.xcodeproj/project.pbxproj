@@ -105,6 +105,8 @@
 		B22B5CE81BB22FE0001CAF7A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B22D0BC71B991B4D00BD1857 /* RestoreWithRestoreCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreWithRestoreCode.h; sourceTree = "<group>"; };
 		B22D0BC81B991B4D00BD1857 /* RestoreWithRestoreCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreWithRestoreCode.m; sourceTree = "<group>"; };
+		B23694B91BB3119A00D747A3 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = AuthenticatorCircle/Debug.xcconfig; sourceTree = "<group>"; };
+		B23694BA1BB318E900D747A3 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = AuthenticatorCircle/Release.xcconfig; sourceTree = "<group>"; };
 		B2384D6C1BB07717000D80BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Configuration.plist; sourceTree = "<group>"; };
 		B23DD22B1BA8F6BD00A5B9B9 /* WelcomePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomePageView.h; sourceTree = "<group>"; };
 		B23DD22C1BA8F6BD00A5B9B9 /* WelcomePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomePageView.m; sourceTree = "<group>"; };
@@ -200,9 +202,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B23694BB1BB322F200D747A3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B23694BA1BB318E900D747A3 /* Release.xcconfig */,
+				B23694B91BB3119A00D747A3 /* Debug.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
 		B23E4C0F1B7BBFC900D35088 = {
 			isa = PBXGroup;
 			children = (
+				B23694BB1BB322F200D747A3 /* Configuration */,
 				B23E4C1A1B7BBFC900D35088 /* AuthenticatorCircle */,
 				B23E4C341B7BBFCA00D35088 /* AuthenticatorCircleTests */,
 				B23E4C191B7BBFC900D35088 /* Products */,
@@ -741,6 +753,7 @@
 		};
 		B23E4C3C1B7BBFCA00D35088 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23694B91BB3119A00D747A3 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AuthenticatorCircle/AuthenticatorCircle.entitlements;
@@ -756,6 +769,7 @@
 		};
 		B23E4C3D1B7BBFCA00D35088 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23694BA1BB318E900D747A3 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AuthenticatorCircle/AuthenticatorCircle.entitlements;

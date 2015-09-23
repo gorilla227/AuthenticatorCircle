@@ -8,7 +8,6 @@
 
 //--------------------FeecbackMail--------------------
 "FeedbackMail_Subject" = "Authenticator Feedback";
-"FeedbackMail_To" = "axu@blizzard.com";
 "FeedbackMail_Body" = "
 
 

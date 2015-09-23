@@ -11,12 +11,13 @@
 
 @interface Menu ()
 @property (nonatomic, strong) IBOutlet UILabel *lb_CopyRights;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *btn_Debug;
 @end
 
 @implementation Menu {
     BOOL isCopyRightFrameSet;
 }
-@synthesize lb_CopyRights;
+@synthesize lb_CopyRights, btn_Debug;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +25,9 @@
     [self.tableView setBackgroundColor:cBackground];
     [lb_CopyRights setBackgroundColor:cBackground];
     [lb_CopyRights sizeToFit];
+    if (![[[[NSBundle mainBundle] infoDictionary] objectForKey:@"ClearAuthenticatorButton"] boolValue]) {
+        [self.navigationItem setLeftBarButtonItem:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,7 +69,7 @@
             [compose.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
             [compose.navigationBar setTintColor:self.view.tintColor];
             [compose setSubject:NSLocalizedString(@"FeedbackMail_Subject", @"FeedbackMail_Subject")];
-            [compose setToRecipients:@[NSLocalizedString(@"FeedbackMail_To", @"FeedbackMail_Recipients")]];
+            [compose setToRecipients:@[[[[NSBundle mainBundle] infoDictionary] objectForKey:@"FeedbackMailTo"]]];
             NSString *body = [NSString localizedStringWithFormat:NSLocalizedString(@"FeedbackMail_Body", @"FeedbackMail_Body"), [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"], [[NSBundle mainBundle] preferredLocalizations].firstObject, [UIDevice currentDevice].model, [UIDevice currentDevice].systemVersion];
             [compose setMessageBody:body isHTML:NO];
             

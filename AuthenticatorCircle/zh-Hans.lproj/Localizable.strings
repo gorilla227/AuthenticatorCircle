@@ -14,9 +14,6 @@ iOS version: %@
 /* FeedbackMail_Subject */
 "FeedbackMail_Subject" = "Authenticator Feedback";
 
-/* FeedbackMail_Recipients */
-"FeedbackMail_To" = "axu@blizzard.com";
-
 /* Serial Number */
 "UI_FI_Serial" = "（序列号：%@）";
 
