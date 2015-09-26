@@ -14,7 +14,7 @@
 "2aO-L9-ged.title" = "帮助";
 
 /* Class = "UILabel"; text = "You're done!"; ObjectID = "2eV-F6-4mt"; */
-"2eV-F6-4mt.text" = "安装完成！";
+"2eV-F6-4mt.text" = "安装完成";
 
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "2q2-ml-Yr1"; */
 "2q2-ml-Yr1.title" = "返回";
@@ -41,7 +41,7 @@
 "8ym-HJ-NJR.text" = "Help Title";
 
 /* Class = "UILabel"; text = "iCloud last synced:"; ObjectID = "9m2-o3-ABM"; */
-"9m2-o3-ABM.text" = "最近在iCloud同步的设备：";
+"9m2-o3-ABM.text" = "最近在iCloud上同步的设备：";
 
 /* Class = "UILabel"; text = "The authenticator information on your device does not match what's on iCloud. Choose which you'd like to use:"; ObjectID = "9ov-Ju-QpZ"; */
 "9ov-Ju-QpZ.text" = "您的设备上所使用的安全令信息与iCloud上所存储的不同。选择您希望使用的一项：";
@@ -77,7 +77,7 @@
 "EX4-5a-xOj.text" = "Date";
 
 /* Class = "UILabel"; text = "The Battle.net Mobile Authenticator increases your account security to help keep it safe.\n\nOnce you add an authenticator, you'll use it when you play Blizzard games or log in to your Battle.net Account."; ObjectID = "FPf-5l-Z97"; */
-"FPf-5l-Z97.text" = "战网手机安全令会为你的账号提供更可靠的安全保障。
+"FPf-5l-Z97.text" = "战网手机安全令会为您的账号提供更可靠的安全保障。
 
 安装安全令后，在启动暴雪游戏或使用战网账号登录时都需要使用它进行验证。";
 
@@ -89,11 +89,6 @@
 
 /* Class = "UILabel"; text = "(Serial:)"; ObjectID = "Ikf-EI-YBJ"; */
 "Ikf-EI-YBJ.text" = "(Serial:)";
-
-/* Class = "UILabel"; text = "Battle.net Mobile Authenticator v2.0.1\n©2015 Blizzard Entertainment, Inc.\nAll rights reserved."; ObjectID = "dLR-Tf-OAg"; */
-"dLR-Tf-OAg.text" = "战网手机安全令 v2.0.1
-©2015 暴雪娱乐股份有限公司
-保留所有权利";
 
 /* Class = "UILabel"; text = "Serial:"; ObjectID = "Lar-dg-BYV"; */
 "Lar-dg-BYV.text" = "序列号：";
@@ -114,7 +109,7 @@
 "PG2-en-Mqb.title" = "重置安全令";
 
 /* Class = "UIViewController"; title = "Set Up Authenticator"; ObjectID = "QTT-KD-Rhv"; */
-"QTT-KD-Rhv.title" = "设置安全令";
+"QTT-KD-Rhv.title" = "安装新的安全令";
 
 /* Class = "UIButton"; normalTitle = "Use Device Information"; ObjectID = "Tpb-7H-0Px"; */
 "Tpb-7H-0Px.normalTitle" = "使用本设备上的信息";
@@ -126,9 +121,9 @@
 "UYj-LS-RhW.text" = "Date";
 
 /* Class = "UILabel"; text = "If you have Cloud Sync enabled on your previous device, you can quickly restore your authenticator by enabling your iCloud Keychain.\n\nTo enable iCloud, go to Settings > iCloud > Keychain."; ObjectID = "VFk-Lb-KB9"; */
-"VFk-Lb-KB9.text" = "如果您在之前的设备上启动了iCloud同步功能，可能通过启动iCloud钥匙串迅速还原安全令。
+"VFk-Lb-KB9.text" = "如果您在之前的设备上开启了云同步功能，就可以通过iCloud钥匙串迅速还原安全令。
 
-要想启动iCloud功能，请前往设置>iCloud>钥匙串";
+要想开启iCloud功能，请前往设置>iCloud>钥匙串。";
 
 /* Class = "UILabel"; text = "(Serial:)"; ObjectID = "Y0t-UU-CXo"; */
 "Y0t-UU-CXo.text" = "(Serial:)";
@@ -148,6 +143,11 @@
 /* Class = "UIViewController"; title = "View Restore Code"; ObjectID = "cTP-XN-oAK"; */
 "cTP-XN-oAK.title" = "查看还原密码";
 
+/* Class = "UILabel"; text = "Battle.net Mobile Authenticator v2.0.1\n©2015 Blizzard Entertainment, Inc.\nAll rights reserved."; ObjectID = "dLR-Tf-OAg"; */
+"dLR-Tf-OAg.text" = "战网手机安全令 v2.0.1
+©2015 暴雪娱乐股份有限公司
+保留所有权利";
+
 /* Class = "UIViewController"; title = "Processing"; ObjectID = "dOl-Fr-Ob6"; */
 "dOl-Fr-Ob6.title" = "Processing";
 
@@ -157,7 +157,7 @@
 我们建议您保存一份还原密码的屏幕截图，并将其存储到手机相册中，以备将来还原应用时使用。";
 
 /* Class = "UILabel"; text = "If you want to reset your authenticator, we recommend you detach it from your Battle.net Account first."; ObjectID = "eHe-Sw-AiS"; */
-"eHe-Sw-AiS.text" = "如果您希望重置安全令，我们建议您先将其与您的展望账号解绑。";
+"eHe-Sw-AiS.text" = "如果您希望重置安全令，我们建议您先将其与您的战网账号解绑，否则可能导致无法登录。";
 
 /* Class = "UILabel"; text = "Help Content"; ObjectID = "g37-IL-c1I"; */
 "g37-IL-c1I.text" = "Help Content";
@@ -209,7 +209,7 @@
 /* Class = "UILabel"; text = "Your Battle.net Account is now more secure.\n\nBe sure to write down these numbers in case you ever need to restore your authenticator (e.g. if you lose your phone)"; ObjectID = "r1i-T7-RXc"; */
 "r1i-T7-RXc.text" = "您的战网账号现在更安全了。
 
-请务必几下这些数字，以供您需要还原安全令时（例如在手机丢失的情况下）使用：";
+请务必记下这些数字，以供您需要还原安全令时（例如在手机丢失的情况下）使用：";
 
 /* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "rg3-lp-47I"; */
 "rg3-lp-47I.normalTitle" = "提交";
@@ -224,7 +224,7 @@
 "sXn-dX-4MZ.text" = "CN-1234-5678-9012";
 
 /* Class = "UILabel"; text = "You can now backup your authenticator on iCloud, making setup and recovery easy if you switch to a new device."; ObjectID = "tKd-EK-Q55"; */
-"tKd-EK-Q55.text" = "您现在可以在iCloud备份安全令，在使用新设备时可以更加轻松地安装或还原安全令。";
+"tKd-EK-Q55.text" = "您现在可以在iCloud备份安全令，在使用新设备时可以更加轻松地安装或还原应用。";
 
 /* Class = "UIButton"; normalTitle = "Save Screenshot"; ObjectID = "tSd-le-MXM"; */
 "tSd-le-MXM.normalTitle" = "保存屏幕截图";
@@ -236,11 +236,11 @@
 "v2l-K8-dSP.text" = "帮助";
 
 /* Class = "UILabel"; text = "1. Go to battle.net/bma and click Continue to Account Management.\n\n2. Click Attach Authenticator in the Battle.net Mobile Authenticator section.\n\n3. Follow the instructions on the website."; ObjectID = "vJP-hn-MvY"; */
-"vJP-hn-MvY.text" = "1.打开battlenet.com.cn/bma，点击“转至账号管理页面”。
+"vJP-hn-MvY.text" = "1. 打开battlenet.com.cn/bma，点击“转至账号管理页面”。
 
-2.点击“添加战网手机安全令”按钮。
+2. 点击“添加战网手机安全令”按钮。
 
-3.根据网站上的相关步骤进行操作。";
+3. 根据网站上的相关步骤进行操作。";
 
 /* Class = "UINavigationItem"; title = "Help"; ObjectID = "vXp-WB-kga"; */
 "vXp-WB-kga.title" = "帮助";
